@@ -1,0 +1,91 @@
+---
+title: "Austraits – a curated plant trait database for the Australian flora"
+bibliography: references.bib
+csl: nature.csl  
+output:
+  word_document: default
+  pdf_document:
+    keep_tex: yes
+  html_document: default
+geometry: margin=0.75in
+fontsize: 9pt
+editor_options:
+  chunk_output_type: console
+---
+
+
+```{r setup, include=FALSE, warning=FALSE, message=FALSE}
+library(knitr)
+library(rmarkdown)
+library(readr)
+library(dplyr)
+
+austraits <- readRDS("data/austraits.rds")
+```
+
+```{r authors, results='asis', echo=FALSE}
+authors <- read_csv("data/authors.csv", col_types = cols(.default = "c"))
+
+affils <- tibble(Affiliation=unique(authors$Affiliation), 
+                 label = letters[seq_len(length(Affiliation)) ])
+authors <- left_join(authors, affils, by = "Affiliation")
+
+# print list of authors
+sprintf("%s (%s)", authors$Author, authors$label) %>% paste0(collapse = ", ") %>% writeLines()
+
+writeLines("\n\n")
+
+# print list of affiliations
+sprintf("**%s**- %s", affils$label, affils$Affiliation) %>% paste0(collapse = "; ") %>% writeLines()
+```
+
+
+# Abstract
+
+Species traits have increasingly become an essential metric for comparing ecological strategies among plants across environmental space or evolutionary lineages. This is because traits are useful indicators of the the functions that species perform, regardless of their taxonomy, in communities and ecosystems. Whilst the volume of trait information has grown rapidly in the last two decades through targeted initiatives, the geographic coverage of trait observations across the globe is patchy, making comprehensive analyses of patterns of trait abundance and diversity impossible to achieve in some regions. One such region is Australia; a continent with a flora of over 20,000 higher-plant species, % of which are considered endemic. Here, we introduce a fully open database of XXX plant traits for the Australian Flora (named AusTraits). Austraits synthesises data from field campaigns, published literature, taxonomic monographs, and individual species descriptions. Traits vary in scope from physiological measures of performance (e.g. photosynthetic gas exchange, water-use efficiency, XX) to morphological parameters (e.g. leaf size, seed size, maximum height) which link to ecological strategy variation. AusTraits contains curated and harmonised species- and genus-level observations coupled to, where available, contextual information on site properties. This data descriptor provides information on Version 1.1 of AusTraits which houses data for XXX trait-by-species combinations across XX,XXX species. We envision AusTraits as an on-going collaborative initiative for easily archiving and sharing trait data to increase our collective understanding the Australian flora. 
+
+# Background & Summary 
+
+- traits now widely agreed as important [@westoby2002]
+-	Legacy data vs. newly-collected traits  considerations for these differ and Austraits can offer a path for how to sample comprehensively
+-	Web portal, maybe like coral traits, for easily adding new data which can accommodate a range of user’s capabilities
+-	Family level plotting for the paper, featuring two traits – continuous and categorical  height and growth form; two important traits which we have good coverage for
+-	CURATED national collection of traits, similar to other biodiversity datasets 
+-	Expose decisions which are being made in the processing of data into a harmonised resource with a view to nationalising the availability of trait information, similar to availability similar to the availability of species occurrence data
+-	What can a national dataset facilitate? Alignment with conservation management across a federlaised system of government. Global platforms might be best built from national datasets (analogous to the GBIF initiative which aggregates occurrence data assembled by national initiatives). 
+-	Current models of trait aggregation are geographically patchy – with some locations comprehensively covered e.g. Europe – but with little taxonomic or functional overlap with other regions (e.g. Africa, Australia). ~5% of the worlds plant species occur in these regions (300 trees in Europe 600 in America; in a single 50-ha plot in Australian tropical forests = same or more species). This actually matters when we increasingly want to apply traits as a proxy for understanding vegetation responses to disturbance and change. Whilst large-scale analyses are relatively well-served by global datasets which have representatives species from each biome or continent, the capacity to explore more nuanced questions about the function of regional vegetation is limited. 
+-	Duplication of effort. Austraits will reduce the duplication of effort across government research agencies and university researchers seeking to create trait-based approaches to their questions. 
+-	Better stewardship of data when collected by a localised group of interested parties. 
+
+# Methods
+
+The data are housed within github repository traitecoevo with sequential releases being made available on this platform and Zenodo/Figshare. Access to Austraits will be  XXX. Austraits can also be accessed via the R package: `austraits`
+
+## Processing pipeline: 
+
+1. what is the platform for curating and harmonising? 
+2. which decisions do we think it is important to expose e.g. taxonomic alignment, trait mapping == standardisation of names and units, data cleaning processes (e.g. substitutions, reshaping of data, excluding values outside plausible bounds  we can put numbers on these as Daniel has the data-frame of excluded data). 
+
+In this way we offer more than an aggregation service, but seek to standardise data provided from a range of disparate sources and individuals. 
+
+
+## Schema
+
+Austraits is designed to collate traits-based measurements with a range of relevant contextual information. Its schema broadly follows the principles of the established Observation and Measurement Ontology (Madin et al., 2007) in that trait data are connected to contextual information. Data flows from individual ‘studies’ which are any natural grouping for data collections, typically scientific publications, species descriptions, and field campaigns. Austraits currently contains X studies and each study has two associated files: `data.csv` and `metadata.yml`. `Metadata.yml` must conform to a standard set of fields to provide context and options for converting data into standardised format via information on trait-mapping. 
+
+## Traits 
+
+Includes data for Type
+
+## Sources
+
+## Measurement
+
+# Taxonomic coverage 
+
+Austraits currently contains data for `r austraits$data$species_name %>% unique() %>% length()` species from `r austraits$species_list$family %>% unique() %>% length()` families; with `r austraits$data %>% nrow()` records for `r austraits$data$trait_name %>% unique() %>% length()` traits.   
+
+
+## References
+
+\footnotesize
