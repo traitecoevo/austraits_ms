@@ -46,9 +46,9 @@ Species traits have increasingly become an essential metric for comparing ecolog
 
 # Background & Summary 
 
-- traits now widely agreed as important [@westoby2002]
+- traits now widely agreed as important [@Westoby-2002]
 -	Legacy data vs. newly-collected traits  considerations for these differ and Austraits can offer a path for how to sample comprehensively
--	Web portal, maybe like coral traits, for easily adding new data which can accommodate a range of user’s capabilities
+-	Web portal, maybe like coral traits [@Madin-2016], for easily adding new data which can accommodate a range of user’s capabilities
 -	Family level plotting for the paper, featuring two traits – continuous and categorical  height and growth form; two important traits which we have good coverage for
 -	CURATED national collection of traits, similar to other biodiversity datasets 
 -	Expose decisions which are being made in the processing of data into a harmonised resource with a view to nationalising the availability of trait information, similar to availability similar to the availability of species occurrence data
@@ -59,7 +59,7 @@ Species traits have increasingly become an essential metric for comparing ecolog
 
 # Methods
 
-The data are housed within github repository traitecoevo with sequential releases being made available on this platform and Zenodo/Figshare. Access to Austraits will be  XXX. Austraits can also be accessed via the R package: `austraits`
+The data are housed within github repository traitecoevo with sequential releases being made available on this platform and Zenodo/Figshare. Access to Austraits will be  XXX. Austraits can also be accessed via the R package: `austraits` Releases versioned, following [@Falster-2017]
 
 ## Processing pipeline: 
 
@@ -71,7 +71,7 @@ In this way we offer more than an aggregation service, but seek to standardise d
 
 ## Schema
 
-Austraits is designed to collate traits-based measurements with a range of relevant contextual information. Its schema broadly follows the principles of the established Observation and Measurement Ontology (Madin et al., 2007) in that trait data are connected to contextual information. Data flows from individual ‘studies’ which are any natural grouping for data collections, typically scientific publications, species descriptions, and field campaigns. Austraits currently contains X studies and each study has two associated files: `data.csv` and `metadata.yml`. `Metadata.yml` must conform to a standard set of fields to provide context and options for converting data into standardised format via information on trait-mapping. 
+Austraits is designed to collate traits-based measurements with a range of relevant contextual information. Its schema broadly follows the principles of the established Observation and Measurement Ontology [@Madin-2007] in that trait data are connected to contextual information. Data flows from individual ‘studies’ which are any natural grouping for data collections, typically scientific publications, species descriptions, and field campaigns. Austraits currently contains X studies and each study has two associated files: `data.csv` and `metadata.yml`. `Metadata.yml` must conform to a standard set of fields to provide context and options for converting data into standardised format via information on trait-mapping. 
 
 ## Traits 
 
