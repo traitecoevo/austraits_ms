@@ -1,12 +1,15 @@
 ---
 title: "Austraits – a curated plant trait database for the Australian flora"
 bibliography: references.bib
-csl: nature.csl  
+csl: assets/nature.csl  
 output:
-  word_document: default
+  word_document:
+    reference_docx: assets/manuscriptstyle.docx
+  html_document:
+    number_sections: yes
+    theme: flatly
   pdf_document:
-    keep_tex: yes
-  html_document: default
+    keep_tex: no
 geometry: margin=0.75in
 fontsize: 9pt
 editor_options:
@@ -31,12 +34,12 @@ affils <- tibble(Affiliation=unique(authors$Affiliation),
 authors <- left_join(authors, affils, by = "Affiliation")
 
 # print list of authors
-sprintf("%s (%s)", authors$Author, authors$label) %>% paste0(collapse = ", ") %>% writeLines()
+sprintf("%s^%s^", authors$Author, authors$label) %>% paste0(collapse = ", ") %>% writeLines()
 
 writeLines("\n\n")
 
 # print list of affiliations
-sprintf("**%s**- %s", affils$label, affils$Affiliation) %>% paste0(collapse = "; ") %>% writeLines()
+sprintf("^%s^ %s", affils$label, affils$Affiliation) %>% paste0(collapse = "; ") %>% writeLines()
 ```
 
 
