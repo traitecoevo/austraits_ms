@@ -24,16 +24,7 @@ library(tidyverse)
 library(rmarkdown)
 
 source("R/ms.R")
-
-## Assumes to items exist in global name space
-if(!exists("austraits")) {
-  austraits <- readRDS("data/austraits.rds")
-  # stop("austraits must exist in global name space to knit a report")
-}
-
-definitions <- austraits$definitions
 ```
-
 
 ```{r authors, results='asis', echo=FALSE}
 authors <- read_csv("data/authors.csv", col_types = cols(.default = "c"))
@@ -49,6 +40,34 @@ writeLines("\n\n")
 
 # print list of affiliations
 sprintf("^%s^ %s", affils$label, affils$Affiliation) %>% paste0(collapse = "; ") %>% writeLines()
+```
+
+```{r austraits}
+
+
+## Assumes to items exist in global name space
+if(!exists("austraits")) {
+  austraits <- readRDS("data/austraits.rds")
+  # stop("austraits must exist in global name space to knit a report")
+}
+
+definitions <- austraits$definitions
+
+sources_all <- 
+  bind_rows(
+    austraits$methods %>% select(dataset_id, citation = source_primary_citation) %>% distinct() %>% mutate(type="primary"),
+    austraits$methods %>% select(dataset_id, citation = source_secondary_citation) %>% distinct() %>% mutate(type="secondary")
+  ) %>% 
+  na.omit() %>% 
+  arrange(dataset_id) 
+
+sources_unique <- tibble(citation=unique(sources_all$citation)) %>% mutate(source_number=1:n())
+
+sources_all <- sources_all %>% left_join(sources_unique, by = "citation")
+
+refs <- sources_all %>% group_by(dataset_id) %>% 
+  summarise(refs = paste(sort(source_number), collapse = ", "))
+
 ```
 
 # Overview
@@ -77,11 +96,14 @@ sites <- austraits$sites %>%
   filter(site_property %in%  c("longitude (deg)","latitude (deg)")) %>% 
   spread(site_property, value)
 
+trait_categories <- read_csv("data/trait_categories.csv")
+
 data_geo <- 
   left_join(by=c("dataset_id", "site_name"),
       select(austraits$traits, -original_name), sites) %>%
   left_join(by="species_name",
-      select(austraits$taxonomy, species_name, family)) 
+      select(austraits$taxonomy, species_name, family)) %>% 
+  left_join(refs, by=c("dataset_id")) 
 
 n_records <- 
   data_geo %>% 
@@ -93,18 +115,21 @@ n_records <-
             `Records (geo.)` = sum(!is.na(`longitude (deg)`) & !is.na(`latitude (deg)`)),
             Studies = n_distinct(dataset_id),
             Species = n_distinct(species_name),
-            Families = n_distinct(family)
-            )
+            Families = n_distinct(family),
+            `Data Citations` = unique(refs) %>% paste(collapse = ", ")
+            ) %>% 
+  left_join(trait_categories, by=c("trait_name")) %>% 
+  select(Tissue = tissue, Category = category, Trait = trait_name, everything()) %>% 
+  arrange(Tissue, Category, Trait)
 
-n_records$Type <- sapply(austraits$definitions$traits$elements, "[[","type")[n_records$trait_name]
-n_records$Description <- sapply(austraits$definitions$traits$elements, "[[","description")[n_records$trait_name]
+n_records$Type <- sapply(austraits$definitions$traits$elements, "[[","type")[n_records$Trait]
+n_records$Description <- sapply(austraits$definitions$traits$elements, "[[","description")[n_records$Trait]
 
 n_records %>%
-  arrange(desc(`Records (all)`)) %>% 
-  slice(1:40) %>%
   kable()
-
 ```
+
+
 
 ```{r, results="asis"}
 print_defintions_element <- function(elements) {
@@ -152,8 +177,7 @@ austraits$definitions$value_type$values %>%
 # Data sources:
 
 ```{r, results='asis'}
-c(austraits$methods$source_primary_citation %>% unique(),
-austraits$methods$source_secondary_citation %>% unique()) %>% paste(collapse = "\n\n") %>% writeLines()
+sprintf("%s. %s", sources_unique$source_number, sources_unique$citation) %>% paste(collapse = "\n\n") %>% writeLines()
 ```
 
 
