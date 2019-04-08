@@ -59,9 +59,9 @@ au_sites_clim<-combined_sites %>% rowid_to_column("ID") %>%
   combine_occurence_climate(au_bioclim)
 
 
-#### 03 Plot the climate data ####
-au_sites_clim
-au_bioclim_table
+# #### 03 Plot the climate data ####
+# au_sites_clim
+# au_bioclim_table
 
 
 # # Option 1: hexagonal background + dot points (size ~ species number)
@@ -82,9 +82,9 @@ au_bioclim_table
 # 
 # austraits_climate_space
 
-# Option 2: Add whittaker plot
-au_bioclim_table %>%
-  sample_n(1e4) %>% group_by(region)->bioclim_small #sample data points to reduce computing load
+# # Option 2: Add whittaker plot
+# au_bioclim_table %>%
+#   sample_n(1e4) %>% group_by(region)->bioclim_small #sample data points to reduce computing load
 
 library(plotbiomes)
 library("RColorBrewer")
@@ -99,17 +99,17 @@ austraits_climate_space<-whittaker_base_plot() +
                alpha=0.5,
                size=log10(au_sites_clim$n),
                inherit.aes = FALSE)+
-  scale_colour_manual(name="",values = c("black", "lightgrey"))+
+  scale_colour_manual(name="",values = c("lightgrey","black"))+
   theme_bw() 
 
-austraits_climate_space
-
-ggsave("austraits_climate_space.png",
-       austraits_climate_space,  
-       height=4, width=8, units="in")
-
-
-# combine species number vs sites
-species_number_lookup %>% na.omit() %>%  
-  anti_join(sites, 
-            by = c("site_name" = "site_name"))->mismatch_sites
+#austraits_climate_space
+# 
+# ggsave("austraits_climate_space.png",
+#        austraits_climate_space,  category,
+#        height=4, width=8, units="in")
+# # 
+# 
+# # combine species number vs sites
+# species_number_lookup %>% na.omit() %>%  
+#   anti_join(sites, 
+#             by = c("site_name" = "site_name"))->mismatch_sites
