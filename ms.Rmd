@@ -1,12 +1,14 @@
 ---
-title: "Austraits – a curated plant trait database for the Australian flora"
-bibliography: references.bib
-csl: assets/nature.csl  
-output:
-  word_document:
-    reference_docx: assets/manuscriptstyle.docx
+title: "Austraits â€“ a curated plant trait database for the Australian flora"
+csl: assets/nature.csl
 editor_options:
   chunk_output_type: console
+output:
+  html_document:
+    df_print: paged
+  word_document:
+    reference_docx: assets/manuscriptstyle.docx
+bibliography: references.bib
 ---
 
 
@@ -77,6 +79,17 @@ AusTraits harmonises data on `r austraits$traits$trait_name %>% unique() %>% len
 This document provides information on the structure of AusTraits and corresponds to Version `r austraits$definitions$austraits$elements$build_info$elements$version$value` of the dataset. 
 
 # Data structures
+
+# Figures
+
+![**Figure 1. The data curation pathway used to assemble the AusTraits database.** Trait observations are accessed from original data sources, including published floras and field campaigns. Factors such as units and taxonomy are harmonised to a common standard. Versioned releases are distributed to users, allowing the dataset to be used and re-used in a reproducible way. Errors are corrected and new datasets added via the blue path for sequential releases of the database.](figures/Pipeline.png)
+  
+  
+
+
+![**Figure 2.** (a.) Locations where the trait data were collected and the corresponding number of species. (b.) AusTraits’ sites (grey) within Australia’s precipitation-temperature space (black) superimposed upon Whittaker’s major biomes diagram. Data from WorldClim (worldclim.org). (c.) Overview of the number of species with which traits are measured within each major plant organ and trait category.](figures/austraits_fig2_blue.png)
+
+
 
 # Tables
 
