@@ -26,7 +26,7 @@ ggplot(data=summary_n_species,
   theme_classic()+ 
   scale_y_log10(breaks = trans_breaks("log10", function(x) 10^x),
                 labels = trans_format("log10", math_format(10^.x)))+
-  xlab("Tissue")+ ylab("N Species")+ scale_x_discrete(limits = positions)+ 
+  xlab("Major plant part")+ ylab("Species (n)")+ scale_x_discrete(limits = positions)+ 
   theme(legend.position = "right") +
   scale_fill_manual(values=cbPalette)->austraits_composition
 

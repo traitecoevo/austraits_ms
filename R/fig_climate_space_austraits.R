@@ -100,14 +100,14 @@ austraits_climate_space<-whittaker_base_plot() +
                size=log10(au_sites_clim$n),
                inherit.aes = FALSE)+
   scale_colour_manual(name="",values = c("lightgrey","black"))+
-  theme_bw() 
+  theme_classic()
 
 #austraits_climate_space
 # 
-# ggsave("austraits_climate_space.png",
-#        austraits_climate_space,  category,
-#        height=4, width=8, units="in")
-# # 
+ggsave("austraits_climate_space.png",
+       austraits_climate_space, 
+       height=4, width=8, units="in")
+#
 # 
 # # combine species number vs sites
 # species_number_lookup %>% na.omit() %>%  

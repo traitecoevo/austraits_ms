@@ -35,3 +35,38 @@ combine_occurence_climate<-function(species_occurence_df, climate_raster_data){
   
   sp_clim_combined
 }
+
+
+myTheme <-
+  
+  theme(legend.position = "none",
+        
+        panel.grid.major = element_blank(),
+        
+        panel.grid.minor = element_blank(),
+        
+        panel.background = element_blank(),
+        
+        panel.border = element_rect(colour = "black", fill=NA, size=1),
+        
+        axis.ticks.length = unit(1, "mm"),
+        
+        axis.ticks = element_line(size = 1),
+        
+        axis.line.x = element_line(),
+        
+        axis.line.y = element_line(),
+        
+        axis.title.x = element_text( size = 12, margin = margin(10, 0, 0, 0)),
+        
+        axis.title.y = element_text( size = 12, margin = margin(0, 10, 0, 0)),
+        
+        axis.text.x = element_text( size = 9, colour = "#666666", margin=margin(15,0,0,0,"pt")),
+        
+        axis.text.y = element_text( size = 9, colour = "#666666", margin=margin(0,15,0,0,"pt")),
+        
+        panel.spacing.y = unit(1, "points"),
+        
+        legend.title=element_text(size=12),
+        
+        legend.text=element_text(size=10))
