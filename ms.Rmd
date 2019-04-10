@@ -1,11 +1,9 @@
 ---
-title: "Austraits â€“ a curated plant trait database for the Australian flora"
+title: "Austraits -- a curated plant trait database for the Australian flora"
 csl: assets/nature.csl
 editor_options:
   chunk_output_type: console
 output:
-  html_document:
-    df_print: paged
   word_document:
     reference_docx: assets/manuscriptstyle.docx
 bibliography: references.bib
@@ -48,27 +46,24 @@ sprintf("^%s^ %s", affils$label, affils$Affiliation) %>% paste0(collapse = "; ")
 
 
 ## Assumes to items exist in global name space
-if(!exists("austraits")) {
-  austraits <- readRDS("data/austraits.rds")
-  # stop("austraits must exist in global name space to knit a report")
-}
+austraits <- readRDS("data/austraits.rds")
 
 definitions <- austraits$definitions
 
+tmp <- RefManageR::WriteBib(austraits$sources, "references.bib")
+
 sources_all <- 
   bind_rows(
-    austraits$methods %>% select(dataset_id, citation = source_primary_citation) %>% distinct() %>% mutate(type="primary"),
-    austraits$methods %>% select(dataset_id, citation = source_secondary_citation) %>% distinct() %>% mutate(type="secondary")
+    austraits$methods %>% select(dataset_id, citation = source_primary_key) %>% 
+            distinct() %>% mutate(type="primary"),
+    austraits$methods %>% select(dataset_id, citation = source_secondary_key) %>% 
+            distinct() %>% mutate(type="secondary")
   ) %>% 
   na.omit() %>% 
-  arrange(dataset_id) 
-
-sources_unique <- tibble(citation=unique(sources_all$citation)) %>% mutate(source_number=1:n())
-
-sources_all <- sources_all %>% left_join(sources_unique, by = "citation")
-
-refs <- sources_all %>% group_by(dataset_id) %>% 
-  summarise(refs = paste(sort(source_number), collapse = ", "))
+  arrange(dataset_id) %>% 
+  group_by(dataset_id) %>% 
+  summarise(refs = sprintf("@%s", citation) %>% 
+  paste(collapse = "; "))
 
 ```
 
@@ -109,14 +104,14 @@ sites <- austraits$sites %>%
   filter(site_property %in%  c("longitude (deg)","latitude (deg)")) %>% 
   spread(site_property, value)
 
-trait_categories <- read_csv("data/trait_categories.csv")
+trait_categories <- read_csv("data/trait_categories.csv", col_types = cols(.default = "c"))
 
 data_geo <- 
   left_join(by=c("dataset_id", "site_name"),
       select(austraits$traits, -original_name), sites) %>%
   left_join(by="species_name",
       select(austraits$taxonomy, species_name, family)) %>% 
-  left_join(refs, by=c("dataset_id")) 
+  left_join(sources_all, by=c("dataset_id")) 
 
 n_records <- 
   data_geo %>% 
@@ -129,7 +124,7 @@ n_records <-
             Studies = n_distinct(dataset_id),
             Species = n_distinct(species_name),
             Families = n_distinct(family),
-            `Data Citations` = unique(refs) %>% paste(collapse = ", ")
+            `Data Citations` = refs %>% unique() %>% paste(collapse = "; ")
             ) %>% 
   left_join(trait_categories, by=c("trait_name")) %>% 
   select(Tissue = tissue, Category = category, Trait = trait_name, everything()) %>% 
@@ -139,6 +134,7 @@ n_records$Type <- sapply(austraits$definitions$traits$elements, "[[","type")[n_r
 n_records$Description <- sapply(austraits$definitions$traits$elements, "[[","description")[n_records$Trait]
 
 n_records %>%
+  select(-Tissue, Description) %>%
   kable()
 ```
 
@@ -189,8 +185,29 @@ austraits$definitions$value_type$values %>%
 
 # Data sources:
 
-```{r, results='asis'}
+## Version 1 - via bib.print
+
+```{r, results='asis', eval=TRUE}
+sources_unique <-
+  bind_rows(
+    austraits$methods %>% select(citation = source_primary_citation)  %>% mutate(type="primary"),
+    austraits$methods %>% select(dataset_id, citation = source_secondary_citation) %>% mutate(type="secondary")
+  ) %>%
+  select(citation) %>%
+            distinct() %>% 
+            mutate(source_number=1:n())
+
 sprintf("%s. %s", sources_unique$source_number, sources_unique$citation) %>% paste(collapse = "\n\n") %>% writeLines()
+
+```
+
+## Version 3 - via csl
+
+```{r, results='asis', eval=FALSE}
+
+austraits$sources %>% sapply(function(i) i$key) -> keys
+
+sprintf("@%s",keys) %>% paste(collapse = "; ") %>% writeLines()
 ```
 
 
