@@ -10,7 +10,14 @@ source("R/plotting_functions.R")
 
 #### 01 Get climate data for Australia ####
 # Download bioclim data using library (raster)
-au_map<-raster("data/australia.tif") %>% 
+
+# one strategy for retrieving data available on web
+filename <- "data/australia.tif"
+if(!file.exists(filename))
+  download.file("htpp:....", filename)
+
+# Read bioclim data using raster package
+au_map<-raster(filename) %>% 
  # aggregate(fact=6) %>% 
   as.data.frame(xy=T)
 

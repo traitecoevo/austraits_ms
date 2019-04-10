@@ -5,3 +5,4 @@
 data/austraits.rds
 *.docx
 *.html
+figures/*

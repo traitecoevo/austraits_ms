@@ -1,3 +1,11 @@
+# Need to Install taxonlookup from XXX
+
+# Need to Install ggtree from https://guangchuangyu.github.io/software/ggtree/
+# this might not be so straight forward, as lots of dependencies.
+# source("https://bioconductor.org/biocLite.R")
+# biocLite("ggtree")
+
+
 ##  The phylogenetic coverage of traits in the Austraits, 
 #for the subset of species in the current molecular phylogeny.
 library(ggtree)
@@ -7,6 +15,11 @@ library(tidyverse)
 library(stringi)
 library(taxonlookup)
 source("R/taxonlookup.R")
+
+
+# load austraits 
+trait_category_lookup<-read_csv("data/trait_categories.csv")
+austraits <- readRDS("data/austraits.rds")
 
 # read a BEAST formatted tree:  Maximum clade credibility tree from the BEAST analysis of the B series
 tr<-read.beast(file = url("https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5543309/bin/ncomms16047-s5.txt"))
@@ -24,13 +37,13 @@ tip_label<-get.tree(tr)$tip.label
 get.tree(tr)$tip.label
 ## extract table column
 tip_label %>% 
-  tibble::enframe()->tr_tiplabel #74,531 species
+  tibble::enframe() -> tr_tiplabel #74,531 species
 
 ## replace "_" with a white-space
-tr_tiplabel$value<-stri_replace_all_fixed(tr_tiplabel$value, "_", " ")
+tr_tiplabel$value <- stri_replace_all_fixed(tr_tiplabel$value, "_", " ")
 
 ## add taxon lookup
-tr_tiplabel<-tr_tiplabel %>% rename(species_name=value) %>% add_taxon_lookup()
+tr_tiplabel <- tr_tiplabel %>% rename(species_name=value) %>% add_taxon_lookup()
 
 ## add austraits and create a lookup table
 austraits$traits %>% 
@@ -45,7 +58,7 @@ tr_tiplabel %>%  inner_join(austraits_summary, by="species_name")
 tr_tiplabel %>%  left_join(austraits_summary,by="species_name") %>% select(-name)-> austraits_tree_lookup
 
 ## replace  white-space with a "_"
-austraits_tree_lookup$species_name<-stri_replace_all_fixed(austraits_tree_lookup$species_name, " ", "_")
+austraits_tree_lookup$species_name <- stri_replace_all_fixed(austraits_tree_lookup$species_name, " ", "_")
 
 
 # see https://guangchuangyu.github.io/ggtree-book/chapter-ggtree.html
@@ -58,6 +71,10 @@ austraits_tree_lookup %>% select(-c(order, group,family, genus))->test
 gheatmap(p, test, width=.4, offset=7, colnames=F) %>% 
   scale_x_ggtree
 
+# consider plotting directly to file
+pdf("figures/tree.pdf", height=5, width=5)
+print(p)
+dev.off()
 
 # resources
 #https://bioconductor.org/packages/release/bioc/vignettes/ggtree/inst/doc/treeVisualization.html#visualize-a-list-of-trees
