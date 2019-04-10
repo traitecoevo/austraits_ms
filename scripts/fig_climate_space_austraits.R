@@ -91,11 +91,11 @@ library("RColorBrewer")
 austraits_climate_space<-whittaker_base_plot() +
     # add the temperature - precipitation data points
     geom_point(data =au_bioclim_table, 
-             aes(x=Temp/10, y=Prec/10, color="Australia"), alpha=0.1,
+             aes(x=Temp/10, y=Prec/10, color="Australia"),shape = ".", alpha=0.1,
              inherit.aes = FALSE) + 
   
     geom_point(data = au_sites_clim, 
-               aes(x=Temp/10, y=Prec/10, color="Austraits sites"), 
+               aes(x=Temp/10, y=Prec/10, color="AusTraits sites"), 
                alpha=0.5,
                size=log10(au_sites_clim$n),
                inherit.aes = FALSE)+
@@ -103,11 +103,11 @@ austraits_climate_space<-whittaker_base_plot() +
   theme_classic()
 
 #austraits_climate_space
-# 
-ggsave("austraits_climate_space.png",
-       austraits_climate_space, 
-       height=4, width=8, units="in")
-#
+# # 
+# ggsave("austraits_climate_space.png",
+#        austraits_climate_space, 
+#        height=4, width=8, units="in")
+# #
 # 
 # # combine species number vs sites
 # species_number_lookup %>% na.omit() %>%  
