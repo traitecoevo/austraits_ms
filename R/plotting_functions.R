@@ -70,3 +70,30 @@ myTheme <-
         legend.title=element_text(size=12),
         
         legend.text=element_text(size=10))
+
+
+#' get_node_tree function
+#'
+#' @param x  family_list[i,] a tibble of family, species
+#' @param t phylogenetic tree
+#'
+#' @return get_node_tree(family_list[2,], tree$scenario.2$run.1)
+#' @export
+#'
+#' @examples
+get_node_tree<-function(x, t=tree$scenario.2$run.1){
+  x[2]%>%
+    unlist %>%
+    rlang::parse_expr()%>%
+    rlang::eval_tidy()->y
+  
+  if(length(y)>10){
+    MRCA(t, y)->z
+    mutate(x, node=z) %>% as.data.frame()
+  } else
+  {
+    # parent(as_tibble(t),y) %>% select(node) %>% unlist()->z
+    mutate(x, node=NA) %>% as.data.frame() # z is the parent node, set into NA if you want to omit clade with only one species,
+  }
+  
+}
