@@ -24,8 +24,6 @@ dev.off()
 
 
 
-
-
 #### Austraits: Phylogenetic coverage of traits ####
 source("scripts/fig_generate_phylogenies.R") # A
 source("scripts/fig_get_family_node.R") # B
@@ -65,8 +63,6 @@ for(j in 1:length(nodes_list)){
 }
 
 
-
-
 austraits_tree <-  gheatmap(base_tree, austraits_summary, 
                 offset=4, 
                 width=0.2, 
@@ -80,6 +76,6 @@ austraits_tree <-  gheatmap(base_tree, austraits_summary,
                 font.size=3,
                 hjust=1)
 
-pdf("figures/austraits_phlogenetic_coverage.pdf", height=10, width=10)
+pdf("figures/austraits_phlogenetic_coverage2.pdf", height=10, width=10)
 austraits_tree
 dev.off()
