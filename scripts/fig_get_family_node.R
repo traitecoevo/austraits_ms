@@ -11,7 +11,7 @@ austraits_sp_list_sampled %>%
   filter(species_name %in% tree$scenario.2$run.1$tip.label) %>% 
   group_by(family) %>%
   summarise(species_name = paste(
-    paste0("'",species_name, "'"),collapse=", ")) %>% 
+    paste0("\"",species_name, "\""),collapse=", ")) %>% 
   mutate(species_name=paste0('c(',species_name, ')'))->family_list
 
 #### 2 Calculate the most recent common ancestor to the node for each family ####
