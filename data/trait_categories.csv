@@ -1,6 +1,6 @@
 trait_name,tissue,category
-leaf_lifespan,leaf,physiology
-leaf_phenology,leaf,physiology
+leaf_lifespan,leaf,physiological
+leaf_phenology,leaf,physiological
 glaucous,leaf,morphological
 leaf_area,leaf,morphological
 leaf_area_ratio,leaf,morphological
@@ -54,6 +54,7 @@ dispersal_appendage,reproductive,morphological
 flower_colour,reproductive,morphological
 fruit_diameter,reproductive,morphological
 fruit_length,reproductive,morphological
+fruit_width,reproductive,morphological
 fruit_type,reproductive,morphological
 fruit_type_botany,reproductive,morphological
 fruit_type_function,reproductive,morphological
