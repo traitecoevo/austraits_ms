@@ -85,15 +85,17 @@ get_node_tree<-function(x, t=tree$scenario.2$run.1){
   x[2]%>%
     unlist %>%
     rlang::parse_expr()%>%
-    rlang::eval_tidy()->y
+    rlang::eval_tidy()->y # is a vector of tip (species)
   
-  if(length(y)>10){
-    MRCA(t, y)->z
+  if(length(y)>10){ # select family with >10 species
+    #browser()
+    ape::getMRCA(t, y)->z # z is a node of the most recent common ancestor 
     mutate(x, node=z) %>% as.data.frame()
   } else
   {
     # parent(as_tibble(t),y) %>% select(node) %>% unlist()->z
-    mutate(x, node=NA) %>% as.data.frame() # z is the parent node, set into NA if you want to omit clade with only one species,
+    mutate(x, node=NA) %>%
+      as.data.frame() # z is the parent node, set into NA if you want to omit clade with only one species,
   }
   
 }
