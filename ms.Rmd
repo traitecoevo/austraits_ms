@@ -75,18 +75,22 @@ This document provides information on the structure of AusTraits and corresponds
 
 # Data structures
 
-# Figures
+# Figures  
 
 ![**Figure 1. The data curation pathway used to assemble the AusTraits database.** Trait observations are accessed from original data sources, including published floras and field campaigns. Factors such as units and taxonomy are harmonised to a common standard. Versioned releases are distributed to users, allowing the dataset to be used and re-used in a reproducible way. Errors are corrected and new datasets added via the blue path for sequential releases of the database.](figures/Pipeline.png)
   
   
 
-
 ![**Figure 2.** (a.) Locations where the trait data were collected and the corresponding number of species. (b.) AusTraits’ sites (grey) within Australia’s precipitation-temperature space (black) superimposed upon Whittaker’s major biomes diagram. Data from WorldClim (worldclim.org). (c.) Overview of the number of species with which traits are measured within each major plant organ and trait category.](figures/austraits_fig2_blue.png)
 
+![**Figure 3.** The phylogenetic representation of traits in the AusTraits database for the subset of 2000 randomly sampled species. The heatmap colour intensities denote the number of traits measured within each major plant organ. The most widespread family names (with more than ten species) are labelled on the edge of the tree.](figures/austraits_phlogenetic_coverage.png)
+
+<!-- Cite: -->
+  <!-- G Yu, DK Smith, H Zhu, Y Guan, TTY Lam*. ggtree: an R package for visualization and annotation of phylogenetic trees with their covariates and other associated data. Methods in Ecology and Evolution. 2017, 8(1):28-36. doi: 10.1111/2041-210X.12628.  -->
+  <!-- G Yu*, TTY Lam, H Zhu, Y Guan*. Two methods for mapping and visualizing associated data on phylogeny using ggtree. Molecular Biology and Evolution, 2018, 35(2):3041-3043. doi: 10.1093/molbev/msy194. -->
 
 
-# Tables
+# Tables  
 
 Table 1:  Main elements of Austraits
 
