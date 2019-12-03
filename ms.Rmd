@@ -4,11 +4,17 @@ csl: assets/nature.csl
 editor_options:
   chunk_output_type: console
 output:
+  html_document:
+    df_print: paged
+  pdf_document:
+    latex_engine: xelatex
   word_document:
     reference_docx: assets/manuscriptstyle.docx
+header-includes:
+- \usepackage{inputenc}
+- \usepackage[T1]{fontenc}
 bibliography: references.bib
 ---
-
 
 ```{r setup, echo=FALSE, message=FALSE, warning=FALSE, results="hide"}
 # knitr defaults
@@ -42,15 +48,103 @@ writeLines("\n\n")
 sprintf("^%s^ %s", affils$label, affils$Affiliation) %>% paste0(collapse = "; ") %>% writeLines()
 ```
 
+### Abstract
+
+We introduce the AusTraits database - a compilation of measurements of plant traits for species in the Australian Flora (hereafter AusTraits). AusTraits synthesises data on 86 traits across 20,321 species from field campaigns, published literature, taxonomic monographs, and individual species descriptions. Traits
+vary in scope from physiological measures of performance (e.g. photosynthetic gas exchange, water-use efficiency) to morphological
+parameters (e.g. leaf area, seed mass, plant height) which link to aspects of ecological variation. AusTraits contains curated and
+harmonised individual-, species- and genus-level observations coupled to, where available, contextual information on site
+properties. This data descriptor provides information on Version 0.0.9 of AusTraits which contains data for 325,819 trait-by-species combinations across 20,321 species. We envision AusTraits as an on-
+going collaborative initiative for easily archiving and sharing trait data to increase our collective understanding of the Australian flora.
+
+## Background and Summary
+
+Species traits are essential metrics for comparing ecological strategies in plants arrayed across environmental space or evolutionary lineages1-4. Broadly, a trait is any measurable property of a plant capturing aspects of its structure or function5-7. Traits thereby provide useful indicators of species behaviours in communities and ecosystems, regardless of their taxonomy8,9. Through targeted global initiatives the volume of available trait information for plants has grown rapidly in the last two decades. However, the geographic coverage of trait observations across the globe is patchy, limiting detailed analyses of trait variation and diversity in some regions. One such region is Australia; a continent with a flora of c. 24,000 native higher-plant species10. While significant investment has been made in curating and digitising herbarium collections in Australia over the last two decades (e.g. The Australian Virtual Herbarium houses ~7 million specimen occurrence records; https://avh.ala.org.au), no complementary resource yet exists for consolidating information on plant traits. 
+
+Here we introduce the AusTraits database (hereafter simply AusTraits) - a compilation of plant traits for the Australian flora. Currently, AusTraits draws together 148 primary sources – including published scientific papers, floras, and taxonomic species descriptions– and contains 325,819 measurements spread across 86 different traits for 20,321 species (Table 1; available online only). By providing a harmonised and curated dataset on 86 plant traits, AusTraits contributes substantially to filling the gap in Australian and global biodiversity resources. Prior to the development of AusTraits, data on Australian plant traits existed largely as a series of disconnected datasets collected by individual laboratories or initiatives (but see 11). Global initiatives, such as the TRY database12 and Open Traits Network, have been working towards sharing of data about plant traits though large numbers of Australian plant species remain unrepresented. 
+
+To assemble AusTraits from diverse primary sources and make it available for reuse, we needed to overcome three main types of challenges (Figure 1). These included: 1) **Accessing** data from diverse original sources, including field studies, online databases, scientific articles, and published taxonomic floras; 2) **Harmonising** these diverse datasets into a federated resource, with common units, trait names, and data formats; and 3) **Distributing** versions of the data under suitable license, while also ensuring appropriate recognition for contributors. Successive versions AusTraits will iterate through steps 1 and 2 to incorporate new data and correct identified errors.  We developed a workflow for harmonising and distributing data, drawing from emerging community standards and our collective experience building traits databases. Combined, the tools applied ensure current best-practices in the construction and distribution of data resources, by achieving the following outcomes:
+
+  - A reproducible and extensible compilation process from raw data to assembled dataset;
+  - Transparent mapping of original values (species names, trait names, units) into the harmonised dataset;
+  - High quality data for end users; 
+  - Easy addition of new data and correction of community-reported errors; 
+  - Satisfying the FAIR principles13, i.e. standards needed to make data resources Findable, Accessible, Interoperable, and Reusable; and
+  - Appropriate recognition of contributors. 
+
+We envision AusTraits as an on-going collaborative initiative for easily archiving and sharing trait data to accelerate our collective understanding the Australian flora. It is anticipated that open access to a comprehensive resource like AusTraits will generate significant new knowledge about the Australian flora across multiple scales of interest. AusTraits will likely reduce duplication of effort in the compilation of plant trait data, particularly for research students and government agencies seeking to create trait-based answers to their questions.
+
+### Methods
+
+#### Primary sources
+
+AusTraits was assembled from 146 distinct sources, including published literature, field campaigns, floras, and taxonomic treatments. We identified a list of candidate traits of interest, including growth form, plant height, leaf size, specific leaf area and seed mass, though several other traits were also collected opportunistically. A full list of traits and their sources appears in Table 1 (available online only). We then identified primary sources containing measurements for these traits and sought access to this data, including both data and metadata. Each original source was designated a `dataset_id`. Ordinarily the id is the surname of first author and year of publication, for the source’s primary citation (e.g. Falster_2005, for Dataset citation 40). Details from each source were saved with minimal modification into two plain text files:
+
+1.	`data.csv`: a table containing the actual trait data in comma-separated values format;
+2.	`metadata.yml`: contains relevant metadata for the study, as well as options for mapping trait names and units onto standard types, and any substitutions applied to the data in processing.
+These two files provide all the information needed to compile each study into a standardised format. 
+
+#### Schema
+
+The schema of AusTraits broadly follows the principles of the established Observation and Measurement Ontology14 in that, where available, trait data are connected to contextual information about the collection site (e.g. location co-ordinates, soil conditions, number of replicates) and information about the methods used to derive measurements (e.g. number of replicates, equipment used where available). The target format contains eight core objects, as described in Table 2. The contents of several of these objects are described further in Tables 3-6. This format was developed to include sufficient information about the data and methods used to collect trait measurements in each source. Where possible, trait measurement was recorded as being one of several possible `value_type` (Table 7), reflecting the type of measurement recorded.
+
+#### Harmonisation
+
+To harmonise each source into the common AusTraits format we applied a reproducible and transparent workflow (Figure 1), written in R15 and using custom code and drawing on functions from the packages `tidyverse`16, `stringr`17, `yaml`18, `rprojroot`, `remake`19, `gitr2`, `knitr`20 and `rmarkdown`21. In this workflow, we performed a series of operations, including reformatting data into standardising format, generating observation id’s for each individual measured, transforming variable names into common terms, transforming data common units, standardising terms for categorial variables, encoding suitable metadata, and flagging data that did not pass quality checks. 
+
+To enhance data quality, we produced detailed reports for each variable and source. These reports were reviewed both by AusTraits compilers as well as data contributors. Whilst all care is taken to curate datasets in AusTraits this is not intended to absolve individual researchers from ensuring the appropriate use of the data provided. 
+
+#### Code Availability
+
+All code, raw and compiled data are hosted within a GitHub repository under the Trait Ecology and Evolution organisation (https://github.com/traitecoevo/austraits). Sequential versions of both source and compiled dataset are also being archived within Figshare (https://figshare.com/). The archived material includes all data sources and code for rebuilding the compiled dataset.
+
+#### Data Records
+
+A static version of the data contained in this descriptor has been released as version 0.0.9 of AusTraits, available on the project website (Data Citation 1) and Figshare (Data Citation 2). Details and references for all traits are summarised in Table 1 (available online only). The latest data can be downloaded directly from the project website https://github.com/traitecoevo/austraits. However, as validation (see Technical Validation, below) and data entry is ongoing, users are recommended to pull data from the static releases, to ensure results in their downstream analyses remain consistent as the database is updated. 
+
+We envision AusTraits as a community resource and we encourage engagement from users on maintaining the quality and usability of the dataset. For instance, we welcome the reporting of possible errors, as well as additions and edits to the online documentation for AusTraits that make using the existing data, or adding new data, easier for the community.
+
+#### Technical Validation
+
+AusTraits is curated on a voluntary basis. Quality control of data and editorial procedures include: 
+
+•	**Automated tests** which confirm that the species names provided can be mapped onto accepted names on The Plant List, that values for continuous traits fall within the accepted range for the trait, and that values for categorical traits are on a list of accepted values maintained by the creators. Data that does not pass these tests is moved to a separate spreadsheet (“excluded_data”) that is also made available for use if desired. 
+
+•	**Detailed review of each source based on bespoke reports**: A report is generated for each source, showing all data and metadata, and is checked by both an AusTraits curator and, where possible, the original contributor for accuracy. In these reports, observations for each trait are plotted against all other values for the trait in AusTraits. This allows AusTraits curators and contributors to quickly visually check the data to ensure it plots against other trait values as expected. Corrections suggested by contributors are combined back into AusTraits and made available with the next static release.  
+
+•	**User feedback**: Data issues can be reported for any observation on the project website.
+
+#### Usage Notes
+
+Each data release is a compressed folder containing separate files for each of the major components of AusTraits (Table 2). Detailed examples for analysis are available on the project website. 
+
+#### Acknowledgement
+
+RVG was supported by Australian Research Council DECRA Fellowship (DE170100208). 
+
+#### Author contributions
+
+RVG, IJW conceived the original idea; RVG, EHW collated data from primary sources; DSF; EHW, DI, SCA, JL contributed to coding; AD error-checked trait observations; RVG, DSF, EHW wrote the first draft of the paper. [all other authors will be data contributors]
+
+#### Competing interests
+
+The authors have no conflicts of interest to declare. 
+
+
+
+
+
 ```{r austraits}
-
-
 ## Assumes to items exist in global name space
 austraits <- readRDS("data/austraits.rds")
 
 definitions <- austraits$definitions
 
-tmp <- RefManageR::WriteBib(austraits$sources, "references.bib")
+
+tmp <- RefManageR::WriteBib(austraits$sources, "references.bib", biblatex = F)
+
+# check non ASCII file
+#tools::showNonASCIIfile("references.bib")
 
 sources_all <- 
   bind_rows(
@@ -187,9 +281,9 @@ austraits$definitions$value_type$values %>%
 
 \footnotesize
 
-# Data sources:
+### Data sources:
 
-## Version 1 - via bib.print
+#### Version 1 - via bib.print
 
 ```{r, results='asis', eval=TRUE}
 sources_unique <-
@@ -205,7 +299,7 @@ sprintf("%s. %s", sources_unique$source_number, sources_unique$citation) %>% pas
 
 ```
 
-## Version 3 - via csl
+#### Version 3 - via csl
 
 ```{r, results='asis', eval=FALSE}
 
@@ -215,4 +309,4 @@ sprintf("@%s",keys) %>% paste(collapse = "; ") %>% writeLines()
 ```
 
 
-## References
+### References
