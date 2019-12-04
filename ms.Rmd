@@ -141,7 +141,7 @@ austraits <- readRDS("data/austraits.rds")
 definitions <- austraits$definitions
 
 
-tmp <- RefManageR::WriteBib(austraits$sources, "references.bib", biblatex = F)
+tmp <- RefManageR::WriteBib(austraits$sources, "references.bib")
 
 # check non ASCII file
 #tools::showNonASCIIfile("references.bib")
@@ -173,8 +173,6 @@ This document provides information on the structure of AusTraits and corresponds
 
 ![**Figure 1. The data curation pathway used to assemble the AusTraits database.** Trait observations are accessed from original data sources, including published floras and field campaigns. Factors such as units and taxonomy are harmonised to a common standard. Versioned releases are distributed to users, allowing the dataset to be used and re-used in a reproducible way. Errors are corrected and new datasets added via the blue path for sequential releases of the database.](figures/Pipeline.png)
   
-  
-
 ![**Figure 2.** (a.) Locations where the trait data were collected and the corresponding number of species. (b.) AusTraits’ sites (grey) within Australia’s precipitation-temperature space (black) superimposed upon Whittaker’s major biomes diagram. Data from WorldClim (worldclim.org). (c.) Overview of the number of species with which traits are measured within each major plant organ and trait category.](figures/austraits_fig2_blue.png)
 
 ![**Figure 3.** The phylogenetic representation of traits in the AusTraits database for the subset of 2000 randomly sampled species. The heatmap colour intensities denote the number of traits measured within each major plant organ. The most widespread family names (with more than ten species) are labelled on the edge of the tree.](figures/austraits_phlogenetic_coverage.png)
