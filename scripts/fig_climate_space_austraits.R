@@ -3,7 +3,6 @@ library(raster)
 library(tidyverse)
 library(hexbin)
 library(ggplot2)
-library(viridis)
 source("R/plotting_functions.R")
 
 #### 01 Get climate data for Australia ####
@@ -28,33 +27,11 @@ au_bioclim_table<-au_bioclim %>%
   na.omit() %>%
   as_tibble %>% mutate(region="Australia")
 
-#### 03 Get the point coordinates of Austraits data ####t
-
-# Get the coordinates of the sites
-austraits<-readRDS("data/austraits.rds")
-sites <- austraits$sites %>% 
-  filter(site_property %in%  c("longitude (deg)","latitude (deg)")) %>% 
-  spread(site_property, value)
-sites
-
-
-# get species number for each study
-austraits$traits %>%
-  group_by(dataset_id, site_name) %>%
-  distinct(species_name) %>% 
-  count(dataset_id, sort = TRUE) %>% 
-  ungroup()-> species_number_lookup
-
-# combine species number vs sites
-species_number_lookup %>% na.omit() %>%  
-left_join(sites, 
-          by = c("dataset_id" = "dataset_id", 
-                 "site_name" = "site_name"))->combined_sites
-
-write_csv(combined_sites, "data/austraits_sites.csv")
+#### 03 Get the point coordinates of Austraits data ####
+source("R/get_sites.R")
 
 # Get climate values for each site
-au_sites_clim<-combined_sites %>% rowid_to_column("ID") %>% 
+au_sites_clim<- sites %>% rowid_to_column("ID") %>% 
   rename(latitude=`latitude (deg)`, longitude=`longitude (deg)`) %>% 
   combine_occurence_climate(au_bioclim)
 
@@ -96,20 +73,13 @@ austraits_climate_space<-whittaker_base_plot() +
   
     geom_point(data = au_sites_clim, 
                aes(x=Temp/10, y=Prec/10, color="AusTraits sites"), 
-               alpha=0.5,
-               size=log10(au_sites_clim$n),
-               inherit.aes = FALSE)+
-  scale_colour_manual(name="",values = c("lightgrey","black"))+
+               alpha=0.2,
+              # size=log10(au_sites_clim$n),
+               size=1,
+               stroke = 0,
+               inherit.aes = FALSE,
+               position = "jitter")+
+  scale_colour_manual(name="",values = c("red","black"))+
   theme_classic()
 
-#austraits_climate_space
-# # 
-# ggsave("austraits_climate_space.png",
-#        austraits_climate_space, 
-#        height=4, width=8, units="in")
-# #
-# 
-# # combine species number vs sites
-# species_number_lookup %>% na.omit() %>%  
-#   anti_join(sites, 
-#             by = c("site_name" = "site_name"))->mismatch_sites
+austraits_climate_space
