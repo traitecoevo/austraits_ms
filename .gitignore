@@ -6,3 +6,6 @@ data/austraits.rds
 *.docx
 *.html
 figures/*
+wc10/*
+*.pdf
+
