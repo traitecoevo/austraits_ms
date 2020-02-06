@@ -1,4 +1,3 @@
-
 #### Austraits: Figure 2 ####
 
 library(patchwork)
@@ -18,7 +17,7 @@ combined_plot<-(austraits_site_locations+
   plot_layout(ncol = 1, heights = c(3, 1))
 
 
-pdf("figures/austraits_fig2.pdf",height=6, width=12)
+png("figures/austraits_fig2.png",height=6, width=12, units = "in", res = 300)
 combined_plot
 dev.off()
 

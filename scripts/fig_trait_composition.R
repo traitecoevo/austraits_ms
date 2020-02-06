@@ -31,10 +31,5 @@ ggplot(data=summary_n_species,
                 labels = trans_format("log10", math_format(10^.x)))+
   xlab("Major plant part")+ ylab("Species (n)")+ scale_x_discrete(limits = positions)+ 
   theme(legend.position = "right") +
-  scale_fill_viridis_d()->austraits_composition
-
-# austraits_composition
-# ggsave("austraits_composition.png",
-#        austraits_composition,  
-#        height=5, width=8, units="in")
+  scale_fill_viridis_d()-> austraits_composition
 
