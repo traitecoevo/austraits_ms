@@ -42,7 +42,13 @@ au_sites_clim <- sites %>% rowid_to_column("ID") %>%
 
 
 #### 04 Plot the climate data ####
-whittaker_base_plot() +
+ggplot() +
+  geom_polygon(data = Whittaker_biomes,
+               aes(x    = temp_c,
+                   y    = precp_cm,
+                   fill = biome),
+               colour = "gray98", # colour of polygon border
+               size   = 0.1)  +
   # add the temperature - precipitation data points
   geom_point(
     data = au_bioclim_table,
@@ -71,6 +77,7 @@ whittaker_base_plot() +
     breaks = names(Ricklefs_colors),
     labels = names(Ricklefs_colors),
     values =  alpha(Ricklefs_colors, 0.5)
+    
   ) +
   theme_classic() +
   guides(colour = guide_legend(override.aes = list(alpha = 1, size = 2))) -> austraits_climate_space
