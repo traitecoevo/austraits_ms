@@ -80,5 +80,8 @@ ggplot() +
     
   ) +
   theme_classic() +
-  guides(colour = guide_legend(override.aes = list(alpha = 1, size = 2))) -> austraits_climate_space
+  guides(colour = guide_legend(override.aes = list(alpha = 1, size = 2))) +
+  xlab(expression(Temperature (degree * C))) +
+  ylab(" Precipitation (cm)")+
+  theme(text = element_text(size = 12)) -> austraits_climate_space
 
