@@ -18,9 +18,33 @@ austraits$traits %>%
   count(dataset_id, sort = TRUE) %>% 
   ungroup() -> sp_number
 
-sites<- sites%>%
-  left_join(sp_number, by=c("dataset_id", "site_name"))
-rm(sp_number)
+# get trait categories
+trait_category_lookup <- read_csv("data/trait_categories.csv")
+
+# uncategorised/ unclassified traits
+unclassified_traits <- austraits$traits %>%
+  as_tibble()  %>% 
+  dplyr::select(dataset_id, site_name, trait_name) %>% 
+  left_join(trait_category_lookup, by = "trait_name") %>% 
+  dplyr::filter(is.na(category)) %>% 
+  dplyr::select(trait_name, tissue, category) %>%
+  distinct()
+
+# extract trait categories by dataset_id and site_name
+trait_categories <- austraits$traits %>%
+  as_tibble()  %>% 
+  dplyr::select(dataset_id, site_name, trait_name) %>% 
+  left_join(trait_category_lookup, by = "trait_name")  %>%
+  mutate(category = str_replace(category, "physiology", "physiological")) %>%
+  dplyr::select(-trait_name) %>%
+  distinct() 
+
+sites %<>%
+  left_join(sp_number, by=c("dataset_id", "site_name")) %>% 
+  left_join(trait_categories, by=c("dataset_id", "site_name")) 
+  
+
+rm(sp_number, trait_categories)
 # 
 # library(leaflet)
 # library(htmltools)
