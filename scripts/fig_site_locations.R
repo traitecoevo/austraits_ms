@@ -32,7 +32,7 @@ ggplot() +
   )) +
   myTheme -> au_basemap
 
-au_basemap
+
 
 #### 03 Overlay site locations  ####
 #sites <- read_csv("data/austraits_sites.csv")
@@ -57,24 +57,6 @@ sites %>%
 
 
 #### 03 Overlay site locations  ####
-austraits_site_locations <- au_basemap +
-  geom_pointdensity(
-    data = sites2,
-    aes(y = `latitude (deg)`,
-        x = `longitude (deg)`),
-    inherit.aes = FALSE,
-    show.legend = TRUE,
-    adjust = 1
-  ) +
-  scale_color_viridis(option = "plasma") +
-  theme(
-    legend.justification = c(-0.1, 0),
-    legend.position = c(0.05, 0.05),
-    legend.direction  = "horizontal"
-  ) +
-  scale_fill_grey(
-    name = "",
-    start = 0.8,
-    guide = FALSE,
-    na.value = "white"
-  ) + xlab("") +ylab("")
+austraits_site_locations <- produce_site_map(sites2, "latitude (deg)", "longitude (deg)", feature = NA )
+austraits_site_locations_by_tissue <- produce_site_map(sites2, "latitude (deg)", "longitude (deg)", feature = "tissue" )
+austraits_site_locations_by_category <- produce_site_map(sites2, "latitude (deg)", "longitude (deg)", feature = "category" )
