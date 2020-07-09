@@ -10,9 +10,12 @@ austraits<-readRDS("data/austraits.rds")
 trait_category_lookup<-read_csv("data/trait_categories.csv")
 
 austraits$traits %>% 
-  left_join(trait_category_lookup,by="trait_name")  %>% mutate(category = str_replace(category, "physiology", "physiological"))%>%
+  left_join(trait_category_lookup,by="trait_name")  %>%
+  mutate(category = str_replace(category, "physiology", "physiological"))%>%
   group_by(tissue, category) %>% 
-  summarise(n = n_distinct(species_name)) %>% rename(Category=category) %>% drop_na()-> summary_n_species
+  summarise(n = n_distinct(species_name)) %>%
+  rename(Category=category) %>%
+  drop_na()-> summary_n_species
 
 
 
@@ -28,10 +31,5 @@ ggplot(data=summary_n_species,
                 labels = trans_format("log10", math_format(10^.x)))+
   xlab("Major plant part")+ ylab("Species (n)")+ scale_x_discrete(limits = positions)+ 
   theme(legend.position = "right") +
-  scale_fill_manual(values=cbPalette)->austraits_composition
-
-# austraits_composition
-# ggsave("austraits_composition.png",
-#        austraits_composition,  
-#        height=5, width=8, units="in")
+  scale_fill_viridis_d()-> austraits_composition
 

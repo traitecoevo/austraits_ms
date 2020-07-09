@@ -99,3 +99,45 @@ get_node_tree<-function(x, t=tree$scenario.2$run.1){
   }
   
 }
+
+
+#' Produce site maps (Fig 2 A)
+#'
+#' @param df a dataframe consist of 
+#' @param lat latitude in degree decimal
+#' @param lon longitude in degree decimal
+#' @param feature grouping/classification categories
+#'
+#' @return
+#' @export
+#'
+#' @examples
+produce_site_map <- function(df, lat, lon, feature=NA){
+  site_map <- au_basemap +
+    geom_pointdensity(
+      data = {{df}},
+      aes(y = !!as.name(lat),
+          x = !!as.name(lon)),
+      inherit.aes = FALSE,
+      show.legend = TRUE,
+      adjust = 1
+    ) +
+    scale_color_viridis(option = "plasma") +
+    theme(
+      legend.justification = c(-0.1, 0),
+      legend.position = c(0.05, 0.05),
+      legend.direction  = "horizontal"
+    ) +
+    scale_fill_grey(
+      name = "",
+      start = 0.8,
+      guide = FALSE,
+      na.value = "white"
+    ) + xlab("") +ylab("")
+
+  if(is.na(feature)){
+    site_map } else {
+      site_map + facet_wrap(paste("~", feature))
+    }
+
+}
