@@ -12,18 +12,27 @@ austraits$sites %>%
 # calculate species number
 austraits$traits %>%
   as_tibble() %>% 
-  dplyr::select(dataset_id, species_name, site_name) %>% 
+  dplyr::select(dataset_id, taxon_name, site_name) %>% 
   dplyr::group_by(dataset_id, site_name) %>% 
-  distinct(species_name) %>% 
+  distinct(taxon_name) %>% 
   count(dataset_id, sort = TRUE) %>% 
   ungroup() -> sp_number
 
 # get trait categories
-trait_category_lookup <- read_csv("data/trait_categories.csv")
+trait_category_lookup <- read_csv("data/traits_filled_in.csv") %>% 
+  dplyr::select(trait_name, tissue, category)
+
+# get trait list
+trait_list<- austraits$traits %>%
+  as_tibble() %>% 
+  dplyr::select(dataset_id, taxon_name, site_name, trait_name) 
+
+trait_composition_list <- trait_list %>% 
+  full_join(trait_category_lookup, by = "trait_name") %>% 
+  full_join(sites, by = c("dataset_id", "site_name"))
 
 # uncategorised/ unclassified traits
 unclassified_traits <- austraits$traits %>%
-  as_tibble()  %>% 
   dplyr::select(dataset_id, site_name, trait_name) %>% 
   left_join(trait_category_lookup, by = "trait_name") %>% 
   dplyr::filter(is.na(category)) %>% 
