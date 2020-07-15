@@ -1,3 +1,65 @@
+#### check for missing packages and load libraries####
+list_of_packages <-
+  c(
+    "rmarkdown",
+    "knitr",
+    "rprojroot",
+    "tidyverse",
+    "RefManageR",
+    "ape",
+    "shiny",
+    "RLumShiny",
+    "ggplot2",
+    "raster",
+    "RColorBrewer",
+    "dplyr",
+    "rlang",
+    "tibble",
+    "hexbin",
+    "phytools",
+    "tidytree",
+    "ggpointdensity",
+    "viridis",
+    "scales",
+    "ggstance",
+    "stringi",
+    "cowplot"
+  )
+new_packages <-
+  list_of_packages[!(list_of_packages %in% installed.packages()[, "Package"])]
+
+if (length(new_packages))
+  install.packages(new_packages)
+
+# load libraries
+lapply(list_of_packages, library, character.only = TRUE)
+
+if(!require("V.PhyloMaker")){
+  devtools::install_github("jinyizju/V.PhyloMaker")
+  library( "V.PhyloMaker")
+}
+
+if(!require(patchwork)){
+  devtools::install_github("thomasp85/patchwork")
+  library( patchwork)
+}
+
+if(!require(plotbiomes)){
+  devtools::install_github("valentinitnelav/plotbiomes")
+  library(plotbiomes)
+}
+
+if(!require(ggtree)){
+  devtools::install_github("GuangchuangYu/ggtree")
+  library(ggtree)
+}
+if(!require(treeio)){
+  devtools::install_github("GuangchuangYu/treeio")
+  library(treeio)
+}
+
+
+##### Functions ####
 extract_climate_data<-function(df, climstack){
   #df is a dataframe of trait data with lat and lon columns
   #climstack is a stack of gridded climate data

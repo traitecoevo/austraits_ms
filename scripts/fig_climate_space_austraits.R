@@ -1,13 +1,4 @@
 ## Austraits: Precipitation–temperature space plot
-library(raster)
-library(tidyverse)
-library(hexbin)
-library(ggplot2)
-library(RColorBrewer)
-library(plotbiomes)
-
-source("R/plotting_functions.R")
-
 #### 01 Get climate data for Australia ####
 # Download bioclim data using library (raster)
 bioclim <- getData("worldclim", var = "bio", res = 10)

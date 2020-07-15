@@ -1,13 +1,4 @@
 ## Austraits: site locations plot
-library(raster)
-library(tidyverse)
-library(ggplot2)
-library(RColorBrewer)
-library(viridis)
-library(ggpointdensity)
-source("R/plotting_functions.R")
-
-
 
 #### 01 Get climate data for Australia ####
 # Download bioclim data using library (raster)
