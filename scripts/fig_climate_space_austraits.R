@@ -32,7 +32,7 @@ au_bioclim_table <- au_bioclim %>%
   as_tibble %>%
   mutate(region = as.factor("Australia"))
 
-#### 03 Get the point coordinates of Austraits data ####
+#### 03 Extract geographic coordinates of AusTraits' sites#
 source("R/get_sites.R")
 
 # Get climate values for each site
@@ -41,14 +41,17 @@ au_sites_clim <- sites %>% rowid_to_column("ID") %>%
   combine_occurence_climate(au_bioclim)
 
 
-#### 04 Plot the climate data ####
-ggplot() +
-  geom_polygon(data = Whittaker_biomes,
-               aes(x    = temp_c,
-                   y    = precp_cm,
-                   fill = biome),
-               colour = "gray98", # colour of polygon border
-               size   = 0.1)  +
+#### 04 Plot austraits sites over whittaker biome plot ####
+austraits_climate_space <- ggplot() +
+  geom_polygon(
+    data = Whittaker_biomes,
+    aes(x    = temp_c,
+        y    = precp_cm,
+        fill = biome),
+    colour = "gray98",
+    # colour of polygon border
+    size   = 0.1
+  )  +
   # add the temperature - precipitation data points
   geom_point(
     data = au_bioclim_table,
@@ -82,14 +85,14 @@ ggplot() +
   theme_classic() +
   guides(colour = guide_legend(override.aes = list(alpha = 1, size = 2))) +
   xlab(expression(Temperature (degree * C))) +
-  ylab(" Precipitation (cm)")+
+  ylab(" Precipitation (cm)") +
   theme(text = element_text(size = 12))  +
   theme(
     legend.justification = c(-0.1, 0),
     legend.position = c(0.005, 0.25),
-    legend.text=element_text(size=8),
-    legend.title=element_text(size=10)
+    legend.text = element_text(size = 8),
+    legend.title = element_text(size = 10)
     #legend.key.size = unit(1, "cm")
-  ) -> austraits_climate_space
+  ) 
 
 #austraits_climate_space

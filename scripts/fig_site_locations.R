@@ -38,7 +38,7 @@ ggplot() +
 #sites <- read_csv("data/austraits_sites.csv")
 source("R/get_sites.R")
 ## Filter sites
-sites %>%
+sites2 <- sites %>%
   filter(
     `latitude (deg)` > (-45),
     `latitude (deg)` < (-9.5),
@@ -52,7 +52,7 @@ sites %>%
       "site_at_-16.9333_degS_and_149.1833_degE",
       "site_at_-16.9833_degS_and_149.8833_degE"
     )
-  ) -> sites2
+  ) 
 
 
 
@@ -61,19 +61,18 @@ sites %>%
 # austraits_site_locations_by_tissue <- produce_site_map(sites2, "latitude (deg)", "longitude (deg)", feature = "tissue" )
 # austraits_site_locations_by_category <- produce_site_map(sites2, "latitude (deg)", "longitude (deg)", feature = "category" )
 
-austraits_site_locations_by_tissue_fig_2 <- sites2 %>% 
+austraits_site_locations_by_tissue_fig_2 <- sites2 %>%
   drop_na() %>%
-  produce_site_map( "latitude (deg)", "longitude (deg)", feature = "tissue" )+
+  produce_site_map("latitude (deg)", "longitude (deg)", feature = "tissue") +
   theme(
     #legend.justification = c(-.05, -.05),
-    legend.position ="bottom",
-   # legend.direction  = "horizontal",
+    legend.position = "bottom",
+    # legend.direction  = "horizontal",
     strip.background = element_blank(),
-    strip.text.x = element_text(
-      size = 12),
-     legend.key.height = unit(0.5, "cm"),
+    strip.text.x = element_text(size = 12),
+    legend.key.height = unit(0.5, "cm"),
     legend.key.width = unit(2, "cm"),
-     legend.box = "horizontal" #,
+    legend.box = "horizontal" #,
     # legend.spacing  = unit(0.1, "cm")
     # legend.text = element_text(size=2)
   )
