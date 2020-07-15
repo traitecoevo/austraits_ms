@@ -7,12 +7,12 @@ source("R/plotting_functions.R")
 rm(myTheme)
 
 #### 1 Group species by family ####
-austraits_sp_list_sampled %>%
-  filter(species_name %in% tree$scenario.2$run.1$tip.label) %>% 
+family_list <- austraits_sp_list_sampled %>%
+  filter(taxon_name %in% tree$scenario.2$run.1$tip.label) %>% 
   group_by(family) %>%
-  summarise(species_name = paste(
-    paste0("\"",species_name, "\""),collapse=", ")) %>% 
-  mutate(species_name=paste0('c(',species_name, ')'))->family_list
+  summarise(taxon_name = paste(
+    paste0("\"",taxon_name, "\""),collapse=", ")) %>% 
+  mutate(taxon_name=paste0('c(',taxon_name, ')')) 
 
 #### 2 Calculate the most recent common ancestor to the node for each family ####
 
@@ -25,7 +25,7 @@ for(i in 1:nrow(family_list)){
 
 # convert list to data frame
 node_lookup %>%
-  dplyr::bind_rows() ->node_lookup_outcome 
+  dplyr::bind_rows() -> node_lookup_outcome 
 
 rm(node_lookup)
 
