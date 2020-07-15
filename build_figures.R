@@ -31,22 +31,20 @@ source("scripts/fig_generate_phylogenies.R") # A
 source("scripts/fig_get_family_node.R") # B
 
 #### 1 Plot a base phylogenetic tree ####
-base_tree <- ggtree(tree$scenario.2$run.1) #base_tree
+base_tree <- ggtree(tree$scenario.2$run.1, layout = "circular",  size=0.01,)+ 
+  guides(color=FALSE) #base_tree
+
+# rotate the base_tree
+base_tree <- rotate_tree(base_tree, 300)
 
 # make a list of nodes
 node_lookup_outcome %>% 
   select(node) %>% 
-  unlist()->nodes_list
+  unlist() -> nodes_list
 
 
-base_tree <- groupClade(base_tree, .node=nodes_list) # group by nodes
-base_tree<-ggtree(base_tree, # turn base_tree back to ggtree format
-                  size=0.01, # change line thickness
-                  layout = "circular") + 
-  guides(color=FALSE)
-#(values = cbp2)
-# rotate the base_tree
-base_tree <- rotate_tree(base_tree, 300)
+base_tree <- ggtree::groupClade(base_tree, .node=nodes_list) # group by nodes
+
 
 # attach clade label
 for(j in 1:length(nodes_list)){
@@ -64,20 +62,32 @@ for(j in 1:length(nodes_list)){
   }
 }
 
-
+tree_breaks = c(1, 3, 10, 30, 100)
 austraits_tree <-  gheatmap(base_tree, austraits_summary, 
                 offset=4, 
-                width=0.2, 
-                low="#77dd77", 
-                high="red", 
+                width=0.2,
                 color = NULL,
                 colnames_angle=30,
                 colnames_position = "top", 
                 colnames_offset_x =0,
                 colnames_offset_y =50,
                 font.size=3,
-                hjust=1)
+                hjust=1) +
+  scale_fill_gradientn( trans="log10", 
+                       # low="#014127",
+                       # high="#ff4500",
+                       colours=c("#ffcd00", "#94c338", "#2bac66", "#00843D"), # National colours of Australia
+                       labels = tree_breaks,
+                       breaks = tree_breaks, 
+                       na.value = 'white',
+                       name="Trait count") +
+  theme(legend.position="bottom", legend.justification = "right")+
+  guides(fill = guide_colourbar(title.position="top",
+                                label.position = "bottom", 
+                                barwidth = 10, 
+                                barheight = 1))
 
-pdf("figures/fig_4_austraits_phlogenetic_coverage.pdf", height=10, width=10)
+
+pdf("figures/fig_4_austraits_phlogenetic_coverage.pdf", height=12, width=12)
 austraits_tree
 dev.off()
