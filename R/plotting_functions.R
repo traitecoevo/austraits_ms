@@ -120,7 +120,9 @@ produce_site_map <- function(df, lat, lon, feature=NA){
           x = !!as.name(lon)),
       inherit.aes = FALSE,
       show.legend = TRUE,
-      adjust = 1
+      adjust = 1,
+      size = 0.5,
+      alpha=0.8
     ) +
     scale_color_viridis(option = "plasma") +
     theme(
