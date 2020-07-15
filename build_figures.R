@@ -7,21 +7,24 @@ source("scripts/fig_climate_space_austraits.R") # B
 source("scripts/fig_trait_composition.R") # C
 
 
-combined_plot<-(austraits_site_locations+
-                  austraits_climate_space)-
-                  {
-                    austraits_composition +
-                      plot_spacer()+
-                      plot_layout(widths = c(14, 1)) 
-                  }+
-  plot_layout(ncol = 1, heights = c(3, 1))
+# combined_plot <- (austraits_site_locations+
+#                   austraits_climate_space)-
+#                   {
+#                     austraits_composition +
+#                       plot_spacer()+
+#                       plot_layout(widths = c(14, 1)) 
+#                   }+
+#   plot_layout(ncol = 1, heights = c(3, 1))
 
 
-png("figures/austraits_fig2.png",height=6, width=12, units = "in", res = 300)
-combined_plot
+
+pdf("figures/austraits_fig2.pdf",height=12, width=8)
+austraits_climate_space / austraits_site_locations_by_tissue_fig_2 +  plot_annotation(tag_levels = 'A') 
 dev.off()
 
-
+pdf("figures/austraits_fig3.pdf",height=6, width=8)
+austraits_composition_georef / austraits_composition_non_georef +  plot_annotation(tag_levels = 'A') 
+dev.off()
 
 #### Austraits: Phylogenetic coverage of traits ####
 source("scripts/fig_generate_phylogenies.R") # A
@@ -43,7 +46,7 @@ base_tree<-ggtree(base_tree, # turn base_tree back to ggtree format
   guides(color=FALSE)
 #(values = cbp2)
 # rotate the base_tree
-base_tree<-rotate_tree(base_tree, 300)
+base_tree <- rotate_tree(base_tree, 300)
 
 # attach clade label
 for(j in 1:length(nodes_list)){
@@ -75,6 +78,6 @@ austraits_tree <-  gheatmap(base_tree, austraits_summary,
                 font.size=3,
                 hjust=1)
 
-pdf("figures/austraits_phlogenetic_coverage2.pdf", height=10, width=10)
+pdf("figures/fig_4_austraits_phlogenetic_coverage.pdf", height=10, width=10)
 austraits_tree
 dev.off()
