@@ -32,7 +32,8 @@ trait_composition_list %>%
   scale_x_discrete(limits = positions) +
   theme(legend.position = "right") +
   scale_fill_viridis_d() + 
-  annotation_logticks(sides="l") -> austraits_composition_georef
+  annotation_logticks(sides="l") +
+  ggtitle("Georeferenced") -> austraits_composition_georef
 
 # Non-georeferenced trait data
 trait_composition_list %>% 
@@ -54,4 +55,5 @@ trait_composition_list %>%
   scale_x_discrete(limits = positions) +
   theme(legend.position = "right") +
   scale_fill_viridis_d(option = "plasma") + 
-  annotation_logticks(sides="l") -> austraits_composition_non_georef
+  annotation_logticks(sides="l")+
+  ggtitle("Non-Georeferenced") -> austraits_composition_non_georef
