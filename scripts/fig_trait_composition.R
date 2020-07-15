@@ -1,11 +1,4 @@
 ## Austraits: trait composition plot
-
-library(tidyverse)
-library(ggplot2)
-library(scales)
-library(RColorBrewer)
-
-
 ## Rearrange order of tissue
 positions <-
   c("leaf", "stem", "bark", "root", "reproductive", "whole_plant")

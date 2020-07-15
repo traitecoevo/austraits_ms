@@ -1,24 +1,5 @@
 ## 1 Build a phylogenetic tree from the list of species in AusTraits
 
-
-##### 0 Load libraries ####
-# check for missing packages
-list.of.packages <- c("phytools", "V.PhyloMaker", "tidyverse")
-new.packages <- list.of.packages[!(list.of.packages %in% installed.packages()[,"Package"])]
-if(length(new.packages)) install.packages(new.packages)
-
-# load libraries
-library(phytools)
-library("V.PhyloMaker"); #devtools::install_github(jinyizju/V.PhyloMaker)
-library(tidyverse)
-library(ggtree)
-library(treeio)
-library(ggplot2)
-library(tidytree)
-
-
-
-
 ##### 1 Read data #####
 ## add austraits and read the lookup table
 austraits <- readRDS("data/austraits.rds")

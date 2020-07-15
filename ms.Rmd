@@ -14,6 +14,10 @@ header-includes:
 - \usepackage{inputenc}
 - \usepackage[T1]{fontenc}
 - \usepackage{float}
+- \usepackage{fontspec}
+- \usepackage{unicode-math}
+# - \setmainfont{Arial}
+# - \setmathfont{Cambria Math}
 bibliography: [data/references_ms.bib]
 ---
 
@@ -177,7 +181,7 @@ Each data release is a compressed folder containing separate files for each of t
 
 DSF was supported by Australian Research Council Future Fellowship (FT160100113), RVG was supported by Australian Research Council DECRA Fellowship (DE170100208). 
 
-We achknowelde XXXXXXXXXXx institutions, who
+We acknowledge XXXXXXXXXXx institutions, who
 
 
 #### Author contributions
@@ -227,11 +231,14 @@ This document provides information on the structure of AusTraits and corresponds
 
 ## Figures  
 
-![**Figure 1. The data curation pathway used to assemble the AusTraits database.** Trait observations are accessed from original data sources, including published floras and field campaigns. Factors such as units and taxonomy are harmonised to a common standard. Versioned releases are distributed to users, allowing the dataset to be used and re-used in a reproducible way. Errors are corrected and new datasets added via the blue path for sequential releases of the database.](figures/Pipeline.png)
-  
-![**Figure 2.** (a.) Locations where the trait data were collected and the corresponding number of taxa. (b.) AusTraits’ sites (grey) within Australia’s precipitation-temperature space (black) superimposed upon Whittaker’s major biomes diagram. Data from WorldClim (worldclim.org). (c.) Overview of the number of taxa with which traits are measured within each major plant organ and trait category.](figures/austraits_fig2_blue.png)
+![The data curation pathway used to assemble the AusTraits database.** Trait observations are accessed from original data sources, including published floras and field campaigns. Factors such as units and taxonomy are harmonised to a common standard. Versioned releases are distributed to users, allowing the dataset to be used and re-used in a reproducible way. Errors are corrected and new datasets added via the blue path for sequential releases of the database.](figures/Pipeline.png)
 
-![**Figure 3.** The phylogenetic representation of traits in the AusTraits database for the subset of 2000 randomly sampled taxa. The heatmap colour intensities denote the number of traits measured within each major plant organ. The most widespread family names (with more than ten taxa) are labelled on the edge of the tree.](figures/austraits_phlogenetic_coverage.png)
+![(a.) AusTraits’ sites (orange) within Australia’s precipitation-temperature space (dark-grey) superimposed upon Whittaker’s major biomes diagram. Climate data were extracted from Worldclim (www.worldclim.org).(B.) Locations of georeferenced-sites grouped by plant tissues ](figures/austraits_fig_2_biome_map.pdf)
+
+
+![Overview of the number of taxa with which traits are measured within each plant tissue and trait category; (A.) accounts for the georeferenced trait data (correspond with Fig 2B) whereas (B.) for the non-georeferenced trait data. ](figures/austraits_fig_3_composition.pdf)
+
+![The phylogenetic representation of traits in the AusTraits database for the subset of 2000 randomly sampled taxa. The heatmap colour intensity denotes the number of traits measured within each plant tissue. The most widespread family names (with more than ten taxa) are labelled on the edge of the tree.](figures/austraits_fig_4_austraits_phlogenetic_coverage.pdf)
 
 \clearpage 
 
