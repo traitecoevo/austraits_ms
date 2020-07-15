@@ -62,7 +62,7 @@ for(j in 1:length(nodes_list)){
   }
 }
 
-tree_breaks = c(1, 3, 10, 30, 100)
+tree_breaks = c(1, 3, 10, 30, 80)
 austraits_tree <-  gheatmap(base_tree, austraits_summary, 
                 offset=4, 
                 width=0.2,
