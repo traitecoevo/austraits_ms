@@ -61,9 +61,9 @@ ggplot() +
   
   # add the AusTraits Sites
   geom_point(
-    data = au_sites_clim,
+    data = au_sites_clim ,
     aes(x = Temp / 10, y = Prec / 10, color = "AusTraits sites"),
-    alpha = 0.2,
+    alpha = 0.3,
     stroke = 0,
     size = 1,
     inherit.aes = FALSE,
@@ -71,7 +71,7 @@ ggplot() +
   ) +
   
   # set color for  the temperature - precipitation data points and the the AusTraits Sites
-  scale_colour_manual(name = "", values = c("#d3d3d3", "#233D4D")) +
+  scale_colour_manual(name = "Australian climate space", values = c("#FF7F50", "#233D4D")) +
   scale_fill_manual(
     name   = "Whittaker biomes",
     breaks = names(Ricklefs_colors),
@@ -83,5 +83,13 @@ ggplot() +
   guides(colour = guide_legend(override.aes = list(alpha = 1, size = 2))) +
   xlab(expression(Temperature (degree * C))) +
   ylab(" Precipitation (cm)")+
-  theme(text = element_text(size = 12)) -> austraits_climate_space
+  theme(text = element_text(size = 12))  +
+  theme(
+    legend.justification = c(-0.1, 0),
+    legend.position = c(0.005, 0.25),
+    legend.text=element_text(size=8),
+    legend.title=element_text(size=10)
+    #legend.key.size = unit(1, "cm")
+  ) -> austraits_climate_space
 
+#austraits_climate_space
