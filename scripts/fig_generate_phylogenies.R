@@ -2,7 +2,7 @@
 
 ##### 1 Read data #####
 ## add austraits and read the lookup table
-austraits <- readRDS("data/austraits.rds")
+austraits <- readRDS("data/austraits_2.0.0.rds")
 #tree<-readRDS("data/AusTraits_phylogenies.rds") 
 trait_category_lookup<-read_csv("data/traits_filled_in.csv") %>% 
   dplyr::select(trait_name, tissue, category)

@@ -1,4 +1,4 @@
-austraits <- readRDS("data/austraits.rds")
+austraits <- readRDS("data/austraits_2.0.0.rds")
 library(tidyverse)
 
 # collect sites
