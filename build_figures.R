@@ -34,3 +34,26 @@ pdf(
 )
 austraits_tree
 dev.off()
+
+
+#### Figure 5: AusTraits and TRY comparison ####
+source("scripts/fig_comparison_TRY.R") 
+
+pdf( "figures/austraits_fig_5_austraits_try_comparison_v1.pdf",
+     height = 4,
+     width = 5)
+p_aus_try
+dev.off()
+
+pdf( "figures/austraits_fig_5_austraits_try_comparison_v2.pdf",
+     height = 5,
+     width = 6)
+ggExtra::ggMarginal(p_aus_try, type = "density", groupColour = T)
+dev.off()
+
+pdf("figures/austraits_fig_5_austraits_try_comparison_v3.pdf",
+    height = 8,
+    width = 10)
+p_aus_try + facet_wrap( ~tissue)
+dev.off()
+
