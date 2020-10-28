@@ -1,0 +1,50 @@
+Type: Compendium
+Package: austraitsms
+Title: Paper describing the AusTraits database
+Version: 0.0.1
+Authors@R: c(
+    person(given = "Daniel", family = "Falster",
+           role = c("aut", "cre"), email = "daniel.falster@unsw.edu.au",
+           comment = c(ORCID = "0002-9814-092X")),
+    person(given = "Dony", family = "Indiarto",
+           role = c("aut")),    
+    person(given = "Rachael", family = "Gallagher",
+           role = c("aut"), comment = c(ORCID = "0002-4680-8115"))
+           )
+Description: Compendium description
+License: MIT + file LICENSE
+Depends: 
+    R (>= 3.6.1),
+    rlang,
+    rmarkdown,
+    knitr,
+    rprojroot,
+    ggplot2 (>= 3.3.2),
+    ggExtra,
+    ggpointdensity,
+    ggstance,
+    ggtree,
+    scales,
+    cowplot,
+    patchwork,
+    hexbin,
+    viridis,
+    plotbiomes,
+    ape,
+    phytools,
+    treeio,
+    RefManageR,
+    V.PhyloMaker,
+    tibble,
+    dplyr,
+    stringi
+Imports:
+    raster
+remotes:
+    github::valentinitnelav/plotbiomes,
+    github::jinyizju/V.PhyloMaker,
+    github::GuangchuangYu/treeio,
+    bioc::ggtree
+Encoding: UTF-8
+Language: en
+LazyData: true

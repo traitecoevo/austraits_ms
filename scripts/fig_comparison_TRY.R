@@ -10,7 +10,7 @@ TRY <- bind_rows(
 # AUSTRAITS -- data over 650000 records,
 # for 339 traits, for 23,480 species. 282000 trait x species combinations, 22,000 locations
 austraits <- readRDS("data/austraits_2.0.0.rds")
-tissue_lookup <- read_csv("data/traits_filled_in.csv") %>%
+tissue_lookup <- read_csv("data/trait_categories.csv") %>%
   select(trait_name, `TRY name`, tissue)
 
 
@@ -23,14 +23,17 @@ try_by_sp <- TRY %>%
   group_by(Trait) %>%
   summarise(n_try = n_distinct(AccSpeciesName))
 
-
 aus_try <- tissue_lookup %>%
   full_join(aus_trait_by_taxon, by = "trait_name") %>%
   full_join(try_by_sp, by = c("TRY name" = "Trait")) %>%
   mutate_if(is.numeric, ~ replace_na(., 0)) %>%
-  mutate(tissue = replace_na(tissue, "uncategorised"))
-
-
+  mutate(tissue = replace_na(tissue, "uncategorised")) %>% 
+  group_by(`TRY name`) %>% 
+  summarise(
+    n_austraits = sum(n_austraits), 
+    n_try = n_try[1],
+    tissue = subset(tissue, !is.na(tissue))[1]
+  ) %>% ungroup()
 
 #==== 03 Plotting ====
 # Scatter plot

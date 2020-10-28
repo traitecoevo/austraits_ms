@@ -1,5 +1,3 @@
-austraits <- readRDS("data/austraits_2.0.0.rds")
-library(tidyverse)
 
 # collect sites
 austraits$sites %>%
@@ -21,7 +19,7 @@ austraits$traits %>%
   ungroup() -> sp_number
 
 # get trait categories
-trait_category_lookup <- read_csv("data/traits_filled_in.csv") %>%
+trait_category_lookup <- read_csv("data/trait_categories.csv") %>%
   dplyr::select(trait_name, tissue, category)
 
 # get trait list

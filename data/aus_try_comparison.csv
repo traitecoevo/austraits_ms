@@ -1,0 +1,441 @@
+TRY name,n_austraits,n_try,tissue
+Bark calcium (Ca) content per bark dry mass,11,0,bark
+Bark carbon (C) content per bark dry mass,17,0,bark
+Bark carbon (C) isotope signature (delta 13C),17,0,bark
+Bark density (bark dry mass per bark volume),62,0,bark
+Bark magnesium (Mg) content per bark dry mass,11,0,bark
+Bark nitrogen (N) content per bark dry mass,44,0,bark
+Bark nitrogen (N) isotope signature (delta 15N),17,0,bark
+Bark phosphorus (P) content per bark dry mass,27,0,bark
+Bark potassium (K) content per bark dry mass,11,0,bark
+Bark sclereids arrangement,0,1,bark
+Bark structure,0,1,bark
+Bark thickness,221,276,bark
+Bark thickness (inner bark),0,264,bark
+Bark thickness (outer bark),0,264,bark
+Branch hydraulic conductance,43,0,stem
+Budbank height distribution,39,0,root
+Coarse root diameter,0,1,root
+Coarse root dry mass per ground area,0,2,root
+Coarse root dry mass turnover rate,0,1,root
+Coarse root growth: coarse root carbon (C) production per ground area and time,0,1,root
+Coarse root growth: coarse root dry mass production per ground area per year,0,1,root
+Coarse root length density (RLD): coarse root length per ground area,0,1,root
+"Coarse root length per coarse root dry mass (specific coarse root length, SRL)",12,1,root
+Coarse root length per soil volume,0,1,root
+Coarse root to fine root mass ratio,0,18,root
+Coarse woody debris (CWD) branch: decomposition rate,0,1,stem
+Coarse woody debris (CWD) branch: decomposition rate constant,0,2,stem
+Coarse woody debris (CWD) root: decomposition rate,0,1,root
+Coarse woody debris (CWD) root: decomposition rate constant,0,1,root
+Coarse woody debris (CWD) stem: bark fraction,0,8,bark
+Coarse woody debris (CWD) stem: calcium (Ca) content per stem CWD,0,8,stem
+Coarse woody debris (CWD) stem: carbon/nitrogen (C/N) ratio,0,4,stem
+Coarse woody debris (CWD) stem: cellulose content per stem CWD,0,4,stem
+Coarse woody debris (CWD) stem: decomposition rate,0,25,stem
+Coarse woody debris (CWD) stem: decomposition rate constant,0,27,stem
+Coarse woody debris (CWD) stem: lignin content per stem CWD,0,4,stem
+Coarse woody debris (CWD) stem: magnesium (Mg) content per stem CWD,0,8,stem
+Coarse woody debris (CWD) stem: nitrogen (N) content per stem CWD,0,8,stem
+Coarse woody debris (CWD) stem: phenols content per stem CWD,0,4,stem
+Coarse woody debris (CWD) stem: phosphorus (P) content per stem CWD,0,8,stem
+Coarse woody debris (CWD) stem: potassium (K) content per stem CWD,0,8,stem
+Coarse woody debris (CWD) stem: protein content per stem CWD,0,4,stem
+Coarse woody debris (CWD) stem: rot type,0,13,stem
+Coarse woody debris (CWD) stem: wood fraction,0,8,stem
+Coarse woody debris (CWD): density,0,1,stem
+Crown (canopy) height (base to top),0,8,whole_plant
+Crown (canopy) length: diameter along the longest axis,0,3,whole_plant
+Crown (canopy) width,100,0,whole_plant
+Dispersal syndrome,3914,593,reproductive
+Dispersal unit dry mass,283,0,reproductive
+Dispersal unit type,2920,0,reproductive
+Fine root boron (B) content per fine root dry mass,0,2,root
+Fine root calcium (Ca) content per fine root dry mass,0,3,root
+Fine root carbon (C) content per fine root dry mass,0,6,root
+Fine root carbon content per ground area,0,2,root
+Fine root carbon/nitrogen (C/N) ratio,0,6,root
+Fine root cellulose content per fine root dry mass,0,4,root
+Fine root copper (Cu) content per fine root dry mass,0,2,root
+Fine root debris decomposition rate constant,0,4,root
+Fine root diameter,0,43,root
+Fine root dry mass fraction that is taproot (taproot dry mass per fine root dry mass),14,0,root
+Fine root dry mass per fine root fresh mass (fine root dry matter content; RDMC),0,14,root
+Fine root dry mass per ground area,0,4,root
+Fine root dry mass per soil volume,0,10,root
+Fine root dry mass to leaf dry mass ratio,0,2,root
+Fine root dry mass turnover rate,0,6,root
+Fine root growth: fine root dry mass production per ground area per month,0,1,root
+Fine root growth: fine root dry mass production per ground area per year,0,1,root
+Fine root growth: fine root length production per minirhizotron surface area per day,0,2,root
+Fine root growth: fine root length production per minirhizotron surface area per year,0,2,root
+Fine root iron (Fe) content per fine root dry mass,0,2,root
+"Fine root length per fine root dry mass (specific fine root length, SRL)",0,43,root
+Fine root length per ground area,0,2,root
+Fine root length per minirhizotron screen area,0,2,root
+Fine root length per soil volume,0,1,root
+Fine root lignin content per fine root dry mass,0,4,root
+Fine root magnesium (Mg) content per fine root dry mass,0,3,root
+Fine root manganese (Mn) content per fine root dry mass,0,2,root
+Fine root monthly decomposition rate,0,1,root
+Fine root mortality: fine root length mortality per minirhizotron surface per day,0,2,root
+Fine root mortality: fine root length mortality per minirhizotron surface per year,0,2,root
+Fine root necromass (dead dry mass) per ground area for specified soil depth increment,0,1,root
+Fine root necromass to biomass ratio,0,1,root
+Fine root nitrogen (N) content per fine root dry mass,0,8,root
+Fine root nitrogen (N) content per ground area,0,2,root
+"Fine root persistence (lifespan, longevity)",0,2,root
+Fine root phosphorus (P) content per fine root dry mass,0,5,root
+Fine root polyphenol content per fine root dry mass,0,4,root
+Fine root potassium (K) content per fine root dry mass,0,4,root
+Fine root rooting depth,0,14,root
+Fine root silicon (Si) content per fine root dry mass,0,2,root
+Fine root sodium (Na) content per fine root dry mass,0,2,root
+Fine root specific root hair cylinder volume: volume of root hairs per fine root dry mass,0,14,root
+Fine root sulfur (S) content per fine root dry mass,0,2,root
+Fine root surface area per fine root dry mass (specific fine root area),0,14,root
+Fine root tissue density (fine root dry mass per fine root volume),0,7,root
+Fine root zinc (Zn) content per fine root dry mass,0,2,root
+Fine root/shoot ratio,0,16,stem
+Flower color,5037,0,reproductive
+Flower number per plant,7,0,reproductive
+"Flower sexual syndrome (dichogamy, cleistogamy, dioecious, monoecious)",3282,0,reproductive
+Fruit diameter,2643,0,reproductive
+Fruit length,3289,0,reproductive
+Fruit mass,138,0,reproductive
+Fruit type,6962,0,reproductive
+Leaf aluminium (Al) content per leaf dry mass,112,0,leaf
+"Leaf angle (inclination, orientation)",282,602,leaf
+"Leaf area (in case of compound leaves: leaf, petiole included)",0,94,leaf
+"Leaf area (in case of compound leaves: leaf, undefined if petiole in- or excluded)",4829,1489,leaf
+"Leaf area (in case of compound leaves: leaflet, petiole included)",0,720,leaf
+"Leaf area (in case of compound leaves: leaflet, undefined if petiole is in- or excluded)",0,2153,leaf
+"Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole excluded",0,180,leaf
+"Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): petiole included",0,1143,leaf
+"Leaf area per leaf dry mass (specific leaf area, SLA or 1/LMA): undefined if petiole is in- or exclu",3843,1216,leaf
+Leaf area per leaf fresh mass (specific leaf area (SLA or 1/LMA) based on leaf fresh mass),19,0,leaf
+Leaf area per plant,0,31,leaf
+Leaf area per plant dry mass (leaf area ratio; LAR),116,0,leaf
+Leaf area-specific conductivity (leaf specific conductivity),141,154,leaf
+Leaf boron (B) content per leaf dry mass,214,0,leaf
+Leaf calcium (Ca) content per leaf dry mass,292,0,leaf
+Leaf carbon (C) content per leaf area,0,74,leaf
+Leaf carbon (C) content per leaf dry mass,1059,95,leaf
+Leaf carbon (C) isotope fractionation ('big' Delta 13C),0,469,leaf
+Leaf carbon (C) isotope signature (delta 13C),1490,467,leaf
+Leaf carbon/nitrogen (C/N) ratio,79,95,leaf
+Leaf carotenoid content per leaf area,38,0,leaf
+Leaf carotenoid content per leaf dry mass,67,74,leaf
+Leaf cell wall mass per leaf area,0,54,leaf
+Leaf cell wall mass per leaf dry mass,36,54,leaf
+Leaf cell wall nitrogen (N) content per cell wall dry mass,22,0,leaf
+Leaf chlorine (Cl) content per leaf dry mass,6,0,leaf
+Leaf chlorophyll a/b ratio,153,74,leaf
+Leaf chlorophyll content per leaf area,63,94,leaf
+Leaf chlorophyll content per leaf area (Chl a),38,0,leaf
+Leaf chlorophyll content per leaf area (Chl b),38,0,leaf
+Leaf chlorophyll content per leaf dry mass,172,94,leaf
+Leaf chlorophyll content per leaf dry mass (Chl a),123,74,leaf
+Leaf chlorophyll content per leaf dry mass (Chl b),123,74,leaf
+Leaf compoundness,13719,1722,leaf
+Leaf copper (Cu) content per leaf dry mass,257,0,leaf
+"Leaf density (leaf tissue density, leaf dry mass per leaf volume)",73,402,leaf
+Leaf distribution along the shoot axis (arrangement type),5261,44,leaf
+Leaf dry mass (single leaf),1693,691,leaf
+"Leaf dry mass per leaf fresh mass (leaf dry matter content, LDMC)",1092,113,leaf
+Leaf elastic modulus,61,0,stem
+"Leaf emergences (pubescence, pruinescence, hairs, spines, thorns)",1211,295,leaf
+Leaf epidermis cell area; Leaf mesophyll cell area,38,0,leaf
+Leaf epidermis thickness,313,0,leaf
+Leaf epidermis volume per leaf volume,0,3,leaf
+Leaf fresh mass,374,0,leaf
+Leaf hydraulic conductance,79,0,leaf
+Leaf hypodermis thickness,10,0,leaf
+Leaf iron (Fe) content per leaf dry mass,256,0,leaf
+Leaf length,14503,2,leaf
+Leaf lifespan (longevity),139,139,leaf
+Leaf light absorption (extinction),37,0,leaf
+Leaf light transmittance,37,0,leaf
+Leaf lignin content per leaf dry mass,52,0,leaf
+Leaf magnesium (Mg) content per leaf dry mass,288,0,leaf
+Leaf manganese (Mn) content per leaf dry mass,256,0,leaf
+Leaf margin type,8832,0,leaf
+Leaf mesophyll conductance,74,0,leaf
+Leaf mesophyll palisade parenchym volume per leaf spongiophyll volume,0,3,leaf
+Leaf mesophyll palisade parenchym volume per leaf volume,0,3,leaf
+Leaf mesophyll spongiophyll thickness,63,0,leaf
+Leaf mesophyll spongiophyll volume per leaf volume,0,3,leaf
+Leaf minus soil nitrogen (N) isotope signature (leaf delta 15N minus soil delta 15N),0,13,leaf
+Leaf molybdenum (Mo) content per leaf dry mass,77,0,leaf
+Leaf nickel (Ni) content per leaf dry mass,15,0,leaf
+Leaf nitrogen (N) content per leaf,0,159,leaf
+Leaf nitrogen (N) content per leaf area,680,537,leaf
+Leaf nitrogen (N) content per leaf dry mass,2121,615,leaf
+Leaf nitrogen (N) fraction in Rubisco,29,1,leaf
+Leaf nitrogen (N) isotope signature (delta 15N),856,143,leaf
+Leaf nitrogen/phosphorus (N/P) ratio,110,198,leaf
+Leaf oxygen (O) isotope signature (delta 18O),1,0,leaf
+Leaf phenology type,6702,1936,leaf
+Leaf phosphorus (P) content per leaf,0,159,leaf
+Leaf phosphorus (P) content per leaf area,361,405,leaf
+Leaf phosphorus (P) content per leaf dry mass,958,431,leaf
+Leaf phosphorus (P) retranslocation prior to leaf senescence,0,154,leaf
+Leaf photosynthesis carboxylation capacity (Vcmax) per leaf area (Farquhar model),76,209,leaf
+Leaf photosynthesis carboxylation capacity (Vcmax) per leaf dry mass (Farquhar model),37,201,leaf
+Leaf photosynthesis CO2 compensation point,0,2,leaf
+Leaf photosynthesis CO2 concentration at chloroplast,37,0,leaf
+Leaf photosynthesis drawdown of CO2 concentration from ambient airspace to intercellular airspace,0,102,leaf
+Leaf photosynthesis electron transport capacity (Jmax) per leaf area (Farquhar model),76,17,leaf
+Leaf photosynthesis electron transport capacity (Jmax) per leaf dry mass (Farquhar model),0,10,leaf
+Leaf photosynthesis light response curvatur,0,1,leaf
+Leaf photosynthesis light use efficiency (LUE),0,2,leaf
+Leaf photosynthesis pathway,4543,892,whole_plant
+Leaf photosynthesis rate per leaf area,651,368,leaf
+Leaf photosynthesis rate per leaf dry mass,536,311,leaf
+"Leaf photosynthesis rate per leaf nitrogen (N) content (photosynthetic nitrogen use efficiency, PNUE",179,0,leaf
+Leaf photosynthesis rate per leaf transpiration (photosynthetic water use effinciency: WUE),189,0,leaf
+Leaf photosynthesis rate per stomatal conductance,105,0,leaf
+Leaf photosynthesis: intercellular CO2 concentration,0,260,leaf
+Leaf photosynthesis: intercellular CO2 concentration to ambient CO2 (ci/ca),481,0,leaf
+Leaf photosynthesis: quantum efficiency of photosystem II (maximum potential; FvFm),3,0,leaf
+Leaf photosynthetic A/Ci curve: intercellular CO2 concentration,372,0,leaf
+Leaf photosynthetic A/Ci curve: transpiration rate per leaf area,89,0,leaf
+Leaf potassium (K) content per leaf area,18,0,leaf
+Leaf potassium (K) content per leaf dry mass,341,0,leaf
+Leaf respiration rate in light per leaf area,9,0,leaf
+Leaf respiration rate in the dark as fraction of photosynthetic carboxylation capacity (Vcmax),0,189,leaf
+Leaf respiration rate in the dark per leaf area,325,221,leaf
+Leaf respiration rate in the dark per leaf dry mass,300,214,leaf
+Leaf Rubisco content per leaf area,29,0,leaf
+Leaf shape,2915,11,leaf
+Leaf sodium (Na) content per leaf dry mass,243,0,leaf
+Leaf starch content per leaf dry mass,13,0,leaf
+Leaf sugar content per leaf dry mass,2,0,leaf
+Leaf sulfur (S) content per leaf dry mass,263,0,leaf
+"Leaf texture (sclerophylly, physical strength, toughness)",0,500,leaf
+Leaf thickness,848,519,leaf
+Leaf transpiration rate per leaf area,176,56,leaf
+Leaf transpiration rate per leaf dry mass,0,1,leaf
+Leaf type,566,999,leaf
+Leaf vein density,252,0,leaf
+Leaf volume per leaf area,0,7,leaf
+Leaf water & osmotic potential: leaf osmotic potential at full turgor,0,10,leaf
+Leaf water & osmotic potential: leaf osmotic potential at turgor loss,85,10,leaf
+Leaf water & osmotic potential: leaf water potential,4,9,leaf
+Leaf water content per leaf dry mass (at saturation),237,0,leaf
+Leaf water content per leaf dry mass (not saturated),210,112,leaf
+Leaf water content per leaf dry mass missing to leaf water saturation,0,21,leaf
+Leaf width,14103,2,leaf
+Leaf zinc (Zn) content per leaf dry mass,257,0,leaf
+Leaflet number per leaf,0,1663,leaf
+Litter (fine root) decomposition rate,0,1,root
+Litter (fine root) decomposition rate constant,0,1,root
+Litter (leaf) calcium (Ca) content per leaf litter dry mass,21,0,leaf
+Litter (leaf) cellulose content per leaf litter dry mass,0,1,leaf
+Litter (leaf) copper (Cu) content per leaf litter dry mass,18,0,leaf
+Litter (leaf) decomposition rate,0,1,leaf
+Litter (leaf) decomposition rate constant,0,1,leaf
+Litter (leaf) iron (Fe) content per leaf litter dry mass,18,0,leaf
+Litter (leaf) lignin content per leaf litter dry mass,0,1,leaf
+Litter (leaf) magnesium (Mg) content per leaf litter dry mass,21,0,leaf
+Litter (leaf) manganese (Mn) content per leaf litter dry mass,18,0,leaf
+Litter (leaf) nitrogen (N) content per leaf litter dry mass,47,0,leaf
+Litter (leaf) phenols content per leaf litter dry mass,0,1,leaf
+Litter (leaf) phosphorus (P) content per leaf litter dry mass,51,0,leaf
+Litter (leaf) potassium (K) content per leaf litter dry mass,21,0,leaf
+Litter (leaf) protein content per leaf litter dry mass,0,1,leaf
+Litter (leaf) sulfur (S) content per leaf litter dry mass,18,0,leaf
+Litter (leaf) zinc (Zn) content per leaf litter dry mass,18,0,leaf
+"Litter (other than leaf: twigs, bark, flowers...) calcium (Ca) content per litter dry mass",5,0,stem
+"Litter (other than leaf: twigs, bark, flowers...) decomposition rate",0,1,whole_plant
+"Litter (other than leaf: twigs, bark, flowers...) decomposition rate constant",0,1,whole_plant
+"Litter (other than leaf: twigs, bark, flowers...) density",0,1,whole_plant
+"Litter (other than leaf: twigs, bark, flowers...) lignin content per litter dry mass",0,1,whole_plant
+"Litter (other than leaf: twigs, bark, flowers...) magnesium (Mg) content per litter dry mass",5,0,stem
+"Litter (other than leaf: twigs, bark, flowers...) phenols content per litter dry mass",0,1,whole_plant
+"Litter (other than leaf: twigs, bark, flowers...) potassium (K) content per litter dry mass",5,0,stem
+"Litter (other than leaf: twigs, bark, flowers...) protein content per litter dry mass",0,1,whole_plant
+"Litter (other than leaf: twigs, bark, flowers...) sodium (Na) content per litter dry mass",5,0,stem
+"Litter (other than leaf: twigs, bark, flowers…) cellulose content per litter dry mass",0,1,whole_plant
+Litter cellulose content per litter dry mass,0,64,leaf
+Litter decomposition rate,0,71,whole_plant
+Litter lignin content per litter dry mass,0,6,leaf
+Litter nitrogen (N) content per litter dry mass,0,68,leaf
+Litter other than leaf phosphorus (P) content per litter dry mass,5,0,stem
+Litter phosphorus (P) content per litter dry mass,0,68,leaf
+"Litter SLA (leaf area per leaf dry mass, specific leaf area, 1/LMA of leaf litter)",0,6,leaf
+Litter tannin content per litter dry mass,0,6,leaf
+Litter twig nitrogen (N) content per twig dry mass,5,0,stem
+Litter water soluble carbon (C) content per litter dry mass,0,6,leaf
+Mycorrhiza type,2599,171,root
+Mycorrhizal colonization AM: fraction of root length that contains arbuscular mycorrhizal structures,0,2,root
+Mycorrhizal colonization EM: fraction of root length colonized by ectomycorrhizal structure,0,1,root
+"Mycorrhizal colonization: fraction of root length with mycorrhizla hyphae, arbuscules, or vesicles",0,1,root
+NA; same as starch?,22,0,leaf
+Plant biomass and allometry: Bark mass per plant,0,14,bark
+Plant biomass and allometry: branch dry mass per plant dry mass,45,0,stem
+Plant biomass and allometry: Branch mass per plant,0,12,stem
+Plant biomass and allometry: Coarse root dry mass per plant,0,3,root
+Plant biomass and allometry: Coarse root mass fraction (fraction of coarse root dry mass per whole p,0,3,root
+Plant biomass and allometry: Coarse root mass per plant,0,3,root
+Plant biomass and allometry: Crown (canopy) area per plant,0,2,whole_plant
+Plant biomass and allometry: Crown (canopy) area: projected as seen from above,0,3,whole_plant
+Plant biomass and allometry: Fine root dry mass per plant,0,31,root
+Plant biomass and allometry: Fine root length per plant,0,7,root
+Plant biomass and allometry: Fine root mass fraction (fraction of fine root dry mass to whole plant,0,18,root
+Plant biomass and allometry: Fine root mass per plant,0,3,root
+Plant biomass and allometry: Leaf dry mass per plant,0,3,leaf
+"Plant biomass and allometry: Leaf dry mass per plant dry mass (leaf weight ratio, LWR)",97,14,leaf
+Plant biomass and allometry: Leaf mass (dry or fresh) per plant,0,41,leaf
+Plant biomass and allometry: Plant mass,0,7,whole_plant
+Plant biomass and allometry: Reproductive dry mass per plant dry mass (reproductive weight fraction),47,0,reproductive
+Plant biomass and allometry: Root dry mass per plant,0,3,root
+Plant biomass and allometry: Root mass fraction (fraction of root dry mass per whole plant dry mass),27,3,root
+Plant biomass and allometry: Root mass per plant,0,6,root
+Plant biomass and allometry: Root tips per plant,0,6,root
+Plant biomass and allometry: Shoots per plant,61,0,stem
+Plant biomass and allometry: Stem cross-sectional area at base of the crown,0,1,stem
+Plant biomass and allometry: Stem cross-sectional area at base of the plant,0,25,stem
+Plant biomass and allometry: Stem cross-sectional area at breast height,0,27,stem
+Plant biomass and allometry: Stem dry mass per plant dry mass per plant,19,0,stem
+Plant biomass and allometry: Stem mass (including branches) per plant,0,38,stem
+"Plant biomass and allometry: Supportive structure (stem, twig, leaf petiole, leaf sheeth) dry mass p",79,0,whole_plant
+Plant biomass and allometry: Whole plant aboveground mass,0,48,whole_plant
+Plant biomass and allometry: Wood (heartwood) cross-sectional area at base,0,1,stem
+Plant biomass and allometry: Wood (heartwood) cross-sectional area at base of crown,0,1,stem
+Plant biomass and allometry: Wood (heartwood) cross-sectional area at breast height,0,1,stem
+Plant biomass and allometry: Wood (sapwood) cross-sectional area at base,0,2,stem
+Plant biomass and allometry: Wood (sapwood) cross-sectional area at base of crown,0,1,stem
+Plant biomass and allometry: Wood (sapwood) cross-sectional area at breast height,0,2,stem
+Plant functional type (PFT),0,974,whole_plant
+Plant growth form,18339,2721,whole_plant
+Plant height of lowest branch,0,8,whole_plant
+Plant height vegetative,17477,1357,stem
+Plant life form (Raunkiaer life form),2142,949,whole_plant
+Plant lifespan (longevity),16888,634,whole_plant
+Plant morphological adaptations: root metamorphoses,0,94,root
+Plant morphological adaptations: storage organs,0,296,whole_plant
+Plant nitrogen(N) fixation capacity,2396,319,whole_plant
+Plant palatability,0,280,whole_plant
+Plant reproductive phenology timing,0,294,reproductive
+Plant resprouting capacity,148,385,whole_plant
+Plant secondary compounds,0,267,whole_plant
+Plant vegetative phenology (leaf phenology),0,274,leaf
+Plant vegetative regeneration capacity,1727,80,whole_plant
+Plant vegetative reproduction: clonal growth organ,0,63,reproductive
+Plant vegetative reproduction: clonal growth organ; Plant vegetative regeneration capacity,3750,0,reproductive
+Plant woodiness,9494,2277,stem
+Pollination syndrome,1960,296,reproductive
+Root carbon (C) content per root dry mass,15,0,root
+Root carbon (C) isotope signature (delta 13C),15,0,root
+Root diameter,71,0,root
+Root dry mass per ground area,0,2,root
+Root dry mass per root fresh mass (root dry matter content; RDMC),96,0,root
+Root dry mass to leaf dry mass ratio,0,1,root
+Root dry mass turnover rate,0,1,root
+Root evenness of dry mass vertical distribution,75,0,root
+Root growth: root carbon (C) production per ground area and time,0,1,root
+Root growth: root dry mass production per ground area per year,0,1,root
+Root length density (RLD): root length per ground area,0,1,root
+"Root length per root dry mass (specific root length, SRL)",66,1,root
+Root length per soil volume,0,1,root
+Root necromass (dead dry mass) per ground area for specified soil depth increment,0,1,root
+Root necromass to biomass ratio,0,1,root
+Root nitrogen (N) content per root dry mass,15,0,root
+Root nitrogen (N) isotope signature (delta 15N),15,0,root
+Root root hair length,0,15,root
+Root rooting depth,0,311,root
+Root starch content per dry mass,2,0,root
+Root sugar content per root dry mass,2,0,root
+Root surface area per root dry mass (specific root area),75,0,root
+Root tissue density (root dry mass per root volume),99,0,root
+Root/shoot ratio,83,0,root
+Seed (seedbank) longevity,0,103,reproductive
+Seed dry mass,9920,1438,reproductive
+Seed germination rate (germination efficiency),2443,0,reproductive
+Seed germination requirement,0,110,reproductive
+Seed germination stimulation,1116,0,reproductive
+Seed length,7688,0,reproductive
+Seed mucilaginous,0,296,reproductive
+Seed nitrogen (N) content per dry mass (or diaspore),40,0,reproductive
+Seed oil content per seed mass,230,0,reproductive
+Seed phosphorus (P) content per dry mass (or diaspore),44,0,reproductive
+Seed protein content per seed mass,85,0,reproductive
+Seed shape,2713,0,reproductive
+Seed viability,65,0,reproductive
+Seed volume,511,0,reproductive
+Seed width,5197,0,reproductive
+Seedbank type,2011,99,reproductive
+"Shoot emergences (pubescence, hairs, spines, thorns)",291,296,leaf
+Species genotype: chromosome cDNA content,0,678,whole_plant
+Species genotype: chromosome number,0,451,whole_plant
+Species genotype: chromosome ploidy,0,415,whole_plant
+Species genotype: genome size,975,0,whole_plant
+Species occurrence range: climate type,0,340,whole_plant
+Species occurrence range: invasiveness,0,138,whole_plant
+Species occurrence range: native vs invasive,0,325,whole_plant
+Species tolerance to drought,0,281,whole_plant
+Species tolerance to fire,0,207,whole_plant
+Species tolerance to fire; Plant resprouting capacity,3944,0,whole_plant
+Species tolerance to salt,276,0,whole_plant
+Species tolerance to salt; Species tolerance to drought,292,0,whole_plant
+Stem calcium (Ca) content per stem dry mass,13,0,stem
+Stem carbon (C) content per stem dry mass,58,0,stem
+Stem conduit density (vessels and tracheids),0,20,stem
+"Stem conduit diameter (vessels, tracheids)",0,26,stem
+Stem conduit length,0,5,stem
+Stem conduit lumen cross-sectional area (vessels and tracheids) per stem sapwood cross-sectional are,161,0,stem
+Stem construction type,0,276,stem
+Stem diameter,395,313,stem
+"Stem dry mass per stem fresh mass (stem dry matter content, StDMC)",53,0,stem
+Stem magnesium (Mg) content per stem dry mass,13,0,stem
+Stem nitrogen (N) content per stem dry mass,22,0,stem
+Stem phosphorus (P) content per stem dry mass,42,0,stem
+Stem potassium (K) content per stem dry mass,13,0,stem
+Stem respiration rate per stem dry mass,4,0,stem
+Stem respiration rate per stem surface area,0,4,stem
+Stem respiration rate per stem volume,0,2,stem
+Stem respiration temperature dependence,0,4,stem
+Stem sapwood cross-sectional area per supported leaf surface area (Huber value),297,42,stem
+Stem specific density (SSD) or wood density (stem dry mass per stem fresh volume),1899,44,stem
+Stomata conductance per leaf area,458,311,leaf
+Stomata conductance per leaf dry mass,0,229,leaf
+Stomata density,63,31,leaf
+Stomata distribution to ab- and adaxial leaf surfaces,72,0,leaf
+Twig length,33,0,stem
+Wood (sapwood) cross-sectional fraction of axial parenchyma area,103,0,stem
+Wood (sapwood) cross-sectional fraction of fibre area,103,0,stem
+Wood (sapwood) cross-sectional fraction of Vessel (conduit) area,32,0,stem
+Wood (sapwood) cross-sectional fraction of wod ray area,103,0,stem
+Wood (sapwood) specific conductivity (stem specific conductivity),175,153,stem
+Wood (sapwood) water content,61,0,stem
+Wood axial parenchyma types,0,1,stem
+Wood cambium type (cambial variant),0,1,stem
+Wood carbon (C) isotope signature (delta 13C),35,0,stem
+Wood conduit pit fraction,0,4,stem
+Wood crystal types,0,1,stem
+Wood fiber cell wall thickness,0,1,stem
+Wood fiber-pits types,0,1,stem
+Wood fibre types,0,56,stem
+Wood growth ring distinction,0,71,stem
+"Wood mechanical property: flexual stiffness, elasticity, rupture",525,0,leaf
+Wood nitrogen (N) content per wood dry mass,68,0,stem
+Wood nitrogen (N) isotope signature (delta 15N),35,0,stem
+Wood outer pit aperture diameter,0,3,stem
+Wood outer pit aperture diameter / interconduit pit size,0,3,stem
+Wood ray types,0,1,stem
+Wood total interconduit pit (membrane) surface area,0,9,stem
+Wood vessel cell-wall thickness,0,1,stem
+Wood vessel density,0,1,stem
+Wood vessel density; Branch vessel density,148,0,stem
+Wood vessel diameter,0,1,stem
+Wood vessel diameter; Branch vessel diameter,171,0,stem
+Wood vessel grouping,0,51,stem
+Wood vessel perforation plates,0,76,stem
+Wood vessel pits characteristics (vestured pits),0,7,stem
+Wood vessels surrounded by tracheids (vasicentric tracheids),0,33,stem
+Wood vestures presence,0,59,stem
+Wood xylem torus diameter,0,2,stem
+Wood xylem torus diameter per outer pit apertuer diameter,0,1,stem
+"Xylem hydraulic vulnerability, xylem cavitation vulnerability, embolism vulnerability, (P20, P50, P8",20,72,leaf
+NA,41315,0,reproductive

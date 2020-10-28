@@ -9,9 +9,9 @@ if (!file.exists(filename))
   download.file("htpp:....", filename)
 
 # Read bioclim data using raster package
-au_map <- raster(filename) %>%
+au_map <- raster::raster(filename) %>%
   # aggregate(fact=6) %>%
-  as.data.frame(xy = T)
+  raster::as.data.frame(xy = T)
 
 
 #### 02 Plot AU basemap ####

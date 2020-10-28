@@ -4,7 +4,7 @@
 ## add austraits and read the lookup table
 austraits <- readRDS("data/austraits_2.0.0.rds")
 #tree<-readRDS("data/AusTraits_phylogenies.rds") 
-trait_category_lookup<-read_csv("data/traits_filled_in.csv") %>% 
+trait_category_lookup<-read_csv("data/trait_categories.csv") %>% 
   dplyr::select(trait_name, tissue, category)
 
 
@@ -15,11 +15,12 @@ n_species_tree <- 2000
 ## generate list of species from austraits (or sample 2000 species)
 set.seed(10)
 austraits$taxa %>% 
-  select(taxon_name, genus, family) %>% 
+  dplyr::select(taxon_name, genus, family) %>% 
   filter(!is.na(family))%>% 
   mutate(taxon_name = gsub(" ", "_", taxon_name)) %>% 
   sample_n(n_species_tree) -> austraits_sp_list_sampled
 
+## Can we use ape::drop.tip instead?
 
 # Build a tree using V.PhyloMaker (probably in a newick format)
 tree <- phylo.maker(sp.list = austraits_sp_list_sampled,

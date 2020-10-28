@@ -1,24 +1,24 @@
 ## Austraits: Precipitation–temperature space plot
 #### 01 Get climate data for Australia ####
 # Download bioclim data using library (raster)
-bioclim <- getData("worldclim", var = "bio", res = 10)
+bioclim <- raster::getData("worldclim", var = "bio", res = 10)
 # Pick BIO1 (Mean Annual Temperature; T) and BIO12 (Annual Precipitation; P)
 bioclim <- bioclim[[c(1, 12)]]
 names(bioclim) <- c("Temp", "Prec")
 
 #### 02 Get the climate data for Australia ####
 # Load Australia landmass binary map
-au_map <- raster("data/australia.tif")
+au_map <- raster::raster("data/australia.tif")
 # Clip bioclim data with the au map
 ## crop and mask
-bioclim_au <- crop(bioclim, extent(au_map)) #%>% mask(.,au_map)
+bioclim_au <- raster::crop(bioclim, raster::extent(au_map)) #%>% mask(.,au_map)
 new.bioclim <-
-  projectRaster(bioclim_au, au_map) # harmonize the spatial extent and projection
+  raster::projectRaster(bioclim_au, au_map) # harmonize the spatial extent and projection
 au_bioclim <- raster::mask(new.bioclim, au_map)
 
 # Transform raster data into a tibble
 au_bioclim_table <- au_bioclim %>%
-  as.data.frame() %>%
+  raster::as.data.frame() %>%
   na.omit() %>%
   as_tibble %>%
   mutate(region = as.factor("Australia"))

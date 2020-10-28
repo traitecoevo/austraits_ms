@@ -50,7 +50,7 @@ ci_at_Asat,leaf,physiological,,21,internal CO2 concentration during Asat measure
 ci_over_ca,leaf,physiological,,22,Ratio of internal to external CO2 concentrations,Leaf photosynthesis: intercellular CO2 concentration to ambient CO2 (ci/ca),3379,,NA,NA,NA,numeric,umolCO2/umolCO2
 cotyledon_position,leaf,morphological,,NA,NA,NA,,,NA,NA,NA,NA,NA
 cotyledon_type,leaf,morphological,,NA,NA,NA,,,NA,NA,NA,NA,NA
-dead_wood_Ca_per_dry_mass,stem,nutrient,,NA,NA,"Litter (other than leaf: twigs, bark, flowers…) calcium (Ca) content per litter dry mass",2892,,NA,NA,NA,NA,NA
+dead_wood_Ca_per_dry_mass,stem,nutrient,,NA,NA,"Litter (other than leaf: twigs, bark, flowers...) calcium (Ca) content per litter dry mass",2892,,NA,NA,NA,NA,NA
 dead_wood_K_per_dry_mass,stem,nutrient,,NA,NA,"Litter (other than leaf: twigs, bark, flowers...) potassium (K) content per litter dry mass",2891,,NA,NA,NA,NA,NA
 dead_wood_Mg_per_dry_mass,stem,nutrient,,NA,NA,"Litter (other than leaf: twigs, bark, flowers...) magnesium (Mg) content per litter dry mass",2893,,NA,NA,NA,NA,NA
 dead_wood_N_per_dry_mass,stem,nutrient,,NA,NA,Litter twig nitrogen (N) content per twig dry mass,1199,,NA,NA,NA,NA,NA
