@@ -37,7 +37,9 @@ Depends:
     V.PhyloMaker,
     tibble,
     dplyr,
-    stringi
+    tidyr,
+    stringi,
+    kableExtra
 Imports:
     raster
 remotes:

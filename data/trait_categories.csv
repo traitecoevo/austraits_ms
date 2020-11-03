@@ -347,3 +347,17 @@ wood_P_per_dry_mass,stem,nutrient,,NA,NA,Stem phosphorus (P) content per stem dr
 wood_ray_fraction,stem,morphological,cellular_scale,NA,NA,Wood (sapwood) cross-sectional fraction of wod ray area,3020,,NA,NA,NA,NA,NA
 wood_tracheid_fraction,stem,morphological,cellular_scale,NA,NA,NA,,,NA,NA,NA,NA,NA
 woodiness,stem,morphological,,214,A plant's degree of lignification in stems,Plant woodiness,38,,whole plant woodiness,TOP706,http://top-thesaurus.org/annotationInfo?viz=1&&trait=Woodiness,categorical,NA
+competitive_stratum,whole_plant,life_history,,,,,,,,,,,
+flood_regime_classification,whole_plant,life_history,,,,,,,,,,,
+guard_cell_length,leaf,morphological,,,,,,,,,,,
+hydraulic_safety_margin_50,stem,physiological,,,,,,,,,,,
+leaf_transpiration,leaf,physiological,,,,,,,,,,,
+leaf_work_to_tear,leaf,physiological,,,,,,,,,,,
+leaf_work_to_tear_adjusted,leaf,physiological,,,,,,,,,,,
+ploidy,reproductive,life_history,,,,,,,,,,,
+stomatal_distribution,leaf,morphological,,,,,,,,,,,
+time_from_fire_to_fruit,whole_plant,life_history,,,,,,,,,,,
+vessel_density_leaves,leaf,morphological,,,,,,,,,,,
+vessel_diameter_leaves,leaf,morphological,,,,,,,,,,,
+water_potential_50percent_lost_conductivity,stem,physiological,,,,,,,,,,,
+water_potential_88percent_lost_conductivity,stem,physiological,,,,,,,,,,,
