@@ -2,13 +2,14 @@
 
 devtools::load_all()
 
+load_data()
+
 source("R/plotting_functions.R") # Load required packages and functions
 
 
 #### Figure 2: geographical and biome map####
 source("scripts/fig_site_locations.R") # A
 source("scripts/fig_climate_space_austraits.R") # B
-
 
 pdf("figures/austraits_fig_biome_map.pdf",
     height = 12,

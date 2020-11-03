@@ -1,11 +1,11 @@
 ## 1 Build a phylogenetic tree from the list of species in AusTraits
 
-##### 1 Read data #####
-## add austraits and read the lookup table
-austraits <- readRDS("data/austraits_2.0.0.rds")
-#tree<-readRDS("data/AusTraits_phylogenies.rds") 
-trait_category_lookup<-read_csv("data/trait_categories.csv") %>% 
-  dplyr::select(trait_name, tissue, category)
+# ##### 1 Read data #####
+# ## add austraits and read the lookup table
+# austraits <- readRDS("data/austraits_2.0.0.rds")
+# #tree<-readRDS("data/AusTraits_phylogenies.rds") 
+# trait_category_lookup<-read_csv("data/trait_categories.csv") %>% 
+#   dplyr::select(trait_name, tissue, category)
 
 
 ##### 2 Build a phylogenetic tree ####
@@ -58,4 +58,3 @@ colnames(austraits_summary)<-c( "Root", # Root Traits
                                     "Leaf" # Leaf Traits
                                    ) 
 
-rm(austraits)

@@ -18,6 +18,7 @@ Depends:
     rlang,
     rmarkdown,
     knitr,
+    devtools,
     rprojroot,
     ggplot2 (>= 3.3.2),
     ggExtra,
@@ -36,9 +37,12 @@ Depends:
     RefManageR,
     V.PhyloMaker,
     tibble,
+    readr,
     dplyr,
     tidyr,
+    purrr,
     stringi,
+    stringr,
     kableExtra
 Imports:
     raster
