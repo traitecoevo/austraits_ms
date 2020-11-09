@@ -6,7 +6,7 @@
 # color by tissue
 p_aus_try <-
   aus_try_comparison %>% 
-  mutate_at(c("n_austraits", "n_try"), ~.x/28000*100) %>% 
+  mutate_at(c("n_austraits", "n_try"), ~.x/26000*100) %>% 
   ggplot(aes(y = n_austraits, x = n_try, color = tissue)) +
   geom_point(alpha = 0.5, size = 2) +
   geom_abline(intercept = 4, slope =1, alpha = 0.2) +

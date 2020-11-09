@@ -43,7 +43,7 @@ austraits$traits %>%
   mutate(taxon_name = gsub(" ", "_", taxon_name)) %>% 
   filter(taxon_name %in% tree$species.list$species) %>% 
   spread(key=tissue,value=n) %>%
-  select(taxon_name, root, whole_plant, stem, reproductive, leaf) %>% 
+  select(taxon_name, root, `whole plant`, stem, reproductive, leaf) %>% 
   #mutate_if(is.integer, as.logical)%>% 
   #mutate_if(as.integer) %>% 
   as.data.frame() -> austraits_summary
@@ -52,7 +52,7 @@ austraits$traits %>%
 row.names(austraits_summary)<-austraits_summary$taxon_name
 austraits_summary$taxon_name<-NULL
 colnames(austraits_summary)<-c( "Root", # Root Traits
-                                    "Plant", # whole_plant traits
+                                    "Plant", # whole plant traits
                                     "Stem", # Stem Traits
                                     "Reprod.", # Reproductive traits
                                     "Leaf" # Leaf Traits

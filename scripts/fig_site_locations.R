@@ -45,6 +45,7 @@ austraits_site_locations_by_tissue_fig_2 <-
   produce_site_map("latitude (deg)", "longitude (deg)", feature = "tissue") +
   theme(
     legend.position = "bottom",
+    legend.title = element_blank(),
     strip.background = element_blank(),
     strip.text.x = element_text(size = 12),
     legend.key.height = unit(0.5, "cm"),

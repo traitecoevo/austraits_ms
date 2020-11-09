@@ -44,9 +44,9 @@ Coarse woody debris (CWD) stem: protein content per stem CWD,stem
 Coarse woody debris (CWD) stem: rot type,stem
 Coarse woody debris (CWD) stem: wood fraction,stem
 Coarse woody debris (CWD): density,stem
-Crown (canopy) height (base to top),whole_plant
-Crown (canopy) length: diameter along the longest axis,whole_plant
-Crown (canopy) width,whole_plant
+Crown (canopy) height (base to top),whole plant
+Crown (canopy) length: diameter along the longest axis,whole plant
+Crown (canopy) width,whole plant
 Dispersal syndrome,reproductive
 Dispersal unit dry mass,reproductive
 Dispersal unit type,reproductive
@@ -189,7 +189,7 @@ Leaf photosynthesis electron transport capacity (Jmax) per leaf area (Farquhar m
 Leaf photosynthesis electron transport capacity (Jmax) per leaf dry mass (Farquhar model),leaf
 Leaf photosynthesis light response curvatur,leaf
 Leaf photosynthesis light use efficiency (LUE),leaf
-Leaf photosynthesis pathway,whole_plant
+Leaf photosynthesis pathway,whole plant
 Leaf photosynthesis rate per leaf area,leaf
 Leaf photosynthesis rate per leaf dry mass,leaf
 "Leaf photosynthesis rate per leaf nitrogen (N) content (photosynthetic nitrogen use efficiency, PNUE",leaf
@@ -247,18 +247,18 @@ Litter (leaf) protein content per leaf litter dry mass,leaf
 Litter (leaf) sulfur (S) content per leaf litter dry mass,leaf
 Litter (leaf) zinc (Zn) content per leaf litter dry mass,leaf
 "Litter (other than leaf: twigs, bark, flowers...) calcium (Ca) content per litter dry mass",stem
-"Litter (other than leaf: twigs, bark, flowers...) decomposition rate",whole_plant
-"Litter (other than leaf: twigs, bark, flowers...) decomposition rate constant",whole_plant
-"Litter (other than leaf: twigs, bark, flowers...) density",whole_plant
-"Litter (other than leaf: twigs, bark, flowers...) lignin content per litter dry mass",whole_plant
+"Litter (other than leaf: twigs, bark, flowers...) decomposition rate",whole plant
+"Litter (other than leaf: twigs, bark, flowers...) decomposition rate constant",whole plant
+"Litter (other than leaf: twigs, bark, flowers...) density",whole plant
+"Litter (other than leaf: twigs, bark, flowers...) lignin content per litter dry mass",whole plant
 "Litter (other than leaf: twigs, bark, flowers...) magnesium (Mg) content per litter dry mass",stem
-"Litter (other than leaf: twigs, bark, flowers...) phenols content per litter dry mass",whole_plant
+"Litter (other than leaf: twigs, bark, flowers...) phenols content per litter dry mass",whole plant
 "Litter (other than leaf: twigs, bark, flowers...) potassium (K) content per litter dry mass",stem
-"Litter (other than leaf: twigs, bark, flowers...) protein content per litter dry mass",whole_plant
+"Litter (other than leaf: twigs, bark, flowers...) protein content per litter dry mass",whole plant
 "Litter (other than leaf: twigs, bark, flowers...) sodium (Na) content per litter dry mass",stem
-"Litter (other than leaf: twigs, bark, flowers…) cellulose content per litter dry mass",whole_plant
+"Litter (other than leaf: twigs, bark, flowers…) cellulose content per litter dry mass",whole plant
 Litter cellulose content per litter dry mass,leaf
-Litter decomposition rate,whole_plant
+Litter decomposition rate,whole plant
 Litter lignin content per litter dry mass,leaf
 Litter nitrogen (N) content per litter dry mass,leaf
 Litter other than leaf phosphorus (P) content per litter dry mass,stem
@@ -278,8 +278,8 @@ Plant biomass and allometry: Branch mass per plant,stem
 Plant biomass and allometry: Coarse root dry mass per plant,root
 Plant biomass and allometry: Coarse root mass fraction (fraction of coarse root dry mass per whole p,root
 Plant biomass and allometry: Coarse root mass per plant,root
-Plant biomass and allometry: Crown (canopy) area per plant,whole_plant
-Plant biomass and allometry: Crown (canopy) area: projected as seen from above,whole_plant
+Plant biomass and allometry: Crown (canopy) area per plant,whole plant
+Plant biomass and allometry: Crown (canopy) area: projected as seen from above,whole plant
 Plant biomass and allometry: Fine root dry mass per plant,root
 Plant biomass and allometry: Fine root length per plant,root
 Plant biomass and allometry: Fine root mass fraction (fraction of fine root dry mass to whole plant,root
@@ -287,7 +287,7 @@ Plant biomass and allometry: Fine root mass per plant,root
 Plant biomass and allometry: Leaf dry mass per plant,leaf
 "Plant biomass and allometry: Leaf dry mass per plant dry mass (leaf weight ratio, LWR)",leaf
 Plant biomass and allometry: Leaf mass (dry or fresh) per plant,leaf
-Plant biomass and allometry: Plant mass,whole_plant
+Plant biomass and allometry: Plant mass,whole plant
 Plant biomass and allometry: Reproductive dry mass per plant dry mass (reproductive weight fraction),reproductive
 Plant biomass and allometry: Root dry mass per plant,root
 Plant biomass and allometry: Root mass fraction (fraction of root dry mass per whole plant dry mass),root
@@ -299,29 +299,29 @@ Plant biomass and allometry: Stem cross-sectional area at base of the plant,stem
 Plant biomass and allometry: Stem cross-sectional area at breast height,stem
 Plant biomass and allometry: Stem dry mass per plant dry mass per plant,stem
 Plant biomass and allometry: Stem mass (including branches) per plant,stem
-"Plant biomass and allometry: Supportive structure (stem, twig, leaf petiole, leaf sheeth) dry mass p",whole_plant
-Plant biomass and allometry: Whole plant aboveground mass,whole_plant
+"Plant biomass and allometry: Supportive structure (stem, twig, leaf petiole, leaf sheeth) dry mass p",whole plant
+Plant biomass and allometry: Whole plant aboveground mass,whole plant
 Plant biomass and allometry: Wood (heartwood) cross-sectional area at base,stem
 Plant biomass and allometry: Wood (heartwood) cross-sectional area at base of crown,stem
 Plant biomass and allometry: Wood (heartwood) cross-sectional area at breast height,stem
 Plant biomass and allometry: Wood (sapwood) cross-sectional area at base,stem
 Plant biomass and allometry: Wood (sapwood) cross-sectional area at base of crown,stem
 Plant biomass and allometry: Wood (sapwood) cross-sectional area at breast height,stem
-Plant functional type (PFT),whole_plant
-Plant growth form,whole_plant
-Plant height of lowest branch,whole_plant
+Plant functional type (PFT),whole plant
+Plant growth form,whole plant
+Plant height of lowest branch,whole plant
 Plant height vegetative,stem
-Plant life form (Raunkiaer life form),whole_plant
-Plant lifespan (longevity),whole_plant
+Plant life form (Raunkiaer life form),whole plant
+Plant lifespan (longevity),whole plant
 Plant morphological adaptations: root metamorphoses,root
-Plant morphological adaptations: storage organs,whole_plant
-Plant nitrogen(N) fixation capacity,whole_plant
-Plant palatability,whole_plant
+Plant morphological adaptations: storage organs,whole plant
+Plant nitrogen(N) fixation capacity,whole plant
+Plant palatability,whole plant
 Plant reproductive phenology timing,reproductive
-Plant resprouting capacity,whole_plant
-Plant secondary compounds,whole_plant
+Plant resprouting capacity,whole plant
+Plant secondary compounds,whole plant
 Plant vegetative phenology (leaf phenology),leaf
-Plant vegetative regeneration capacity,whole_plant
+Plant vegetative regeneration capacity,whole plant
 Plant vegetative reproduction: clonal growth organ,reproductive
 Plant vegetative reproduction: clonal growth organ; Plant vegetative regeneration capacity,reproductive
 Plant woodiness,stem
@@ -367,18 +367,18 @@ Seed volume,reproductive
 Seed width,reproductive
 Seedbank type,reproductive
 "Shoot emergences (pubescence, hairs, spines, thorns)",leaf
-Species genotype: chromosome cDNA content,whole_plant
-Species genotype: chromosome number,whole_plant
-Species genotype: chromosome ploidy,whole_plant
-Species genotype: genome size,whole_plant
-Species occurrence range: climate type,whole_plant
-Species occurrence range: invasiveness,whole_plant
-Species occurrence range: native vs invasive,whole_plant
-Species tolerance to drought,whole_plant
-Species tolerance to fire,whole_plant
-Species tolerance to fire; Plant resprouting capacity,whole_plant
-Species tolerance to salt,whole_plant
-Species tolerance to salt; Species tolerance to drought,whole_plant
+Species genotype: chromosome cDNA content,whole plant
+Species genotype: chromosome number,whole plant
+Species genotype: chromosome ploidy,whole plant
+Species genotype: genome size,whole plant
+Species occurrence range: climate type,whole plant
+Species occurrence range: invasiveness,whole plant
+Species occurrence range: native vs invasive,whole plant
+Species tolerance to drought,whole plant
+Species tolerance to fire,whole plant
+Species tolerance to fire; Plant resprouting capacity,whole plant
+Species tolerance to salt,whole plant
+Species tolerance to salt; Species tolerance to drought,whole plant
 Stem calcium (Ca) content per stem dry mass,stem
 Stem carbon (C) content per stem dry mass,stem
 Stem conduit density (vessels and tracheids),stem
@@ -438,4 +438,3 @@ Wood vestures presence,stem
 Wood xylem torus diameter,stem
 Wood xylem torus diameter per outer pit apertuer diameter,stem
 "Xylem hydraulic vulnerability, xylem cavitation vulnerability, embolism vulnerability, (P20, P50, P8",leaf
-NA,reproductive

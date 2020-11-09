@@ -59,14 +59,14 @@ txt_wrap <- function(txt, n=22) {
   
   g <- function(txt) {
     ifelse(str_length(txt) < n, -1L, 
-           str_locate_all(txt,"_") %>% purrr::map_dbl(~.x %>% .[,"start"] %>% subset(., .<= n) %>% max(., -1L)) 
+           str_locate_all(txt,"_") %>% purrr::map_dbl(~.x %>% .[,"start"] %>% subset(., .< n) %>% max(., -1L)) 
     )
   }
   
   i <- g(txt)
-  txt2 <- ifelse(str_length(txt) > n , str_sub(txt, i+1), "")
+  txt2 <- ifelse(str_length(txt) >= n , str_sub(txt, i+1), "")
   ii <- g(txt2)
-  txt3 <- ifelse(str_length(txt2) > n , str_sub(txt2, ii+1), "")
+  txt3 <- ifelse(str_length(txt2) >= n , str_sub(txt2, ii+1), "")
   
   paste(str_sub(txt, 1, i), f(txt2, ii), f(txt3))
 }

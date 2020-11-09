@@ -24,7 +24,6 @@ au_bioclim_table <- au_bioclim %>%
   mutate(region = as.factor("Australia"))
 
 #### 03 Extract geographic coordinates of AusTraits' sites#
-source("R/get_sites.R")
 
 # Get climate values for each site
 au_sites_clim <- sites %>% rowid_to_column("ID") %>%
@@ -76,7 +75,7 @@ austraits_climate_space <- ggplot() +
   theme_classic() +
   guides(colour = guide_legend(override.aes = list(alpha = 1, size = 2))) +
   xlab(expression(Temperature (degree * C))) +
-  ylab(" Precipitation (cm)") +
+  ylab(" Precipitation (cm/yr)") +
   theme(text = element_text(size = 12))  +
   theme(
     legend.justification = c(-0.1, 0),
