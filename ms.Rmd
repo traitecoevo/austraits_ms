@@ -12,7 +12,6 @@ output:
 biblio-style: naturemag
 header-includes:
 - \usepackage{inputenc}
-#- \usepackage[T1]{fontenc}
 - \usepackage{float}
 - \usepackage{fontspec}
 - \usepackage{unicode-math}
@@ -29,6 +28,7 @@ header-includes:
 - \usepackage[normalem]{ulem}
 - \usepackage{makecell}
 - \usepackage{xcolor}
+- \usepackage[square,sort,comma,numbers]{natbib}
 bibliography: [data/references.bib]
 
 ---
