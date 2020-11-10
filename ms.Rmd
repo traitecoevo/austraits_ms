@@ -200,7 +200,7 @@ This document provides information on the structure of AusTraits and corresponds
 
 \clearpage 
 
-![Coverage of georeferenced trait records across Australian climatic and geographic space for traits in different categories. (a.) AusTraits’ sites (orange) within Australia’s precipitation-temperature space (dark-grey) superimposed upon Whittaker’s major biomes diagram. Climate data were extracted from Worldclim \citep{Fick-2017}.(B.) Locations of geo-referenced records for different plant tissues. ](figures/austraits_fig_biome_map.pdf)
+![Coverage of georeferenced trait records across Australian climatic and geographic space for traits in different categories. (a.) AusTraits’ sites (orange) within Australia’s precipitation-temperature space (dark-grey) superimposed upon Whittaker’s major biomes diagram. Climate data were extracted from Worldclim \citep{Fick-2017}.(B.) Locations of geo-referenced records for different plant tissues. ](figures/austraits_fig_biome_map.png)
 
 
 \clearpage 

@@ -17,7 +17,7 @@ austraits_composition_georef <-
   scale_y_log10(
     breaks = trans_breaks("log10", function(x)
       10 ^ x),
-    limits = c(1, 20000),
+    limits = c(1, 100000),
     labels = trans_format("log10", math_format(10 ^ .x))
   ) +
   xlab("") + ylab("Species (n)") +
@@ -41,7 +41,7 @@ austraits_composition_non_georef <-
   scale_y_log10(
     breaks = trans_breaks("log10", function(x)
       10 ^ x),
-    limits = c(1, 20000),
+    limits = c(1, 100000),
     labels = trans_format("log10", math_format(10 ^ .x))
   ) +
   xlab("Major plant part") + ylab("Species (n)") +

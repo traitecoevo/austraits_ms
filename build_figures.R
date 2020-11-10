@@ -17,6 +17,12 @@ pdf("figures/austraits_fig_biome_map.pdf",
 austraits_climate_space / austraits_site_locations_by_tissue_fig_2 +  plot_annotation(tag_levels = 'A')
 dev.off()
 
+png("figures/austraits_fig_biome_map.png",
+    height = 12,
+    width = 8, units="in", res=300)
+austraits_climate_space / austraits_site_locations_by_tissue_fig_2 +  plot_annotation(tag_levels = 'A')
+dev.off()
+
 #### Figure 3: trait composition count ####
 
 source("scripts/fig_trait_composition.R")
@@ -33,7 +39,7 @@ source("scripts/fig_link_tree_and_trait_count_matrix.R") # C
 
 
 pdf(
-  "figures/austraits_fig_austraits_phylogenetic_coverage.pdf",
+  "figures/austraits_fig_austraits_phylogenetic_coverage1.pdf",
   height = 12,
   width = 12
 )
@@ -45,8 +51,8 @@ dev.off()
 source("scripts/fig_comparison_TRY.R") 
  
 pdf( "figures/austraits_fig_austraits_try_comparison.pdf",
-     height = 6,
-     width = 5)
+     height = 4,
+     width = 4)
 p_aus_try
 dev.off()
 

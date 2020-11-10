@@ -2,7 +2,7 @@
 load_data <- function() {
   
   if(!exists("austraits", envir = .GlobalEnv )) {
-    austraits <- readRDS("data/austraits_2.0.0.rds")
+    austraits <- readRDS("data/austraits_2.1.0.rds")
     assign("austraits", austraits, envir = .GlobalEnv)
   }
   
@@ -120,22 +120,16 @@ load_data <- function() {
   aus_try_comparison <- 
     trait_category_lookup %>% 
     select(trait_name, `TRY name`, tissue) %>%
+    mutate(`TRY name` = ifelse(duplicated(`TRY name`), NA, `TRY name`)) %>%
     full_join(by = "trait_name",
       austraits$traits %>%
       group_by(trait_name) %>%
-      summarise(n_austraits = n_distinct(taxon_name))
+      summarise(n_austraits = n_distinct(taxon_name)) 
               ) %>%
     full_join(try_by_sp, by = c("TRY name" = "Trait")) %>%
     mutate_if(is.numeric, ~ replace_na(., 0)) %>%
-    mutate(tissue = ifelse(is.na(trait_name),`TRY tissue`, tissue)) %>%
-    group_by(`TRY name`) %>% 
-    summarise(
-      trait_name = trait_name[1],
-      n_austraits = sum(n_austraits), 
-      n_try = n_try[1],
-      tissue = subset(tissue, !is.na(tissue))[1]
-    ) %>% ungroup()
-  
+    mutate(tissue = ifelse(is.na(trait_name),`TRY tissue`, tissue))
+
   assign("aus_try_comparison", aus_try_comparison, envir = .GlobalEnv)
     
 }

@@ -15,7 +15,7 @@ list1_to_df <- function(my_list) {
 ## Separate into groups of max size n. 
 ## This is needed for latex table, overwise citations
 ## spill off the page
-format_cites_n <- function(x, n = 6){
+format_cites_n <- function(x, n = 5){
   
   # Make sorted vector of all unique refs
   x2 <- str_split(x, ", ") %>% unlist() %>% sort()

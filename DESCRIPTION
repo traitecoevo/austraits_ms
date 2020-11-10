@@ -31,11 +31,7 @@ Depends:
     hexbin,
     viridis,
     plotbiomes,
-    ape,
-    phytools,
-    treeio,
     RefManageR,
-    V.PhyloMaker,
     tibble,
     readr,
     dplyr,
@@ -45,7 +41,11 @@ Depends:
     stringr,
     kableExtra
 Imports:
-    raster
+    raster,
+    ape,
+    phytools,
+    treeio,
+    V.PhyloMaker,
 remotes:
     github::valentinitnelav/plotbiomes,
     github::jinyizju/V.PhyloMaker,
