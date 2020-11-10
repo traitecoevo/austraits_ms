@@ -59,46 +59,9 @@ c(
 ```
 
 ```{r authors}
-authors_lead <- read_csv("data/lead_authors.csv", col_types = cols(.default = "c"))
-
-# check list of acknowledgments and assistants
-
-data_contributors <- 
-  austraits$contributors %>% 
-    mutate(name = gsub("Richard Duncan", "Richard P. Duncan", name, fixed=TRUE)) %>%
-    mutate(
-      acknowledge = ifelse(
-          # old studies or excluded
-          dataset_id %in% c("Lawes_2012", "Westman_1977", "Hall_1981", "Hocking_1982", "Hocking_1986", "Toelken_1996", "Brock_1993", "Forster_1992", "Forster_1995", "Goble_1981") |
-           role %in% c("assistant") |
-           # deceased
-           name %in% c("Peter Clarke", "Barbara Rice", "Peter Myerscough", "Lyn Craven", "Harold Trevor Clifford", "William Cooper") |
-            # no response or can't locate
-           name %in% c("Emma Laxton", "Huw Morgan", "Wendy Cooper", "Muhammad Islam", "Michael Lawes"),
-            TRUE, FALSE),
-      year = dataset_id %>% str_split_fixed("_", 4) %>% .[,2]) %>% 
-    arrange(year) %>%
-    # take most recent address for each author
-    group_by(name) %>% 
-    summarise(institution = last(institution),
-              dataset_ids = paste(dataset_id, collapse = ", "),
-              acknowledge = all(acknowledge)) %>% 
-    ungroup() %>% 
-    distinct() %>% 
-    mutate(surname = str_split(name, " ") %>% map_chr(last)) %>% 
-    rename(affiliation = institution) %>%
-    arrange(surname) %>% 
-    select(-surname)
-
-authors <- bind_rows(authors_lead, 
-                     data_contributors %>% filter(! (name %in% authors_lead$name), !acknowledge)
-                    )
-
-acknowledge <- data_contributors %>% filter(! (name %in% authors$name), acknowledge)
-
-authors %>% select(dataset_ids, everything()) %>% mutate_all(~ replace_na(.x, "")) %>% write_csv("data/author_list.csv")
-
-# Update author info from google sheets
+data_contributors <- read_csv("data/author_list.csv")
+authors <- data_contributors %>% filter(!acknowledge)
+acknowledge <- data_contributors %>% filter(acknowledge)
 
 affils <- tibble(affiliation=unique(authors$affiliation), 
                  label = seq_len(length(affiliation)))
