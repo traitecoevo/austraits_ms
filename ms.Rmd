@@ -84,7 +84,7 @@ sprintf("^%s^ %s", affils$label, affils$affiliation) %>% paste0(collapse = "; ")
 
 ## Abstract
 
-We introduce the AusTraits database - a compilation of measurements of plant traits for taxa in the Australian Flora (hereafter AusTraits). AusTraits synthesises data on `r austraits$traits$trait_name %>% n_distinct()` traits across `r austraits$traits$taxon_name %>% n_distinct()` taxa from field campaigns, published literature, taxonomic monographs, and individual taxa descriptions. Traits
+We introduce the AusTraits database - a compilation of measurements of plant traits for taxa in the Australian flora (hereafter AusTraits). AusTraits synthesises data on `r austraits$traits$trait_name %>% n_distinct()` traits across `r austraits$traits$taxon_name %>% n_distinct()` taxa from field campaigns, published literature, taxonomic monographs, and individual taxa descriptions. Traits
 vary in scope from physiological measures of performance (e.g. photosynthetic gas exchange, water-use efficiency) to morphological
 parameters (e.g. leaf area, seed mass, plant height) which link to aspects of ecological variation. AusTraits contains curated and
 harmonised individual-, species- and genus-level observations coupled to, where available, contextual information on site
@@ -93,9 +93,9 @@ going collaborative initiative for easily archiving and sharing trait data to in
 
 ## Background and Summary
 
-Species traits are essential metrics for comparing ecological strategies in plants arrayed across environmental space or evolutionary lineages \citep{diaz2016global, kunstler2016plant, zanne2014three, cornwell2014functional}. Broadly, a trait is any measurable property of a plant capturing aspects of its structure or function \citep{chapin1993evolution, adler2014functional, diaz1998plant,violle2007let}. Traits thereby provide useful indicators of species behaviours in communities and ecosystems, regardless of their taxonomy \citep{violle2007let, funk2017revisiting}. Through global initiatives the volume of available trait information for plants has grown rapidly in the last two decades \citep{Kattge2011try, Kattge-2020}. However, the geographic coverage of trait observations across the globe is patchy, limiting detailed analyses of trait variation and diversity in some regions. 
+Species traits are essential metrics for comparing ecological strategies in plants arrayed across environmental space or evolutionary lineages \citep{diaz2016global, kunstler2016plant, zanne2014three, cornwell2014functional}. Broadly, a trait is any measurable property of a plant capturing aspects of its structure or function \citep{chapin1993evolution, adler2014functional, diaz1998plant,violle2007let}. Traits thereby provide useful indicators of species' behaviours in communities and ecosystems, regardless of their taxonomy \citep{violle2007let, funk2017revisiting}. Through global initiatives the volume of available trait information for plants has grown rapidly in the last two decades \citep{Kattge2011try, Kattge-2020}. However, the geographic coverage of trait observations across the globe is patchy, limiting detailed analyses of trait variation and diversity in some regions. 
 
-One such region is Australia; a continent with a flora of c. 26,000 native higher-plant species \citep{council2010australian}. While significant investment has been made in curating and digitising herbarium collections and observation records in Australia over the last two decades (e.g. The Australian Virtual Herbarium houses ~7 million specimen occurrence records; https://avh.ala.org.au), no complementary resource yet exists for consolidating information on plant traits. Moreover, relatively few Australian species are represented in the leading global databases. For example, the international TRY database \citep{Kattge-2020} has observations for only 3830 Australian species across all collated traits. This level of species coverage limits our ability to use traits to understand and ultimately manage Australian vegetation \citep{Kissling_2018}. While initiatives such as TRY \citep{Kattge-2020} and the Open Traits Network \citep{Gallagher-2020} are working towards global synthesis of trait data a stronger representation of Australian plant taxa in these efforts is essential given the high richness and endemicity of this continental flora. 
+One such region is Australia; a continent with a flora of c. 26,000 native higher-plant species \citep{apc-2020}. While significant investment has been made in curating and digitising herbarium collections and observation records in Australia over the last two decades (e.g. The Australian Virtual Herbarium houses ~7 million specimen occurrence records; https://avh.ala.org.au), no complementary resource yet exists for consolidating information on plant traits. Moreover, relatively few Australian species are represented in the leading global databases. For example, the international TRY database \citep{Kattge-2020} has observations for only 3830 Australian species across all collated traits. This level of species coverage limits our ability to use traits to understand and ultimately manage Australian vegetation \citep{Kissling_2018}. While initiatives such as TRY \citep{Kattge-2020} and the Open Traits Network \citep{Gallagher-2020} are working towards global synthesis of trait data a stronger representation of Australian plant taxa in these efforts is essential given the high richness and endemicity of this continental flora. 
 
 Here we introduce the AusTraits database (hereafter simply AusTraits),  a compilation of plant traits for the Australian flora. Currently, AusTraits draws together `r austraits$sources %>% length()` primary sources and contains `r austraits$traits %>% nrow()` measurements spread across `r austraits$traits$trait_name %>% n_distinct()` different traits for  `r austraits$traits$taxon_name %>% n_distinct()` taxa. To assemble AusTraits from diverse primary sources and make data available for reuse, we needed to overcome three main types of challenges (Figure 1): 1) Accessing data from diverse original sources, including field studies, online databases, scientific articles, and published taxonomic floras; 2) Harmonising these diverse sources into a federated resource, with common units, trait names, and data formats; and 3) Distributing versions of the data under suitable license. To meet this challenge, we developed a workflow which draws on emerging community standards and our collective experience building trait databases.
 
@@ -131,7 +131,7 @@ We developed a custom workflow to clean and standardise taxonomic names using th
 
 ### Access
 
-As an evolving data product, successive versions of AusTraits are being released, containing updates and corrections. Versions are labeled using semantic versioning to indicate the change between versions \citep{Falster-2019}. Static versions of the AusTraits, including version`r austraits$build_info$version` used in this descriptor, are available on the project website (https://github.com/traitecoevo/austraits) and Zenodo (Data Citation 1). The latest data can also be downloaded directly from the project website. As validation (see Technical Validation, below) and data entry is ongoing, users are recommended to pull data from the static releases, to ensure results in their downstream analyses remain consistent as the database is updated. 
+As an evolving data product, successive versions of AusTraits are being released, containing updates and corrections. Versions are labeled using semantic versioning to indicate the change between versions \citep{Falster-2019}. Static versions of the AusTraits, including version `r austraits$build_info$version` used in this descriptor, are available on the project website (https://github.com/traitecoevo/austraits) and Zenodo \citep{falster_2019}. The latest data can also be downloaded directly from the project website. As validation (see Technical Validation, below) and data entry is ongoing, users are recommended to pull data from the static releases, to ensure results in their downstream analyses remain consistent as the database is updated. 
 
 ### Data coverage
 
@@ -141,7 +141,7 @@ As an evolving data product, successive versions of AusTraits are being released
 
 The number of vascular plants (species, subspecies, varieties and forma) in Australia is  ca. 26,000 \citep{apc-2020}. Version `r austraits$build_info$version` of AusTraits included at least one record for `r austraits$taxa$taxon_name %>% n_distinct()`, or about 80% of taxa. Five traits (leaf_length, leaf_width, plant_height, life_history, plant_growth_form) have records for more than 50% of taxa. Across all traits, the median number of taxa with records is 62. Table 10 shows the number of studies, taxa, and families recording data in AusTraits, as well as the number of geo-referenced records, for each trait. 
 
-There were substantial differences in coverage among different tissues and trait types, also with respect to number of georeferenced points (Figure 2).The most common traits are nongeoreferenced records from floras. Yet, geo-referenced records were available in several traits for more than 10% of the flora (Figure 2a). 
+There were substantial differences in coverage among different tissues and trait types, also with respect to number of geo-referenced points (Figure 2).The most common traits are non geo-referenced records from floras. Yet, geo-referenced records were available in several traits for more than 10% of the flora (Figure 2a). 
 
 We found that trait records were spread across the climate space of Australia (Figure 3a), as well as geographic locations (Figure 3b). As with most data, in Australia, the density of records was somewhat concentrated around cities or roads in remote regions, particularly for leaf traits.  
 
@@ -155,7 +155,7 @@ We implemented three strategies to maintain data quality. First, we conducted a 
 
 Second, we implemented automated tests for each dataset, to confirm that values for continuous traits fall within the accepted range for the trait, and that values for categorical traits are on a list of accepted values maintained by the creators. Data that did not pass these tests is moved to a separate spreadsheet (“excluded_data”) that is also made available for use and reviewed. 
 
-Third, are providing a pathway for user feedback. As AusTraits is a community resource and we encourage engagement from users on maintaining the quality and usability of the dataset. As such, we welcome reporting of possible errors, as well as additions and edits to the online documentation for AusTraits that make using the existing data, or adding new data, easier for the community.
+Third, ww provide a pathway for user feedback. AusTraits is a community resource and we encourage engagement from users on maintaining the quality and usability of the dataset. As such, we welcome reporting of possible errors, as well as additions and edits to the online documentation for AusTraits that make using the existing data, or adding new data, easier for the community. Feedback can be posted as an issue directly at the project website: https://github.com/traitecoevo/austraits.build/issues/new/.
 
 ## Usage Notes
 
@@ -186,7 +186,7 @@ The authors have no conflicts of interest to declare.
 
 AusTraits harmonises data on `r austraits$traits$trait_name %>% unique() %>% length()` traits from `r austraits$methods$dataset_id %>% unique() %>% length()` different sources, including field campaigns, published literature, taxonomic monographs, and individual taxa descriptions.
 
-This document provides information on the structure of AusTraits and corresponds to version `r austraits$definitions$austraits$elements$build_info$elements$version$value` of the dataset. 
+This document provides information on the structure of AusTraits and corresponds to version `r austraits$build_info$version` of the dataset. 
 
 \clearpage 
 
@@ -196,11 +196,11 @@ This document provides information on the structure of AusTraits and corresponds
 
 \clearpage 
 
-![Number of taxa with trait records by plant tissue and trait category, for data that is  (A.) geo-referenced, and (B.) not geo-referenced. ](figures/austraits_fig_composition.pdf)
+![Number of taxa with trait records by plant tissue and trait category, for data that is  (A.) geo-referenced, and (B.) not geo-referenced. Many records without a geo-reference come from botanical collections, such as floras. ](figures/austraits_fig_composition.pdf)
 
 \clearpage 
 
-![Coverage of georeferenced trait records across Australian climatic and geographic space for traits in different categories. (a.) AusTraits’ sites (orange) within Australia’s precipitation-temperature space (dark-grey) superimposed upon Whittaker’s major biomes diagram. Climate data were extracted from Worldclim \citep{Fick-2017}.(B.) Locations of geo-referenced records for different plant tissues. ](figures/austraits_fig_biome_map.png)
+![Coverage of geo-referenced trait records across Australian climatic and geographic space for traits in different categories. (a.) AusTraits’ sites (orange) within Australia’s precipitation-temperature space (dark-grey) superimposed upon Whittaker’s major biomes diagram. Climate data were extracted from Worldclim \citep{Fick-2017}.(B.) Locations of geo-referenced records for different plant tissues. ](figures/austraits_fig_biome_map.png)
 
 
 \clearpage 
@@ -216,16 +216,22 @@ This document provides information on the structure of AusTraits and corresponds
 Table 1:  Main elements of the harmonised AusTraits database. See Tables 2-8 for details on each component.
 
 ```{r}
+clean_quotes <- function(txt) {
+  str_replace_all(txt, "`([a-zA-Z_ 0-9()\\.\\\\_]+)`", " texttt{\\1}") %>% 
+  str_replace_all(fixed(" texttt"), fixed("\\texttt")) 
+}
+
 tibble(
   Element = names(austraits$definitions$austraits$elements), 
-  Contents = sapply(austraits$definitions$austraits$elements, "[[", "description") %>% gsub("`", "’", ., fixed=TRUE)
+  Contents = sapply(austraits$definitions$austraits$elements, "[[", "description")
   ) %>% 
   knitr::kable("latex",  booktabs = TRUE) %>%
   kableExtra::kable_styling(latex_options = c("striped")) %>%
   kableExtra::column_spec(1, width = "15em") %>%
   kableExtra::column_spec(2, width = "30em") %>% 
-  str_replace_all(fixed("gray!6"), fixed("gray!20")) %>%
-   writeLines()
+  str_replace_all(fixed("gray!6"), fixed("gray!20"))  %>%
+    clean_quotes() %>%
+  writeLines()
 ```
 
 
@@ -243,11 +249,13 @@ for(v in names(austraits)[c(1:4, 6:7, 9)]) {
   
     elements$elements %>%
     list1_to_df() %>%
+#    mutate(value = clean_quotes(value)) %>%
     knitr::kable("latex",  booktabs = TRUE) %>% 
     kableExtra::kable_styling(latex_options = c("striped")) %>%
     kableExtra::column_spec(1, width = "15em") %>%
     kableExtra::column_spec(2, width = "30em") %>%
-    str_replace_all(fixed("gray!6"), fixed("gray!20")) %>%
+    str_replace_all(fixed("gray!6"), fixed("gray!20"))  %>%
+    clean_quotes() %>%
     writeLines()
     
     i <- i+1
@@ -267,6 +275,7 @@ austraits$definitions$value_type$values %>%
   kableExtra::column_spec(1, width = "15em") %>%
   kableExtra::column_spec(2, width = "30em") %>%
   str_replace_all(fixed("gray!6"), fixed("gray!20")) %>%
+  clean_quotes() %>%
   writeLines()
 ```
 
