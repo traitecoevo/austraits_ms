@@ -633,7 +633,7 @@ FUNCTION {format.eprint}
 FUNCTION {format.url}
 { url empty$
     { "" }
-    { "\urlprefix\url{" url * "}" * }
+    { "\url{" url * "}" * }
   if$
 }
 
