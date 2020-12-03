@@ -1,299 +1,196 @@
-name,acknowledge,affiliation_dataset,dataset_ids,affiliation
-Daniel Falster,FALSE,NA,NA,"Evolution & Ecology Research Centre, School of Biological, Earth and Environmental Sciences, UNSW Sydney, NSW 2052, Australia"
-Rachael Gallagher,FALSE,NA,NA,"Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Elizabeth Wenk,FALSE,NA,NA,"Evolution & Ecology Research Centre, School of Biological, Earth and Environmental Sciences, UNSW Sydney, NSW 2052, Australia"
-Ian Wright,FALSE,NA,NA,"Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Dony Indiarto,FALSE,NA,NA,"Evolution & Ecology Research Centre, School of Biological, Earth and Environmental Sciences, UNSW Sydney, NSW 2052, Australia"
-Caitlan Baxter,FALSE,NA,NA,"Evolution & Ecology Research Centre, School of Biological, Earth and Environmental Sciences, UNSW Sydney, NSW 2052, Australia"
-Sam Andrew,FALSE,NA,NA,"CSIRO Land and Water, Canberra, Australian Capital Territory, Australia"
-James Lawson,FALSE,NA,NA,"NSW Department of Planning Industry & Environment, Australia"
-Stuart Allen,FALSE,NA,NA,"Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Anne Fuchs,FALSE,NA,NA,"Botanical Information, Biodiversity Science Section, Australian National Botanic Gardens, Australia"
-Anna Monro,FALSE,NA,NA,"Centre for Australian National Biodiversity Research, CSIRO Plant Industry, Canberra ACT 2601, Australia"
-Mark Adams,FALSE,University of Western Australia,"Islam_1999_1, Islam_1999_2",Swinburne University of Technology
-Collin W. Ahrens,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University",Ahrens_2019,"Hawkesbury Institute for the Environment, Western Sydney University"
-Matthew Alfonzetti,FALSE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,"Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Sophia Amini,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-Tara Angevin,FALSE,La Trobe University,Angevin_2011,La Trobe University
-Julian Ash,FALSE,Australian National University,Mokany_2008,Australian National University
-Owen Atkin,FALSE,Australian National University,"Weerasinghe_2014, Bloomfield_2018, Guilherme_Pereira_2019",Australian National University
-Tony Auld,FALSE,NA,Ooi_2007,"NSW Department of Planning Industry and Environment, Australia"
-Andrew Baker,FALSE,Southern Cross University,Baker_2019,Southern Cross University
-Anthony Bean,FALSE,Queensland Herbarium,Bean_1997,Queensland Herbarium
-Chris Blackman,FALSE,Western Sydney University,"Blackman_2010, Westoby_2014",Western Sydney University
-Keith Bloomfield,FALSE,Australian National University,Bloomfield_2018,Australian National University
-Tara Boreham,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-David Bowman,FALSE,University of Tasmania,"Prior_2003, Tng_2013, Prior_2016, French_2017, Nicholson_2017",University of Tasmania
-Jason Bragg,FALSE,"RBGDT, Sydney",Bragg_2002,"National Herbarium of NSW, Royal Botanic Gardens and Domain Trust"
-Willi A. Brand,FALSE,Max-Planck Institute for Biogeochemistry,"Schulze_1998, Schulze_2006, Turner_2010",Max-Planck Institute for Biogeochemistry
-Amber Briggs,FALSE,unknown,Briggs_2010,"Western Australia Department of Water and Environmental Regulation, Australia"
-John Brock,TRUE,unknown,Brock_1993,NA
-Tim Brodribb,FALSE,University of Tasmania,Blackman_2010,University of Tasmania
-Genevieve Buckton,FALSE,James Cook University,Buckton_2019,James Cook University
-Don Bulter,FALSE,Macquarie University Sydney,Westoby_2014,"Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Geoff Burrows,FALSE,Charles Sturt University,Burrows_2001,Charles Sturt University
-Elizabeth Caldwell,FALSE,"School of Biological Sciences, Monash University",Caldwell_2016,Monash University
-James Camac,FALSE,La Trobe University,Moore_2019_2,La Trobe University
-Raymond Carpenter,FALSE,University of Adelaide,Jordan_2020,University of Adelaide
-Jane A. Catford,FALSE,"King's College, London",Catford_2014,"King's College, London"
-Gregory Cawthray,FALSE,University of Western Australia,Denton_2007,University of Western Australia
-Lucas Cernusak,FALSE,James Cook University,"Cernusak_2006, Cernusak_2011, Buckton_2019, Cheesman_2020",James Cook University
-Gregory Chandler,FALSE,unknown,Chandler_2002,Department of Agriculture
-Alex Chapman,FALSE,Western Australian Herbarium,"WAH_1998, WAH_2016","Gaia Resources, Environmental Technology Consultants"
-David Cheal,FALSE,"Department of Environment, Land, Water and Planning, Victoria, Australia; Federation University",Cheal_2017,"Department of Environment, Land, Water and Planning, Victoria, Australia"
-Alex Cheesman,FALSE,James Cook University,Cheesman_2020,James Cook University
-Si-Chong Chen,FALSE,University of New South Wales,Chen_2017,"Evolution & Ecology Research Centre, School of Biological, Earth and Environmental Sciences, UNSW Sydney, NSW 2052, Australia"
-Robert Chinnock,FALSE,State Herbarium of South Australia,Chinnock_2007,State Herbarium of South Australia
-Brendan Choat,FALSE,"University of Western Sydney, Hawkesbury Institute for the Environment","Choat_2006, Choat_2012",Western Sydney University
-Peter Clarke,TRUE,deceased,"Knox_2011, Clarke_2015",NA
-Derek Clayton,FALSE,Kew Botanic Gardens,GrassBase_2014,Kew Botanic Gardens
-Steven Clemants,TRUE,Brooklyn Botanic Garden,Williams_2011,Brooklyn Botanic Garden
-Harold Trevor Clifford,TRUE,University of Queensland,Wright_2000,University of Queensland
-Brook Clinton,FALSE,"National Collections and Marine Infrastructure, CSIRO",ANBG_2019,"National Collections and Marine Infrastructure, CSIRO"
-Peta Clode,FALSE,University of Western Australia,Hayes_2018,University of Western Australia
-Michelle Cochrane,FALSE,Australian National University,Roderick_2002,Australian National University
-Helen Coleman,FALSE,Western Australian Herbarium,WAH_1998,"Western Australian Herbarium, Keiran McNamara Conservation Science Centre, Department of Biodiversity, Conservation and Attractions, Western Australia, Australia"
-Bronwyn Collins,TRUE,unknown,Fonseca_2000,NA
-Alessandro Conti,TRUE,University of Tasmania,French_2017,NA
-Wendy Cooper,TRUE,consultant,"Cooper_2004, Cooper_2013",consultant
-William Cooper,TRUE,consultant,"Cooper_2004, Cooper_2013",NA
-William Cornwell,FALSE,University of New South Wales,Taseski_2017,"Evolution & Ecology Research Centre, School of Biological, Earth and Environmental Sciences, UNSW Sydney, NSW 2052, Australia"
-Meredith Cosgrove,FALSE,Australian National University,Leigh_2006,Australian National University
-Ian Cowie,FALSE,Northern Territory Herbarium,NTH_2014,Northern Territory Herbarium
-Lyn Craven,TRUE,Australian National Herbarium,"Craven_1987, Craven_2010",NA
-Michael Crisp,FALSE,The Australian National University,Crisp_2017,The Australian National University
-Erika Cross,FALSE,Charles Sturt University,Cross_2009,Charles Sturt University
-Kristine Crous,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University","Crous_2013, Weerasinghe_2014, Crous_2019","Hawkesbury Institute for the Environment, Western Sydney University"
-Saul Cunningham,FALSE,"CSIRO, contact",Cunningham_1999,"CSIRO, contact"
-Ellen Curtis,FALSE,University of Technology Sydney,Curtis_2012,University of Technology Sydney
-Ian Davidson,TRUE,unknown,Gallagher_2011_3,NA
-Matthew Daws,FALSE,"Environment Department, Alcoa of Australia, Huntly, Western Australia",Standish_2019,"Environment Department, Alcoa of Australia, Huntly, Western Australia"
-Jane L. DeGabriel,FALSE,NA,Moore_2019,"School of Marine and Tropical Biology, James Cook University"
-Matthew Denton,FALSE,"School of Agriculture, Food and Wine, University of Adelaide",Denton_2007,"School of Agriculture, Food and Wine, University of Adelaide"
-Ning Dong,FALSE,Macquarie University,Dong_2017,"Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Honglang Duan,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University",Duan_2015,"National Institute of Technology, Beijing, China"
-David Duncan,FALSE,Melbourne University,Duncan_1998,Melbourne University
-Richard P. Duncan,FALSE,University of Canberra,"Williams_2011, OReillyNugent_2018",University of Canberra
-Marco Duretto,FALSE,National Herbarium of NSW,"TMAG_2009, RBGSYD_2014, NHNSW_2016",National Herbarium of NSW
-John M. Dwyer,FALSE,University of Queensland,"Dwyer_2017, McCarthy_2017, Dwyer_2018, Gardiner_2019, Staples_2019",University of Queensland
-Derek Eamus,FALSE,University of Technology Sydney,"Eamus_1998, Eamus_1999, MacinnisNg_2004, Taylor_2008, MacinnisNg_2016","Institute for Water and Environmental Resource Management, University of Technology Sydney"
-Cheryl Edwards,FALSE,"School of Biological Sciences, Monash University",Edwards_2000,Melbourne Water
-Judy Egan,TRUE,Conservation Commission of the Northern Territory,Lord_1997,NA
-Manuel Esperon-Rodriguez,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University, Locked Bag 1797, Penrith NSW 2751 Australia","EsperonRodriguez_2019_2, EsperonRodriguez_2020","Hawkesbury Institute for the Environment, Western Sydney University"
-John Evans,FALSE,The Australian National University,Harrison_2009,The Australian National University
-Susan Everingham,FALSE,University of New South Wales,Everingham_2020,"Evolution & Ecology Research Centre, School of Biological, Earth and Environmental Sciences, UNSW Sydney, NSW 2052, Australia"
-Chris Fahey,TRUE,University of Tasmania,French_2017,NA
-Jennifer Firn,FALSE,Queensland University of Technology,"Wills_2018, Firn_2019",Queensland University of Technology
-Carlos Fonseca,FALSE,Universidade Federal do Rio Grande do Norte,Fonseca_2000,Universidade Federal do Rio Grande do Norte
-Paul Irwin Forster,TRUE,Queensland Herbarium,"Forster_1992, Forster_1995",NA
-John Foster,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-Ben French,FALSE,University of Tasmania,French_2017,University of Tasmania
-Tony French,TRUE,University of Tasmania,French_2017,NA
-Allison Frith,FALSE,Sydney University,Lewis_2015,Sydney University
-Doug Frood,FALSE,Pathways Bushland and Environment Consultancy,White_2020,Pathways Bushland and Environment Consultancy
-Jennifer Funk,FALSE,"Schmid College of Science and Technology, Chapman University",Funk_2016,"University of California Davis, USA"
-Ronald Gardiner,FALSE,University of Queensland,Gardiner_2019,University of Queensland
-Sonya Geange,FALSE,Australian National University,"Geange_2017, Geange_2020",Australian National University
-Oula Ghannoum,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University",Ghannoum_2010,"Hawkesbury Institute for the Environment, Western Sydney University"
-Sean Gleason,FALSE,USDA,Westoby_2014,USDA
-Ethel Goble-Garratt,TRUE,Unknown,Goble_1981,NA
-Carl Gosper,FALSE,"Department of Biodiversity, Conservation and Attractions, Western Australia","Gosper_2004, Nicolle_2006, Gosper_2012, Gosper_2018","Department of Biodiversity, Conservation and Attractions, Western Australia, Australia"
-Emma Gray,FALSE,Macquarie University Sydney,Gray_2019,"Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Philip K Groom,FALSE,Curtin University,"Groom_1997, Lamont_2002, Groom_2010",Curtin University
-Caroline Gross,FALSE,University of New England,"Gross_1993, Gross_2005, Sjostrom_2006",University of New England
-Peter Grubb,FALSE,Cambridge University,Grubb_2008,Cambridge University
-Greg Guerin,FALSE,"Terrestrial Ecosystem Research Network, The School of Biological Sciences, The University of Adelaide, Adelaide, SA, 5005, Australia.",Munroe_2019,"Terrestrial Ecosystem Research Network, The School of Biological Sciences, The University of Adelaide, Adelaide, SA, 5005, Australia."
-Chris Guinane,TRUE,University of Tasmania,French_2017,NA
-Lydia Guja,FALSE,Australian National Botanic Gardens,ANBG_2019,Australian National Botanic Gardens
-Amy Hahs,FALSE,University of Melbourne,Williams_2011,University of Melbourne
-TJ Hall,TRUE,CSIRO,Hall_1981,NA
-Monique Hallet,TRUE,University of Adelaide,Williams_2011,University of Adelaide
-Matthew Tom Harrison,FALSE,"Tasmanian Institute of Agriculture, University of Tasmania",Harrison_2009,"Tasmanian Institute of Agriculture, University of Tasmania"
-Tammy Haslehurst,TRUE,"Department of Physical Geography, Macquarie University",Leishman_2007,NA
-Foteini Hassiotou,FALSE,Unknown,Hassiotou_2009,University of Western Australia
-Patrick Hayes,FALSE,University of Western Australia,"Hayes_2014, Hayes_2018, Guilherme_Pereira_2019",University of Western Australia
-Martin Henery,FALSE,CSIRO,"Henery_2001, Wright_2001",CSIRO
-John Herbohn,FALSE,"School of Agriculture and Food Science, University of Queensland",Wills_2018,"School of Agriculture and Food Science, University of Queensland"
-Dieter Hochuli,FALSE,"School of Life and Environmental Sciences, Faculty of Science, The University of Sydney",Jin_2019,"School of Life and Environmental Sciences, Faculty of Science, The University of Sydney"
-Peter Hocking,TRUE,Murdoch University,"Hocking_1982, Hocking_1986",NA
-Jocelyn Howell,FALSE,Macquarie University Sydney,"Leishman_1993, Leishman_1995","National Herbarium of NSW, Royal Botanic Gardens and Domain Trust"
-Jing Hu,FALSE,"School of Agriculture and Food Science, University of Queensland",Wills_2018,"School of Agriculture and Food Science, University of Queensland"
-Guomin Huang,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University",Huang_2015,"National Institute of Technology, Beijing, China"
-Kate Hughes,TRUE,unknown,Hughes_2005,NA
-Lesley Hughes,FALSE,Macquarie University Sydney,"Hughes_1992, Laxton_2005","Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-John Huisman,FALSE,Western Australian Herbarium,"WAH_1998, WAH_2016","Western Australian Herbarium, Keiran McNamara Conservation Science Centre, Department of Biodiversity, Conservation and Attractions, Western Australia, Australia"
-Jugo Ilic,FALSE,University of Melbourne,Ilic_2000,NA
-Muhammad Islam,TRUE,unknown,"Islam_1999_1, Islam_1999_2",NA
-Ashika Jagdish,FALSE,University of New South Wales,Jagdish_2020,"Evolution & Ecology Research Centre, School of Biological, Earth and Environmental Sciences, UNSW Sydney, NSW 2052, Australia"
-Daniel Jin,FALSE,"School of Life and Environmental Sciences, Faculty of Science, The University of Sydney",Jin_2019,"School of Life and Environmental Sciences, Faculty of Science, The University of Sydney"
-Gregory Jordan,FALSE,University of Tasmania,"Jordan_2001, Jordan_2007, Blackman_2010, Tng_2013, Jordan_2015, McGlone_2015, Jordan_2020",University of Tasmania
-Enrique Jurado,FALSE,Autonomous University of Nuevo Leon,"Jurado_1992, Jurado_1993",Autonomous University of Nuevo Leon
-Sabine Kasel,FALSE,University of Melbourne,Meers_2007,University of Melbourne
-Ian Kealley,TRUE,unknown,Turner_2010,NA
-Greg Keighery,FALSE,WA Department of Parks and Wildlife,Keighery_2004,WA Department of Parks and Wildlife
-Jürgen Kellermann,FALSE,"State Herbarium of South Australia; School of Biological Sciences, The University of Adelaide",SAH_2014,"State Herbarium of South Australia, School of Biological Sciences, The University of Adelaide"
-James Kirkpatrick,FALSE,University of Tasmania,Kirkpatrick_2020,University of Tasmania
-Kirsten Knox,TRUE,Unknown,Knox_2011,NA
-Michele Kohout,FALSE,"Department of Environment, Land, Water and Planning, Victoria",Cheal_2017,"Department of Environment, Land, Water and Planning, Victoria, Australia"
-Robert Kooyman,FALSE,Royal Botanic Gardens Sydney; Macquarie University,"Kooyman_2011, Sams_2017","National Herbarium of NSW, Royal Botanic Gardens and Domain Trust"
-Martyna Kotowska,FALSE,"Department of Plant Ecology and Ecosystems Research, University of Goettingen",Kotowska_2020,"Department of Plant Ecology and Ecosystems Research, University of Goettingen"
-Luka Kovac,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-Kaely Kreger,TRUE,University of Tasmania,Nicholson_2017,NA
-John Kuo,FALSE,University of Western Australia,Kuo_1982,University of Western Australia
-Hoa Ran Lai,FALSE,University of Queensland,Sams_2017,University of Queensland
-Etienne Laliberte,FALSE,Universite de Montreal,"Laliberte_2012, Hayes_2014",Université de Montréal
-Hans Lambers,FALSE,University of Western Australia,"Denton_2007, Laliberte_2012, Hayes_2014, Hayes_2018, Guilherme_Pereira_2018, Guilherme_Pereira_2019",University of Western Australia
-Martin Lambert,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-Byron Lamont,FALSE,Curtin University,"Groom_1997, Milberg_1997, Milberg_1998, Lamont_2002, Read_2005, Groom_2010",Curtin University
-Dana Lanceman,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-Robert Lanfear,FALSE,Australian National University,Gallagher_2015,Australian National University
-Frank van Langevelde,FALSE,"Wildlife Ecology & Conservation Group, Wageningen University, The Netherlands",Tomlinson_2019,"Wildlife Ecology & Conservation Group, Wageningen University, The Netherlands"
-Daniel C. Laughlin,FALSE,"University of Waikato, New Zealand",Dwyer_2017,University of Wyoming
-Bree-Anne Laugier-Kitchener,FALSE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,"Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Michael Lawes,TRUE,Charles Darwin University,"Lawes_2012, Clarke_2015",NA
-Claire Laws,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-Emma Laxton,TRUE,unknown,Laxton_2005,NA
-Caroline Lehmann,FALSE,University of Edinburgh,Wright_2008,University of Edinburgh
-Andrea Leigh,FALSE,University of Technology Sydney,"Leigh_2003, Leigh_2006, Curtis_2012",University of Technology Sydney
-Michelle Leishman,FALSE,Macquarie University Sydney,"Leishman_1992, Leishman_1993, Leishman_1995, Leishman_2007, Gallagher_2011_1, Gallagher_2011_3, Manea_2011, Gallagher_2012, Lawson_2015","Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Tanja Lenz,FALSE,Macquarie University Sydney,Wright_2002,"Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Brendan Lepschi,FALSE,CSIRO,Maslin_2012,CSIRO
-James Lewis,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University",Lewis_2015,Fordham University
-Felix Lim,FALSE,University of Melbourne,Lim_2017,University of Melbourne
-Liz Lindsay,FALSE,Macquarie University,Wright_2009,Queensland University of Technology
-Udayangani Liu,FALSE,Kew Botanic Gardens,"RBGK_2014, Kew_2019_1, Kew_2019_2, Kew_2019_3, Kew_2019_4, Kew_2019_5, Kew_2019_6",Kew Botanic Gardens
-Daniel Montoya Londono,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-Janice Lord,FALSE,University of Otago,Lord_1997,University of Otago
-Christiane Ludwig,TRUE,unknown,Turner_2010,NA
-Ian Lunt,FALSE,Charles Sturt University,Lunt_2012,Charles Sturt University
-Christopher Lusk,FALSE,University of Waikato,"Lusk_2010, Lusk_2012, Lusk_2014, Sendall_2016",University of Waikato
-Catriona Macinnis-Ng,FALSE,University of Auckland,"MacinnisNg_2004, MacinnisNg_2016","University of Aukland, New Zealand"
-Mary Maconochie,TRUE,University of Tasmania,Nicholson_2017,NA
-Hannah MacPherson,FALSE,"National Herbarium of NSW, Royal Botanic Gardens and Domain Trust",Gallagher_2018,"National Herbarium of NSW, Royal Botanic Gardens and Domain Trust"
-Anthony Manea,FALSE,Macquarie University Sydney,Manea_2011,"Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Karen Marais,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-Bruce Maslin,FALSE,Macquarie University Sydney,Maslin_2012,Western Australian Herbarium
-Riah Mason,FALSE,University of Queensland,Dwyer_2018,University of Queensland
-Margaret Mayfield,FALSE,University of Queensland,"Sams_2017, Reynolds_2018, Staples_2019","School of Biological Sciences, University of Queensland"
-Richard Mazanec,FALSE,"Biodiversity and Conservation Science, Western Australian Department of Biodiversity, Conservation and Attractions, Kensington, WA, Australia",Ahrens_2019,"Biodiversity and Conservation Science, Western Australian Department of Biodiversity, Conservation and Attractions, Kensington, WA, Australia"
-James McCarthy,FALSE,University of Queensland,McCarthy_2017,University of Queensland
-Kate McClenahan,TRUE,University of Technology Sydney,MacinnisNg_2004,University of Technology Sydney
-Elissa McFarlane,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-Matthew McGlone,FALSE,"Landcare Research, New Zealand",McGlone_2015,"Landcare Research, New Zealand"
-Jacob McOverton,TRUE,"Landcare Research, New Zealand",Fonseca_2000,NA
-Trevor Meers,FALSE,Cumberland Ecology,Meers_2007,Cumberland Ecology
-Marlien van der Merwe,FALSE,"National Herbarium of NSW, Royal Botanic Gardens and Domain Trust",Gallagher_2018,"National Herbarium of NSW, Royal Botanic Gardens and Domain Trust"
-Daniel Metcalfe,FALSE,CSIRO,"Grubb_1996, Metcalfe_2009, Cooper_2013, Sams_2017, Metcalfe_2020_1, Metcalfe_2020_2",CSIRO
-Per Milberg,FALSE,Curtin University,"Milberg_1997, Milberg_1998",Curtin University
-Karel Mokany,FALSE,"CSIRO Land and Water Canberra, Australia","Mokany_2008, Mokany_2015, McCarthy_2017","CSIRO, Canberra"
-Angela Moles,FALSE,University of New South Wales,"Moles_2000, Moles_2003, Moles_2011, Chen_2017, Everingham_2020, Jagdish_2020","Evolution & Ecology Research Centre, School of Biological, Earth and Environmental Sciences, UNSW Sydney, NSW 2052, Australia"
-Ben D. Moore,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University",Moore_2019,"Hawkesbury Institute for the Environment, Western Sydney University"
-Nicholas Moore,FALSE,La Trobe University,Moore_2019_2,La Trobe University
-Huw Morgan,TRUE,CSIRO,Morgan_2005,NA
-John Morgan,FALSE,La Trobe University,"Williams_2005, Roberts_2006, Cross_2009, Briggs_2010, Scott_2010, Angevin_2011, Morgan_2011_1, Morgan_2011_2, Venn_2011, Lunt_2012, Morgan_2014, Pickering_2014, Moore_2019_2",La Trobe University
-William Morris,FALSE,University of Melbourne,"Pollock_2012, Pollock_2018",University of Melbourne
-Annette Muir,FALSE,"Department of Environment, Land, Water and Planning, Victoria","Muir_2014, Cheal_2017","Department of Environment, Land, Water and Planning, Victoria, Australia"
-Samantha Munroe,FALSE,"Terrestrial Ecosystem Research Network, The School of Biological Sciences, The University of Adelaide, Adelaide, SA, 5005, Australia.",Munroe_2019,"Terrestrial Ecosystem Research Network, The School of Biological Sciences, The University of Adelaide, Adelaide, SA, 5005, Australia."
-Peter Myerscough,TRUE,"School of Biological Sciences, University of Sydney",Ooi_2007,NA
-Des Nelson,FALSE,CSIRO Alice Springs,Jurado_1992,CSIRO Alice Springs
-Dominic Neyland,TRUE,University of Tasmania,Prior_2016,NA
-Aine Nicholson,FALSE,University of Tasmania,"French_2017, Nicholson_2017",University of Tasmania
-Dean Nicolle,FALSE,Currency Creek Arboretum,"Nicolle_2006, Schulze_2006, Schulze_2006_2",Currency Creek Arboretum
-Adrienne Nicotra,FALSE,Australian National University,"Leigh_2003, Leigh_2006, Geange_2017, Geange_2020",Australian National University
-Ule Niinemets,FALSE,Estonian University of Life Sciences,"Niinemets_2009, Wright_2009",Estonian University of Life Sciences
-Tom North,FALSE,"National Seed Bank, Biodiversity Science Section, Australian National Botanic Gardens",ANBG_2019,"National Seed Bank, Biodiversity Science Section, Australian National Botanic Gardens"
-Andrew O'Reilly-Nugent,FALSE,University of Canberra,OReillyNugent_2018,University of Canberra
-Odhran S. O'Sullivan,FALSE,Australian National University,Guilherme_Pereira_2019,"Australian National University; Leistershire County Council, Leicester, UK"
-Brad Oberle,FALSE,"Division of Natural Sciences, New College of Florida",Lee_2019,"Division of Natural Sciences, New College of Florida"
-Mike Olsen,TRUE,unaffiliated,McCarthy_2017,NA
-Yusuke Onoda,FALSE,Kyoto University,Onoda_2010,Kyoto University
-Mark Ooi,FALSE,"University of New South Wales, Centre for Ecosystem Science","Ooi_2007, Ooi_2018","Centre for Ecosystem Science, School of Biological, Earth and Environmental Sciences, UNSW Sydney, NSW 2052, Australia"
-Colin P. Osborne,FALSE,"University of Sheffield, Department of Animal and Plant Sciences",Osborne_2014,"University of Sheffield, Department of Animal and Plant Sciences"
-Grazyna Paczkowska,FALSE,Western Australian Herbarium,"WAH_1998, WAH_2016","Western Australian Herbarium, Keiran McNamara Conservation Science Centre, Department of Biodiversity, Conservation and Attractions, Western Australia, Australia"
-Paula Peeters,TRUE,unknown,Peeters_2002,NA
-Burak Pekin,TRUE,Unknown,Pekin_2011,NA
-Caio Guilherme Pereira,FALSE,"Department of Civil and Environmental Engineering, Massachusetts Institute of Technology","Guilherme_Pereira_2018, Guilherme_Pereira_2019","Department of Civil and Environmental Engineering, Massachusetts Institute of Technology"
-George Perry,TRUE,University of Auckland,Nicholson_2017,NA
-Aaron Phillips,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-Catherine Pickering,FALSE,"School of Environment, Griffith University","Venn_2011, Pickering_2014","School of Environment, Griffith University"
-Melinda Pickup,FALSE,CSIRO Plant Industry,"Pickup_2002, Pickup_2005",Greening Australia
-Loren Pollitt,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-Laura Pollock,FALSE,"CNRS, University Grenoble Alpes","Pollock_2012, Lim_2017, Pollock_2018","CNRS, University Grenoble Alpes"
-Rob Polmear,TRUE,University of Tasmania,Prior_2016,NA
-Pieter Poot,FALSE,University of Western Australia,Veneklaas_2003,University of Western Australia
-Jeff R. Powell,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University",Lee_2019,"Hawkesbury Institute for the Environment, Western Sydney University"
-Sally A. Power,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University, Locked Bag 1797, Penrith NSW 2751 Australia",EsperonRodriguez_2019_2,"Hawkesbury Institute for the Environment, Western Sydney University"
-Iain Colin Prentice,FALSE,Imperial College London,Dong_2017,Imperial College London
-Aina Price,FALSE,University of Tasmania,Jordan_2015,University of Tasmania
-Lynda Prior,FALSE,University of Tasmania,"Prior_2003, Prior_2016, French_2017, Nicholson_2017",University of Tasmania
-Suzanne Prober,FALSE,CSIRO Land and Water,"Gosper_2012, Gosper_2018",CSIRO
-Thomas Pyne,TRUE,"Department of Biological Sciences, Macquarie University",Gallagher_2018,NA
-R.J.Williams,TRUE,NA,Schulze_1998,NA
-Jennifer Read,FALSE,"School of Biological Sciences, Monash University","Edwards_2000, Read_2003, Read_2005, Caldwell_2016","School of Biological Sciences, Monash University"
-Victoria Reynolds,FALSE,"School of Biological Sciences, University of Queensland",Reynolds_2018,"School of Biological Sciences, University of Queensland"
-Barbara Rice,TRUE,Macquarie University Sydney,"Rice_1991, Hughes_1992, Leishman_1993, Leishman_1995",NA
-Anna Richards,FALSE,CSIRO,"Westman_1977, Richards_2003, Richards_2008, Wright_2008, Onoda_2010",CSIRO
-Ben Richardson,FALSE,Western Australian Herbarium,WAH_1998,"Western Australian Herbarium, Keiran McNamara Conservation Science Centre, Department of Biodiversity, Conservation and Attractions, Western Australia, Australia"
-Jessica L. Rigg,TRUE,"NSW Department of Primary Industries, Elizabeth Macarthur Agricultural Institute",Lee_2019,NA
-Bryan Roberts,FALSE,unknown,Roberts_2006,"Department of Environment, Land, Water and Planning, Victoria, Australia"
-Michael Roderick,FALSE,Australian National University,"Roderick_1999, Roderick_2002",Australian National University
-Julieta A. Rosell,FALSE,National Autonomous University of Mexico,Rosell_2014,National Autonomous University of Mexico
-Maurizio Rossetto,FALSE,"National Herbarium of NSW, Royal Botanic Gardens and Domain Trust",Gallagher_2018,"National Herbarium of NSW, Royal Botanic Gardens and Domain Trust"
-Barbara Rye,FALSE,Western Australian Herbarium,"Rye_2002, Trudgen_2005, Rye_2006, Rye_2009_1, Rye_2009_2, Rye_2013_1, Rye_2013_2, Trudgen_2014, Rye_2015",Western Australian Herbarium
-Paul D. Rymer,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University, Locked Bag 1797, Penrith NSW 2751 Australia","Ahrens_2019, EsperonRodriguez_2019_2","Hawkesbury Institute for the Environment, Western Sydney University"
-Miguel de Salas,FALSE,Tasmanian Herbarium,TMAG_2009,Tasmanian Herbarium
-Anna Salomaa,TRUE,"University of Helsinki, Helsinki Institute of Sustainability Science",Osborne_2014,NA
-Michael Sams,FALSE,University of Queensland,Sams_2017,University of Queensland
-Gordon Sanson,FALSE,"School of Biological Sciences, Monash University","Edwards_2000, Read_2003, Read_2005, Caldwell_2016","School of Biological Sciences, Monash University"
-Susanne Schmidt,FALSE,University of Queensland,"Schmidt_1993, Stewart_1995, Schmidt_1997, Richards_2003, Schmidt_2003, Schmidt_2010, Soper_2014",University of Queensland
-Ernst-Detlef Schulze,FALSE,Max-Planck Institute for Biogeochemistry,"Schulze_1998, Schulze_2006, Schulze_2006_2, Turner_2010, Schulze_2014",Max-Planck Institute for Biogeochemistry
-Inge Schulze,TRUE,Max-Planck Institute for Biogeochemistry,"Schulze_1998, Schulze_2006_2",NA
-Waltraud Schulze,TRUE,unknown,Schulze_1998,NA
-Andrew John Scott,FALSE,La Trobe University,Scott_2010,La Trobe University
-Kerrie Sendall,FALSE,University of Minnesota,Sendall_2016,University of Minnesota
-Alison Shapcott,TRUE,University of the Sunshine Coast,Richards_2003,NA
-Luke Shoo,TRUE,University of Queensland,Gardiner_2019,NA
-Steven Sinclair,FALSE,"Department of Environment, Land, Water and Planning, Victoria",White_2020,"Department of Environment, Land, Water and Planning, Victoria, Australia"
-Anne Sjostrom,TRUE,University of New England,Sjostrom_2006,NA
-Benjamin Smith,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University",Smith_1996,"Hawkesbury Institute for the Environment, Western Sydney University"
-Renee Smith,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University","Ghannoum_2010, Smith_2012, Duan_2015, Huang_2015, Lewis_2015","Hawkesbury Institute for the Environment, Western Sydney University"
-Santiago Soliveres,FALSE,Bern University,Soliveres_2012,Bern University
-Fiona Soper,FALSE,Cornell University,Soper_2014,McGill University
-Ben Sparrow,FALSE,"Terrestrial Ecosystem Research Network, The School of Biological Sciences, The University of Adelaide, Adelaide, SA, 5005, Australia.",Munroe_2019,"Terrestrial Ecosystem Research Network, The School of Biological Sciences, The University of Adelaide, Adelaide, SA, 5005, Australia."
-Amanda Spooner,FALSE,Western Australian Herbarium,WAH_1998,"Western Australian Herbarium, Keiran McNamara Conservation Science Centre, Department of Biodiversity, Conservation and Attractions, Western Australia, Australia"
-Rachel Standish,FALSE,"School of Veterinary and Life Sciences, Murdoch University","Funk_2016, Standish_2019","School of Veterinary and Life Sciences, Murdoch University"
-Timothy Staples,FALSE,University of Queensland,"McCarthy_2017, Staples_2019",University of Queensland
-George Stewart,FALSE,University of Queensland,"Stewart_1995, Schmidt_1997, Schmidt_2003",University of Queensland
-Jan Suda,FALSE,Academy of Science Czech Republic,Gallagher_2011_1,Academy of Science Czech Republic
-Catherine Tait,TRUE,University of Adelaide,Williams_2011,University of Adelaide
-Guy Taseski,FALSE,University of New South Wales,Taseski_2017,University of New South Wales
-Daniel Taylor,FALSE,"Institute for Water and Environmental Resource Management, University of Technology Sydney",Taylor_2008,Aukland University
-Freya Thomas,FALSE,University of Melbourne,Thomas_2017,University of Melbourne
-Ian Thompson,FALSE,University of Melbourne,Thompson_2001,University of Melbourne
-David Tissue,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University","Ghannoum_2010, Smith_2012, Duan_2015, Huang_2015, Lewis_2015","Hawkesbury Institute for the Environment, Western Sydney University"
-Mark G. Tjoelker,FALSE,"Hawkesbury Institute for the Environment, Western Sydney University, Locked Bag 1797, Penrith NSW 2751 Australia",EsperonRodriguez_2019_2,"Hawkesbury Institute for the Environment, Western Sydney University"
-Yue Phin David Jeremiah-Seok Tng,FALSE,"Institute of Biology, Federal University of Bahia, R. Bario Jeremoabo, Ondina, 40170-115 Salvador, Bahia, Brazil",Tng_2013,"Institute of Biology, Federal University of Bahia, R. Barão Jeremoabo, Ondina, 40170-115 Salvador, Bahia, Brazil"
-Hellmut R. Toelken,TRUE,State Herbarium of South Australia,Toelken_1996,NA
-Kyle Tomlinson,FALSE,Xishuangbanna Tropical Botanic Garden,"Tomlinson_2013, Tomlinson_2019",Xishuangbanna Tropical Botanic Garden
-Malcolm Trudgeon,FALSE,Western Australian Herbarium,"Trudgen_2005, Trudgen_2014",Western Australian Herbarium
-Neil C. Turner,FALSE,University of Western Australia,"Schulze_2006, Schulze_2006_2, Turner_2010",University of Western Australia
-Erik Veneklaas,FALSE,University of Western Australia,"Veneklaas_2003, Denton_2007, Hassiotou_2009",University of Western Australia
-Susanna Venn,FALSE,Deakin University,"Venn_2011, Pickering_2014",Deakin University
-Peter Vesk,FALSE,University of Melbourne,"Vesk_2004, Vesk_2007, Williams_2011, Pollock_2012, Muir_2014, Lim_2017, Thomas_2017, Pollock_2018, Vesk_2019",University of Melbourne
-Carolyn Vlasveld,FALSE,"School of Biological Sciences, Monash University",Vlasveld_2018,"School of Biological Sciences, Monash University"
-Maria Vorontsova,FALSE,Kew Botanic Gardens,GrassBase_2014,Kew Botanic Gardens
-Charles Warren,FALSE,Sydney University,"Warren_2005, Warren_2006",Sydney University
-Lasantha K. Weerasinghe,FALSE,Australian National University,"Weerasinghe_2014, Guilherme_Pereira_2019",Australian National University
-W.E Westman,TRUE,"Department of Botany, University of Queens-land, St Lucia, Australia",Westman_1977,NA
-Mark Westoby,FALSE,Macquarie University Sydney,"Rice_1991, Hughes_1992, Leishman_1992, Jurado_1993, Leishman_1993, Leishman_1995, Lord_1997, Duncan_1998, Cunningham_1999, Fonseca_2000, Moles_2000, Wright_2000, Henery_2001, Wright_2001, Bragg_2002, Wright_2002, Falster_2003, Moles_2003, Westoby_2003, Vesk_2004, Westoby_2004, Falster_2005_1, Falster_2005_2, Hughes_2005, Morgan_2005, Wright_2006, Zanne_2007, Niinemets_2009, Wright_2009, Onoda_2010, Zieminska_2013, Rosell_2014, Westoby_2014, Zieminska_2015, Kotowska_2020","Department of Biological Sciences, Macquarie University, North Ryde, NSW 2109 Australia"
-Matthew White,FALSE,"Department of Environment, Land, Water and Planning, Victoria","Cheal_2017, White_2020","Department of Environment, Land, Water and Planning, Victoria, Australia"
-Erica Williams,TRUE,Macquarie University Sydney,Westoby_2004,NA
-Nick Williams,FALSE,University of Melbourne,"Williams_2005, Williams_2011",University of Melbourne
-Kathryn Willis,TRUE,University of Tasmania,French_2017,NA
-Jarrah Wills,FALSE,"School of Agriculture and Food Science, University of Queensland",Wills_2018,"School of Agriculture and Food Science, University of Queensland"
-J. Bastow Wilson,TRUE,"Botany Department, University of Otago, Dunedin, NZ",Smith_1996,"Botany Department, University of Otago, Dunedin, NZ"
-Peter Wilson,FALSE,National Herbarium of NSW,Wilson_2008,National Herbarium of NSW
-Colin Yates,FALSE,"Department of Biodiversity, Conservation and Attractions, Western Australia","Nicolle_2006, Gosper_2012, Gosper_2018","Department of Biodiversity, Conservation and Attractions, Western Australia, Australia"
-Jian Yen,TRUE,University of Melbourne,Vesk_2019,NA
-Amy Zanne,FALSE,George Washington University,"Lemmens_1994, Ilic_2000, Wright_2002, Zanne_2007, Zanne_2009, Lee_2019",George Washington University
-Kasia Zieminska,FALSE,"Department of Plant Ecology and Evolution, Uppsala University, Uppsala, Sweden","Zieminska_2013, Westoby_2014, Zieminska_2015","Department of Plant Ecology and Evolution, Uppsala University, Uppsala, Sweden"
+name,affiliation,orcid
+Daniel Falster,"School of Biological, Earth, and Environmental Sciences, UNSW Sydney, Australia",NA
+Rachael Gallagher,"Department of Biological Sciences, Macquarie University, Australia",0000-0002-4680-8115
+Elizabeth Wenk,"School of Biological, Earth, and Environmental Sciences, UNSW Sydney, Australia",NA
+Ian Wright,"Department of Biological Sciences, Macquarie University, Australia",NA
+Dony Indiarto,"School of Biological, Earth, and Environmental Sciences, UNSW Sydney, Australia",0000-0001-9546-8201
+Caitlan Baxter,"School of Biological, Earth, and Environmental Sciences, UNSW Sydney, Australia",NA
+Samuel C. Andrew,"CSIRO Land and Water, Australia",0000-0003-4589-2746
+James Lawson,"NSW Department of Primary Industries, Australia",0000-0001-7983-4443
+Stuart Allen,"Department of Biological Sciences, Macquarie University, Australia",NA
+Anne Fuchs,"Centre for Australian National Biodiversity Research (a joint venture between Parks Australia and CSIRO), Canberra, ACT, Australia",NA
+Mark A. Adams,"Swinburne University of Technology, Australia",0000-0002-8154-0097
+Collin W. Ahrens,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0002-0614-9928
+Matthew Alfonzetti,"Department of Biological Sciences, Macquarie University, Australia",0000-0002-0064-6368
+Tara Angevin,"La Trobe University, Australia",NA
+Owen K. Atkin,"The Australian National University, Australia",0000-0003-1041-5202
+Tony Auld,"NSW Department of Planning Industry and Environment, Australia",0000-0002-8766-2829
+Andrew Baker,"Southern Cross University, Australia",0000-0002-0658-3767
+Anthony Bean,"Queensland Herbarium, Australia",NA
+Chris J. Blackman,"Université Clermont-Auvergne, INRAE, PIAF, France",NA
+Keith Bloomfield,"Imperial College, London, United Kingdom",NA
+David Bowman,"University of Tasmania, Australia",0000-0001-8075-124X
+Jason Bragg,"Research Centre for Ecosystem Resilience, Royal Botanic Gardens and Domain Trust, Sydney, Australia",0000-0002-7621-7295
+Timothy J. Brodribb,"University of Tasmania, Australia",0000-0002-4964-6107
+Genevieve Buckton,"James Cook University, Australia",NA
+Geoff Burrows,"Charles Sturt University, Australia",NA
+Elizabeth Caldwell,"School of Biological Sciences, Monash University, Australia",NA
+James Camac,"Centre of Excellence for Biosecurity Risk Analysis, The University of Melbourne, Australia",0000-0003-4785-0742
+Raymond Carpenter,"University of Adelaide, Australia",0000-0001-7129-287
+Jane A. Catford,"King's College, London, United Kingdom",0000-0003-0582-5960
+Gregory R. Cawthray,"University of Western Australia, Australia",0000-0003-1150-6675
+Lucas A. Cernusak,"College of Science and Engineering, James Cook University, Cairns, QLD, Australia",0000-0002-7575-5526
+Gregory Chandler,"Department of Agriculture, Australia",NA
+Alex R. Chapman,"Western Australian Herbarium, Keiran McNamara Conservation Science Centre, Department of Biodiversity, Conservation and Attractions, Western Australia, Australia",NA
+David Cheal,"Department of Environment, Land, Water and Planning, Victoria, Australia",NA
+Alexander W. Cheesman,"James Cook University, Australia",0000-0003-3931-5766
+Si-Chong Chen,"Royal Botanic Gardens Kew, Wellcome Trust Millennium Building, Wakehurst, RH17 6TN West Sussex, United Kingdom",0000-0002-6855-2595
+Brendan Choat,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0002-9105-640X
+Brook Clinton,"Centre for Australian National Biodiversity Research (a joint venture between Parks Australia and CSIRO), Canberra, ACT, Australia",NA
+Peta Clode,"University of Western Australia, Australia",0000-0002-5188-4737
+Helen Coleman,"Western Australian Herbarium, Keiran McNamara Conservation Science Centre, Department of Biodiversity, Conservation and Attractions, Western Australia, Australia",NA
+William K. Cornwell,"School of Biological, Earth, and Environmental Sciences, UNSW Sydney, Australia",0000-0003-4080-4073
+Meredith Cosgrove,"The Australian National University, Australia",NA
+Michael Crisp,"The Australian National University, Australia",0000-0002-8255-6349
+Erika Cross,"Charles Sturt University, Australia",NA
+Kristine Y. Crous,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0001-9478-7593
+Saul Cunningham,"Fenner School of Environment and Society, The Australian National University, Australia",0000-0003-0703-6893
+Ellen Curtis,"University of Technology Sydney, Australia",NA
+Matthew I. Daws,"Environment Department, Alcoa of Australia, Huntly, Western Australia",NA
+Jane L. DeGabriel,"School of Marine and Tropical Biology, James Cook University",0000 0003 1245 5291
+Matthew D. Denton,"School of Agriculture, Food and Wine, University of Adelaide, Australia",0000-0002-2804-0384
+Ning Dong,"Department of Biological Sciences, Macquarie University, Australia",0000-0003-0793-8854
+Honglang Duan,"Institute for Forest Resources & Environment of Guizhou. Guizhou University, Guiyang, China",0000-0003-3761-6936
+David H. Duncan,"University of Melbourne, Australia",0000-0003-4411-8214
+Richard P. Duncan,"Institute for Applied Ecology, University of Canberra, ACT 2617, Australia",0000-0003-2295-449X
+Marco Duretto,"National Herbarium of NSW, Royal Botanic Gardens and Domain Trust, Australia",0000-0003-1013-4291
+John M. Dwyer,"School of Biological Sciences, University of Queensland, Australia",0000-0001-7389-5528
+Cheryl Edwards,"Melbourne Water, Australia",NA
+Manuel Esperon-Rodriguez,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0003-3649-2134
+John R. Evans,"The Australian National University, Australia",0000-0003-1379-3532
+Susan E. Everingham,"School of Biological, Earth, and Environmental Sciences, UNSW Sydney, Australia",0000-0002-4780-2700
+Jennifer Firn,"Queensland University of Technology, Australia",0000-0001-6026-8912
+Carlos Roberto Fonseca,"Departamento de Ecologia, Universidade Federal do Rio Grande do Norte, Natal, Brazil",0000-0003-0292-0399
+Ben J. French,"University of Tasmania, Australia",0000-0001-5046-4047
+Doug Frood,"Pathways Bushland and Environment Consultancy, Australia",NA
+Jennifer L. Funk,"Department of Plant Sciences, University of California, Davis, USA",0000-0002-1916-5513
+Sonya R. Geange,"The Australian National University, Australia",0000-0001-5344-7234
+Oula Ghannoum,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0002-1341-0741
+Sean M. Gleason,"USDA-ARS, WMSRU, Fort Collins, Colorado 80526, USA",0000-0002-5607-4741
+Carl R. Gosper,"Biodiversity and Conservation Science, Department of Biodiversity, Conservation and Attractions, WA, Australia",0000-0002-0962-5117
+Emma Gray,"Department of Biological Sciences, Macquarie University, Australia",0000-0002-5352-0398
+Philip K. Groom,"Curtin University, Australia",NA
+Caroline Gross,"University of New England, Australia",0000-0001-8014-1548
+Greg Guerin,"Terrestrial Ecosystem Research Network, The School of Biological Sciences, The University of Adelaide, Adelaide, SA, 5005, Australia",0000-0002-2104-6695
+Lydia Guja,"Centre for Australian National Biodiversity Research (
+ and CSIRO), Canberra, ACT, Australia",0000-0001-5945-438X
+Amy K. Hahs,"School of Ecosystem and Forest Sciences, The University of Melbourne VIC 3010 Australia",0000-0003-0163-6732
+Matthew Tom Harrison,"Tasmanian Institute of Agriculture, University of Tasmania, Australia",0000-0001-7425-452X
+Patrick E. Hayes,"University of Western Australia, Australia",0000-0001-7554-4588
+Martin Henery,"Parks Australia, Department of Agriculture, Water and the Environment, Australia",NA
+Dieter Hochuli,"School of Life and Environmental Sciences, The University of Sydney, Australia",0000-0002-6673-4475
+Jocelyn Howell,"Berowa NSW, Australia",NA
+Guomin Huang,"Nanchang Institute of Technology, Nanchang, China",0000-0002-7597-9386
+Lesley Hughes,"Department of Biological Sciences, Macquarie University, Australia",0000-0003-0313-9780
+John Huisman,"Western Australian Herbarium, Biodiversity and Conservation Science, Department of Biodiversity, Conservation and Attractions, Western Australia, Australia",0000-0002-5255-8423
+Jugoslav Ilic,"University of Melbourne, Australia",NA
+Ashika Jagdish,"School of Biological, Earth, and Environmental Sciences, UNSW Sydney, Australia",NA
+Daniel Jin,"School of Life and Environmental Sciences, The University of Sydney, Australia",0000-0001-7492-9830
+Gregory Jordan,"University of Tasmania, Australia",0000-0002-6033-2766
+Enrique Jurado,"Universidad Autonoma de Nuevo Leon, Mexico",0000-0002-4043-5549
+Sabine Kasel,"University of Melbourne, Australia",0000-0001-8188-1089
+Jürgen Kellermann,"State Herbarium of South Australia, Botanic Gardens and State Herbarium, Hackney Road, Adelaide, SA 5000, Australia",NA
+Michele Kohout,"Department of Environment, Land, Water and Planning, Victoria, Australia",NA
+Robert M. Kooyman,"Department of Biological Sciences, Macquarie University, Australia",0000-0003-1985-9547
+Martyna M. Kotowska,"Department of Plant Ecology and Ecosystems Research, University of Goettingen, Germany",0000-0002-2283-5979
+Hao Ran Lai,"University of Canterbury, New Zealand",0000-0001-6871-0146
+Etienne Laliberté,"Institut de recherche en biologie végétale, Université de Montréal, 4101 Sherbrooke Est, Montréal, Canada H1X 2B2",0000-0002-3167-2622
+Hans Lambers,"University of Western Australia, Australia",0000-0002-4118-2272
+Byron B. Lamont,"Curtin University, Perth, Western Australia",0000-0001-9279-7149
+Robert Lanfear,"Ecology and Evolution, Research School of Biology, Australian National University, Canberra, Australia",0000-0002-1140-2596
+Frank van Langevelde,"Wildlife Ecology & Conservation Group, Wageningen University, The Netherlands",0000-0001-8870-0797
+Daniel C. Laughlin,"Department of Botany, University of Wyoming, Laramie, WY 82071, USA",0000-0002-9651-5732
+Bree-Anne Laugier-Kitchener,"Department of Biological Sciences, Macquarie University, Australia",NA
+Caroline E. R. Lehmann,"Royal Botanic Garden Edinburgh, Edinburgh, United Kingdom",0000-0002-6825-124X
+Andrea Leigh,"University of Technology Sydney, Australia",0000-0003-3568-2606
+Michelle R. Leishman,"Department of Biological Sciences, Macquarie University, Australia",0000-0003-4830-5797
+Tanja Lenz,"Department of Biological Sciences, Macquarie University, Australia",NA
+Brendan Lepschi,"Centre for Australian National Biodiversity Research (a joint venture between Parks Australia and CSIRO), Canberra, ACT, Australia",0000-0002-3281-2973
+James D. Lewis,Fordham University,0000-0002-7347-9513
+Felix Lim,"University of Melbourne, Australia",0000-0003-1227-460X
+Udayangani Liu,"Royal Botanic Gardens Kew, Wellcome Trust Millennium Building, Wakehurst, RH17 6TN West Sussex, United Kingdom",0000-0002-6192-1319
+Janice Lord,"University of Otago, Dunedin, New Zealand",0000-0001-8314-0428
+Christopher H. Lusk,"Environmental Research Institute, University of Waikato, New Zealand",0000-0002-9037-7957
+Cate Macinnis-Ng,"University of Auckland, New Zealand",0000-0003-3935-9814
+Hannah McPherson,"National Herbarium of NSW, Royal Botanic Gardens and Domain Trust, Australia",0000-0003-0254-4573
+Anthony Manea,"Department of Biological Sciences, Macquarie University, Australia",0000-0002-0956-4529
+Margaret Mayfield,"School of Biological Sciences, University of Queensland, Australia",0000-0002-5101-6542
+James K. McCarthy,"Manaaki Whenua – Landcare Research, Lincoln 7640, New Zealand",0000-0003-3060-1678
+Trevor Meers,Cumberland Ecology,NA
+Marlien van der Merwe,"Research Centre for Ecosystem Resilience, Australian Institute of Botanical Science, Royal Botanic Garden Sydney, Australia",0000-0003-1307-5143
+Daniel Metcalfe,CSIRO,NA
+Per Milberg,"Linkoping University, Sweden",0000-0001-6128-1051
+Karel Mokany,"CSIRO, Canberra",0000-0003-4199-3697
+Angela T. Moles,"School of Biological, Earth, and Environmental Sciences, UNSW Sydney, Australia",0000-0003-2041-7762
+Ben D. Moore,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0002-6995-4721
+Nicholas Moore,"La Trobe University, Australia",0000-0002-9087-7580
+John W. Morgan,"La Trobe University, Australia",NA
+William Morris,"University of Melbourne, Australia",0000-0002-8686-4154
+Annette Muir,"Department of Environment, Land, Water and Planning, Victoria, Australia",NA
+Samantha Munroe,"Terrestrial Ecosystem Research Network, The School of Biological Sciences, The University of Adelaide, Adelaide, SA, 5005, Australia",0000-0001-7827-1028
+Áine Nicholson,"University of Tasmania, Australia",NA
+Dean Nicolle,"Currency Creek Arboretum, Australia",NA
+Adrienne B. Nicotra,"The Australian National University, Australia",0000-0001-6578-369X
+Ülo Niinemets,"Estonian University of Life Sciences, Estonia",0000-0002-3078-2192
+Tom North,"Centre for Australian National Biodiversity Research (a joint venture between Parks Australia and CSIRO), Canberra, ACT, Australia",NA
+Andrew O'Reilly-Nugent,"Institute for Applied Ecology, University of Canberra, ACT 2617, Australia",0000-0003-2071-6279
+Odhran S. O’Sullivan,"Leistershire County Council, Leicester, United Kingdom",0000-0002-1448-1066
+Brad Oberle,"Division of Natural Sciences, New College of Florida, USA",0000-0002-4227-3352
+Yusuke Onoda,"Graduate School of Agriculture, Kyoto University, Japan",0000-0001-6245-2342
+Mark K. J. Ooi,"School of Biological, Earth, and Environmental Sciences, UNSW Sydney, Australia",0000-0002-3046-0417
+Colin P. Osborne,"University of Sheffield, Department of Animal and Plant Sciences, United Kingdom",0000-0002-7423-3718
+Grazyna Paczkowska,"Western Australian Herbarium, Keiran McNamara Conservation Science Centre, Department of Biodiversity, Conservation and Attractions, Western Australia, Australia",NA
+Burak Pekin,"Istanbul Technical University, Eurasia Institute of Earth Sciences, Istanbul, Turkey",NA
+Caio Guilherme Pereira,"Department of Civil and Environmental Engineering, Massachusetts Institute of Technology, USA",0000-0003-3288-8553
+Catherine Pickering,"School of Environment and Science, Griffith University, Australia",0000-0002-3731-5407
+Melinda Pickup,Greening Australia,0000-0001-6118-0541
+Laura J. Pollock,"Department of Biology, McGill University, Montréal, Canada",0000-0002-6004-4027
+Pieter Poot,"University of Western Australia, Australia",0000-0001-7721-0696
+Jeff R. Powell,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0003-1091-2452
+Sally A. Power,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0002-2723-8671
+Iain Colin Prentice,"Imperial College London, United Kingdom",0000-0002-1296-6764
+Lynda Prior,"University of Tasmania, Australia",0000-0002-5511-2320
+Suzanne M. Prober,"CSIRO Land and Water, Australia",0000-0002-6518-239X
+Jennifer Read,"School of Biological Sciences, Monash University, Australia",0000-0002-4727-3482
+Victoria Reynolds,"School of Biological Sciences, University of Queensland, Australia",0000-0002-6071-9303
+Anna E. Richards,"CSIRO Land and Water, Australia",0000-0002-2934-5497
+Ben Richardson,"Western Australian Herbarium, Department of Biodiversity, Conservation and Attractions, Western Australia, Australia",0000-0002-6108-0572
+Michael L. Roderick,"The Australian National University, Australia",0000-0002-3630-7739
+Julieta A. Rosell,"Universidad Nacional Autónoma de México, Mexico",0000-0001-5741-8027
+Maurizio Rossetto,"National Herbarium of NSW, Royal Botanic Gardens and Domain Trust, Australia",0000-0002-4878-9114
+Barbara Rye,"Western Australian Herbarium, Australia",NA
+Paul D. Rymer,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0003-0988-4351
+Michael A. Sams,"School of Biological Sciences, University of Queensland, Australia",0000-0003-3311-4891
+Gordon Sanson,"School of Biological Sciences, Monash University, Australia",NA
+Susanne Schmidt,"School of Agriculture and Food Science, University of Queensland, Australia",0000-0001-8369-1238
+Ernst-Detlef Schulze,"Max-Planck Institute for Biogeochemistry, Germany",0000-0001-6188-9219
+Kerrie Sendall,"Rider University, USA",0000-0001-6175-0954
+Steve Sinclair,"Department of Environment, Land, Water and Planning, Victoria, Australia",0000-0002-4282-1021
+Benjamin Smith,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0002-6987-5337
+Renee Smith,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",NA
+Fiona Soper,"McGill University, Canada",0000-0002-9910-9377
+Ben Sparrow,"Terrestrial Ecosystem Research Network, The School of Biological Sciences, The University of Adelaide, Adelaide, SA, 5005, Australia",0000-0003-2566-1895
+Rachel Standish,"Environmental and Conservation Sciences, Murdoch University, Australia",0000-0001-8118-1904
+Timothy L. Staples,"School of Biological Sciences, University of Queensland, Australia",0000-0002-8550-2661
+Guy Taseski,"School of Biological, Earth, and Environmental Sciences, UNSW Sydney, Australia",NA
+Freya Thomas,"University of Melbourne, Australia",0000-0001-9926-6295
+David T. Tissue,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0002-8497-2047
+Mark G. Tjoelker,"Hawkesbury Institute for the Environment, Western Sydney University, Australia",0000-0003-4607-5238
+David Yue Phin Tng,"Centre for Rainforest Studies, School for Field Studies, Yungaburra, Queensland 4872, Australia",0000-0001-5135-0922
+Kyle Tomlinson,"Xishuangbanna Tropical Botanic Garden, China",NA
+Neil C. Turner,"University of Western Australia, Australia",0000-0002-2982-0411
+Erik Veneklaas,"University of Western Australia, Australia",0000-0002-7030-4056
+Susanna Venn,"Deakin University, Australia",0000-0002-7433-0120
+Peter Vesk,"University of Melbourne, Australia",0000-0003-2008-7062
+Carolyn Vlasveld,"School of Biological Sciences, Monash University, Australia",0000-0001-6445-7067
+Maria S. Vorontsova,"Royal Botanic Gardens, Kew, United Kingdom",0000-0003-0899-1120
+Charles Warren,"School of Life and Environmental Sciences, The University of Sydney, Australia",0000-0002-0788-4713
+Lasantha K. Weerasinghe,"Faculty of Agriculture, University of Peradeniya, 20400, Sri Lanka",NA
+Mark Westoby,"Department of Biological Sciences, Macquarie University, Australia",0000-0001-7690-4530
+Matthew White,"Department of Environment, Land, Water and Planning, Victoria, Australia",0000-0003-2120-0071
+Nicholas Williams,"University of Melbourne, Australia",0000-0001-6291-9483
+Jarrah Wills,"School of Life and Environmental Sciences, Faculty of Science",0000-0002-0235-7690
+Peter G. Wilson,"National Herbarium of NSW, Australia",0000-0001-8581-318X
+Colin Yates,"Biodiversity and Conservation Science, Department of Biodiversity, Conservation and Attractions, Kensington, Western Australia",0000-0003-2286-8700
+Amy E. Zanne,"Department of Biological Sciences, George Washington University, Washington, DC 20052, USA",NA
+Kasia Ziemińska,"Department of Plant Ecology and Evolution, Uppsala University, Uppsala, Sweden",0000-0001-7750-4758
