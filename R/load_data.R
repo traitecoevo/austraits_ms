@@ -2,13 +2,13 @@
 load_data <- function() {
   
   if(!exists("austraits", envir = .GlobalEnv )) {
-    austraits <- readRDS("data/austraits_2.1.0.rds")
+    austraits <- readRDS("data/austraits_3.0.0.rds")
     assign("austraits", austraits, envir = .GlobalEnv)
   }
   
   ## Trait lookup table
 
-  assign("trait_category_lookup", read_csv("data/trait_categories.csv", col_types = cols(.default = "c")), envir = .GlobalEnv)
+  assign("trait_category_lookup", read_csv("data/traits_names_list_20210401v2 - traits_names_list_20210401v2.csv", col_types = cols(.default = "c")), envir = .GlobalEnv)
   
   ### 
   sources_all <- 
@@ -42,7 +42,7 @@ load_data <- function() {
       Type= "",
       `all` = n(),
       `geo.` = sum(!is.na(`longitude (deg)`) & !is.na(`latitude (deg)`)),
-      studies = n_distinct(dataset_id),
+      datasets = n_distinct(dataset_id),
       taxa = n_distinct(taxon_name),
       families = n_distinct(family),
       refs =  refs %>% unique() %>% paste(collapse = ", ")

@@ -1,6 +1,8 @@
 # check list of acknowledgments and assistants
 
 ```{r}
+load_data()
+
 authors_lead <- read_csv("data/lead_authors.csv")
 
 data_contributors <- 
@@ -29,9 +31,7 @@ authors <- bind_rows(authors_lead %>% mutate(acknowledge=FALSE),
                      data_contributors %>% filter(! (name %in% authors_lead$name))
   ) %>% 
   rename(affiliation_dataset = affiliation)
-```
 
-```{r}
 affiliations_sheet <- 
   googlesheets4::read_sheet("https://docs.google.com/spreadsheets/d/1nYE5V7utbExcfGmsfILjoXdVsEMDi5CLF_H-uE57EOo/edit#gid=280623389") %>% 
   filter(!is.na(name))
@@ -53,14 +53,14 @@ authors2 <-
   )
 
 # Check who hasn't responded
-authors2 %>% filter(!acknowledge, !(name %in% responses_sheet$name)) %>% pull(name)
+authors2 %>% filter(!acknowledge, !(name %in% (responses_sheet$name))) %>% pull(name)
 
 
 authors3 <- 
   authors2 %>% 
   mutate(
     # no response
-    acknowledge = ifelse(!(name %in% responses_sheet$name), TRUE, acknowledge)
+    acknowledge = ifelse(!(name %in% (responses_sheet$name)), TRUE, acknowledge)
   )
 
 # Save acknowledgments

@@ -43,6 +43,7 @@ Depends:
 Imports:
     raster,
     ape,
+    rgdal,
     phytools,
     treeio,
     V.PhyloMaker,

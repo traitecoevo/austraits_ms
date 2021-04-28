@@ -1,0 +1,97 @@
+title,is_journal,abbrev
+{AoB} {PLANTS},TRUE,AoB Plants
+{PLOS} {ONE},TRUE,PLoS One
+Agricultural and Forest Meteorology,TRUE,Agric. For. Meteorol.
+Alpine Botany,TRUE,Alp. Bot.
+American Journal of Botany,TRUE,Am. J. Bot.
+Annals of Botany,TRUE,Ann. Bot.
+Annual Review of Ecology and Systematics,TRUE,Annu. Rev. Ecol. Syst.
+"Annual Review of Ecology, Evolution, and Systematics", Annu. Rev. Ecol. Evol. Syst.
+AoB PLANTS,TRUE,AoB Plants
+Appita Journal,TRUE,Appita J.
+Austral Ecology,TRUE,Austral Ecol.
+Australian Journal of Botany,TRUE,Aust. J. Bot.
+Australian Journal of Ecology,TRUE,Aust. J. Ecol.
+Australian Journal of Experimental Agriculture,TRUE,Aust. J. Exp. Agric.
+Australian Journal of Plant Physiology,TRUE,Aust. J. Plant. Physiol.
+Australian Systematic Botany,TRUE,Aust. Syst. Bot.
+Biogeosciences,TRUE,Biogeosciences
+Biological Conservation,TRUE,Biol. Conserv.
+Biological Journal of the Linnean Society,TRUE,Biol. J. Linn. Soc.
+Biological Reviews,TRUE,Biol. Rev.
+Botanical Journal of the Linnean Society,TRUE,Bot. J. Linn. Soc.
+Brunonia,TRUE,Brunonia
+Climate Change Responses,TRUE,Clim. Change Responses
+Diversity and Distributions,TRUE,Divers. Distrib.
+Ecography,TRUE,Ecography
+Ecological Applications,TRUE,Ecol. Appl.
+Ecological Engineering,TRUE,Ecol. Eng.
+Ecological informatics,TRUE,Ecol. Inform.
+Ecological Monographs,TRUE,Ecol. Monogr.
+Ecology,TRUE,Ecology
+Ecology and Evolution,TRUE,Ecol. Evo.
+Ecology Letters,TRUE,Ecol. Lett.
+Ecosphere,TRUE,Ecosphere
+F1000Research,TRUE,F1000Res.
+Forest Ecology and Management,TRUE,For. Ecol. Manage.
+Frontiers in Plant Science,TRUE,Front. Plant. Sci.
+Functional Ecology,TRUE,Funct. Ecol.
+Functional Plant Biology,TRUE,Funct. Plant. Bio.
+GigaScience,TRUE,GigaScience
+Global Change Biology,TRUE,Glob. Chang. Biol.
+Global Ecology and Biogeogr.,TRUE,Glob. Ecol. Biog.
+Global Ecology and Biogeography,TRUE,Glob. Ecol. Biog.
+International Journal of Climatology,TRUE,Int. J. Climatol.
+International Journal of Plant Sciences,TRUE,Int. J. Plant Sci.
+International Journal of Wildland Fire,TRUE,Int. J. Wildland Fire
+Journal of Applied Ecology,TRUE,J. Appl. Ecol.
+Journal of Arid Environments,TRUE,J. Arid Environ.
+Journal of Biogeography,TRUE,J. Biogeogr.
+Journal of Ecology,TRUE,J. Ecol.
+Journal of Experimental Botany,TRUE,J. Exp. Bot.
+Journal of the Adelaide Botanic Garden,TRUE,J. Adel. Bot. Gard.
+Journal of Vegetation Science,TRUE,J. Veg. Sci.
+Methods in Ecology and Evolution,TRUE,Methods Ecol. Evol.
+Nature,TRUE,Nature
+Nature Communications,TRUE,Nat. Commun.
+Nature Ecology \and Evolution,TRUE,Nat. Ecol. Evol.
+Nature Ecology and Evolution,TRUE,Nat. Ecol. Evol.
+New Phytologist,TRUE,New Phytol.
+New Zealand Journal of Ecology,TRUE,N. Z. J. Ecol.
+Nuytsia,TRUE,Nuytsia
+Oecologia,TRUE,Oecologia
+Oikos,TRUE,Oikos
+OIKOS,TRUE,Oikos
+"Perspectives in Plant Ecology, Evolution and Systematics",TRUE,Perspect. Plant Ecol. Evol. Systs.
+Photosynthetica,TRUE,Photosynthetica
+Physiologia Plantarum,TRUE,Physiol. Plant.
+Phytotaxa,TRUE,Phytotaxa
+Plant and Soil,TRUE,Plant Soil
+Plant Biosystems - An International Journal Dealing with all Aspects of Plant Biology,TRUE,Plant Biosyst.
+Plant Ecology,TRUE,Plant Ecol.
+Plant Physiology,TRUE,Plant Physiol.
+"Plant, Cell {\and} Environment",TRUE,Plant Cell Envrion.
+"Plant, Cell and Environment",TRUE,Plant Cell Envrion.
+PloS one,TRUE,PLoS One
+PLoS ONE,TRUE,PLoS One
+PLOS ONE,TRUE,PLoS One
+Proceedings of the National Academy of Sciences,TRUE,Proc. Natl. Acad. Sci. U. S. A.
+Proceedings of the Royal Society B: Biological Sciences,TRUE,Proc. R. Soc. Lond. B Biol. Sci.
+R package version,TRUE,NA
+R package version 0.2. 0. Available at https://github. com/richfitz/remake,TRUE,NA
+Restoration Ecology,TRUE,Restor. Ecol.
+Science of The Total Environment,TRUE,Sci. Total Environ.
+Scientific data,TRUE,Sci. Data
+Telopea,TRUE,Telopea
+The American Naturalist,TRUE,Am. Nat.
+The Journal of Ecology,TRUE,J. Ecol.
+The Rangeland Journal,TRUE,Rangeland J.
+Tree Physiology,TRUE,Tree Physiol.
+Trees,TRUE,Trees
+Trends in Ecology and Evolution,TRUE,Trends Ecol. Evol.
+Tropical Grasslands,TRUE,Trop. Grassl.
+unknown,TRUE,NA
+Urban Forestry and Urban Greening,TRUE,Urban For. Urban Green.
+Western Australia Forestry and Timber Bureau Leaflet,TRUE,West. Aust. For. Timber Bur. Leaflet
+Zenodo,TRUE,Zenodo
+NA,FALSE,NA
