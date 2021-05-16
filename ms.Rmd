@@ -1,5 +1,5 @@
 ---
-title: "AusTraits: A curated plant trait database for the Australian flora"
+title: "AusTraits, a curated plant trait database for the Australian flora"
 editor_options:
   chunk_output_type: console
 output:
@@ -128,7 +128,7 @@ For a small subset of sources from herbaria, providing a text description of tax
 
 ### Trait definitions 
 
-A full list of traits and their sources appears in Online-only Table 1 `r n_records$refs %>% str_split(", ") %>% unlist() %>% sort() %>% unique %>%  
+A full list of traits and their sources appears in Supplementary Table 1 `r n_records$refs %>% str_split(", ") %>% unlist() %>% sort() %>% unique %>%  
     paste(collapse = ", ") %>% paste0("\\citep{", ., "}")`. This list was developed gradually as new datasets were incorporated, drawing from original source publications and a published thesaurus of plant characteristics \citep{Garnier-2017}. We categorised traits based on the tissue where it is measured (`r trait_categories$tissue %>% unique() %>% sort() %>% paste(collapse=", ")`) and the type of measurement (`r trait_categories$category %>% unique() %>% sort() %>% gsub("_", " ", .) %>% paste(collapse=", ")`). Version `r austraits$build_info$version` of AusTraits includes  `r n_records$Type %>% table() %>% sort(decreasing = T) %>% paste(.,  names(.), collapse= " and ")` traits.
 
 ### Database structure
@@ -164,7 +164,7 @@ An R package is being developed (see [github.com/traitecoevo/austraits](http://g
 #As of May 2020, the APC included 28,981 accepted species, subspecies, varieties and forma.  
 ```
 
-The number of accepted vascular plant taxa in the APC (as of May 2020) is around 28,981  \citep{apc-2020}. Version `r austraits$build_info$version` of AusTraits includes at least one record for `r austraits$taxa %>% filter(taxonRank %in% c("Species", "Subspecies", "Varietas", "Forma")) %>% nrow() %>% format(big.mark=",")` taxa (~ 93% of known taxa). Five traits (leaf_length, leaf_width, plant_height, life_history, plant_growth_form) have records for more than 50% of known species (Figure 2). Across all traits, the median number of taxa with records is 62. Online-only Table 1 shows the number of studies, taxa, and families recording data in AusTraits, as well as the number of geo-referenced records, for each trait. Looking across traits and tissue categories, coverage declined gradually, with moderate coverage(> 20%) for more than 50 traits (Figure 2). Coverage for root, stem and bark traits declined much faster than trait measurements for other plant tissues (Figure 2b). 
+The number of accepted vascular plant taxa in the APC (as of May 2020) is around 28,981  \citep{apc-2020}. Version `r austraits$build_info$version` of AusTraits includes at least one record for `r austraits$taxa %>% filter(taxonRank %in% c("Species", "Subspecies", "Varietas", "Forma")) %>% nrow() %>% format(big.mark=",")` taxa (~ 93% of known taxa). Five traits (leaf_length, leaf_width, plant_height, life_history, plant_growth_form) have records for more than 50% of known species (Figure 2). Across all traits, the median number of taxa with records is 62. Supplementary Table 1 shows the number of studies, taxa, and families recording data in AusTraits, as well as the number of geo-referenced records, for each trait. Looking across traits and tissue categories, coverage declined gradually, with moderate coverage(> 20%) for more than 50 traits (Figure 2). Coverage for root, stem and bark traits declined much faster than trait measurements for other plant tissues (Figure 2b). 
 
 The most common traits are non geo-referenced records from floras; these are trait values representing a continental or region mean (or spread) and hence are not linked to a location. Yet, geo-referenced records were available in several traits for more than 10% of the flora (Figure 3a). Coverage is notably higher for geo-referenced measurements of some tissues and trait types - such as bark stems and roots - relative to non-georeferenced measurements (Figure 3). 
 
@@ -302,11 +302,10 @@ austraits$definitions$value_type$values %>%
   writeLines()
 ```
 
-\newpage
-
-Online-only Table 1: Details on all traits represented in version `r austraits$build_info$version` of AusTraits. Note the count of studies is less than the number of references when studies are linked to multiple references.
+Supplementary Table 1: Details on all traits represented in version `r austraits$build_info$version` of AusTraits. Note the count of studies is less than the number of references when studies are linked to multiple references.
 
 ```{r}
+# Supplementary Table 1
  n_records %>%
   mutate(
          Trait = txt_wrap(Trait),
