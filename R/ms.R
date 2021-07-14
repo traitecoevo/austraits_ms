@@ -15,18 +15,11 @@ list1_to_df <- function(my_list) {
 ## Separate into groups of max size n. 
 ## This is needed for latex table, overwise citations
 ## spill off the page
-format_cites_n <- function(x, n = 5){
+format_cites_n <- function(x){
   
   # Make sorted vector of all unique refs
-  x2 <- str_split(x, ", ") %>% unlist() %>% sort()
-  # Make a vector with group ids for references
-  groups <- (rep(1:ceiling(length(x2)/n), n) %>% sort() )[seq_len(length(x2))]
-  
-  ## wrap given txt with citation call  
-  format_cites_sub <- function(x) {x %>% paste(collapse = ", ") %>% paste0("\\citep{", ., "}" )}
-  
-  ## split into groups of n citations, wrap each with citation call, the combine
-  split(x2, groups) %>% lapply(format_cites_sub) %>% paste(collapse = " \\newline ")
+  str_split(x, ", ") %>% unlist() %>% sort() %>% 
+    paste(collapse = "; @") %>% paste0("[  [@", ., "]  ]" )
 }
 
 
