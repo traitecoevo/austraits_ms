@@ -39,13 +39,13 @@
     <choose>
       <if variable="volume"/>
       <else-if variable="DOI">
-        <text variable="DOI" prefix="doi:"/>
+        <text variable="DOI" prefix="https://doi.org/"/>
       </else-if>
     </choose>
   </macro>
   <macro name="issuance">
     <choose>
-      <if type="bill book graphic legal_case legislation motion_picture song thesis chapter paper-conference" match="any">
+      <if type="report bill book graphic legal_case legislation motion_picture song thesis chapter paper-conference" match="any">
         <group delimiter="; " suffix=".">
           <group delimiter=", " prefix="(" suffix=")">
             <text variable="publisher" form="long"/>
@@ -55,7 +55,7 @@
           </group>
         </group>
       </if>
-      <else-if type="report webpage post post-weblog" match="any">
+      <else-if type="webpage post post-weblog" match="any">
         <group delimiter=" ">
           <text variable="URL"/>
           <date date-parts="year" form="text" variable="issued" prefix="(" suffix=")"/>

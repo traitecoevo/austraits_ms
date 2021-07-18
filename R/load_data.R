@@ -1,3 +1,7 @@
+expand <- function(x) {x %>% str_split(", ") %>% unlist() %>% unique() %>% na.omit() %>% sort()}
+collapse <- function(x, sep=", ") {x %>% expand() %>% na_if("") %>% na.omit() %>% unique() %>% paste(collapse = sep)}
+remove <- function(x, id) {expand(x) %>% subset(., !(. %in% id))  }
+keep <- function(x, id) {expand(x) %>% subset(., (. %in% id))  }
 
 load_data <- function(update=FALSE) {
   
@@ -10,18 +14,26 @@ load_data <- function(update=FALSE) {
 
   assign("trait_category_lookup", read_csv("data/traits_names_list_20210401v2 - traits_names_list_20210401v2.csv", col_types = cols(.default = "c")), envir = .GlobalEnv)
   
-  ### 
+  # identify refs with unpublished data 
+  unpub <- 
+    tibble(key = map_chr(austraits$sources, ~.x$key), title = map_chr(austraits$sources, ~.x$title), 
+           author = map_chr(austraits$sources, ~.x$author[1] %>% paste(collapse = ", "))
+    ) %>% 
+    filter(grepl("Unpublished data", title, fixed=TRUE))
+  
+  # 
   sources_all <- 
     bind_rows(
-      austraits$methods %>% select(dataset_id, citation = source_primary_key),
-      austraits$methods %>% select(dataset_id, citation = source_secondary_key)
+      austraits$methods %>% select(dataset_id, citation_p = source_primary_key),
+      austraits$methods %>% select(dataset_id, citation_s = source_secondary_key)
     ) %>% 
-    na_if("") %>%
-    na.omit() %>% 
     distinct() %>% 
     arrange(dataset_id) %>% 
     group_by(dataset_id) %>% 
-    summarise(refs = sprintf("%s", citation) %>% paste(collapse = ", ") %>% str_replace_all(";", ",") )
+    summarise(
+      refs_primary = citation_p %>% str_replace_all(";", ",") %>% collapse(),
+      refs_secondary = citation_s %>% str_replace_all(";", ",") %>% collapse()
+      )
   
   sites <- austraits$sites %>% 
     filter(site_property %in%  c("longitude (deg)","latitude (deg)")) %>% 
@@ -34,6 +46,7 @@ load_data <- function(update=FALSE) {
               select(austraits$taxa, taxon_name, family)) %>% 
     left_join(sources_all, by=c("dataset_id")) 
   
+  
   n_records <- 
     data_geo %>% 
     group_by(trait_name) %>%
@@ -45,12 +58,17 @@ load_data <- function(update=FALSE) {
       datasets = n_distinct(dataset_id),
       taxa = n_distinct(taxon_name),
       families = n_distinct(family),
-      refs =  refs %>% unique() %>% paste(collapse = ", ")
+      dataset_id = dataset_id %>% collapse(),
+#      refs_all =  c(refs_primary, refs_secondary) %>% collapse(), 
+      refs_primary_pub =  refs_primary %>% remove(unpub$key) %>% collapse(), 
+      refs_primary_unpub  = refs_primary %>% keep(unpub$key) %>% collapse(), 
+      refs_secondary_pub = refs_secondary %>% remove(unpub$key) %>% collapse(),
+      unpub_people = unpub %>% filter(key %in% expand(refs_primary_unpub)) %>% pull(author) %>% expand() %>% collapse()
     ) %>% 
     left_join(trait_category_lookup %>% select(trait_name, tissue, category), by=c("trait_name")) %>% 
     select(Tissue = tissue, Category = category, Trait = trait_name, everything()) %>% 
     arrange(Tissue, Category, Trait)
-  
+
   n_records$Type <- sapply(austraits$definitions$traits$elements, "[[","type")[n_records$Trait]
   n_records$Description <- sapply(austraits$definitions$traits$elements, "[[","description")[n_records$Trait] %>% unlist()
   assign("n_records", n_records, envir = .GlobalEnv)

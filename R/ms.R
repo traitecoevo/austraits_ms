@@ -10,19 +10,6 @@ list1_to_df <- function(my_list) {
 }
 
 
-
-## Add `\citet{}` for references. 
-## Separate into groups of max size n. 
-## This is needed for latex table, overwise citations
-## spill off the page
-format_cites_n <- function(x){
-  
-  # Make sorted vector of all unique refs
-  str_split(x, ", ") %>% unlist() %>% sort() %>% 
-    paste(collapse = "; @") %>% paste0("[  [@", ., "]  ]" )
-}
-
-
 ## format table
 make_latex_table <- function(data) {
   data %>%
