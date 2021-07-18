@@ -1,8 +1,8 @@
 
-load_data <- function() {
+load_data <- function(update=FALSE) {
   
-  if(!exists("austraits", envir = .GlobalEnv )) {
-    austraits <- readRDS("data/austraits_3.0.0.rds")
+  if(update | !exists("austraits", envir = .GlobalEnv )) {
+    austraits <- readRDS("data/austraits-3.0.2.rds")
     assign("austraits", austraits, envir = .GlobalEnv)
   }
   

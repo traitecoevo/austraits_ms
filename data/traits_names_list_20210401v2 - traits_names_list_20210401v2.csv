@@ -167,6 +167,8 @@ leaf_absorption,leaf,physiology,NA,NA,NA,Leaf light absorption (extinction),10,N
 leaf_Al_per_dry_mass,leaf,nutrient,NA,50,Leaf aluminum (Al) content per unit leaf dry mass,Leaf aluminium (Al) content per leaf dry mass,249,NA,NA,NA,NA,
 leaf_angle,leaf,morphology,NA,51,"Leaf angle, relative to horizontal","Leaf angle (inclination, orientation)",3,NA,NA,NA,NA,
 leaf_area,leaf,morphology,NA,52,Area of the leaf surface,"Leaf area (in case of compound leaves: leaf, undefined if petiole in- or excluded)",3112,NA,leaf area,TOP25,http://top-thesaurus.org/annotationInfo?viz=1&trait=Leaf%20area,
+leaflet_area,leaf,morphology,,,Area of the leaflet surface,,,,,,,
+leaflet_dry_mass,leaf,morphology,,,,,,,,,,
 leaf_area_ratio,leaf,allocation,NA,54,Ratio of leaf area to total plant dry mass,Leaf area per plant dry mass (leaf area ratio; LAR),109,NA,whole plant leaf area per whole plant dry mass,TOP88,http://top-thesaurus.org/annotationInfo?viz=1&trait=Leaf%20area%20ratio,
 leaf_arrangement,leaf,morphology,NA,55,Describes leaf arrangement on the stem,Leaf distribution along the shoot axis (arrangement type),16,NA,NA,NA,NA,
 leaf_ash_content_per_dry_mass,leaf,nutrient,NA,NA,NA,Leaf ash content per leaf dry mass,333,NA,NA,NA,NA,

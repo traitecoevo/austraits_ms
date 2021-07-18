@@ -22,6 +22,15 @@ We use a number packages, which can be easily installed by:
 devtools::install_deps()
 ```
 
+## Data
+
+You'll need to download version 3.0.2 of the AusTraits data and save it in the folder `data`
+
+```r
+url <- "https://zenodo.org/api/files/9c997956-8254-4fcc-a17b-5fe1fd079022/austraits-3.0.2.rds"
+utils::download.file(url=url, destfile="data/austraits-3.0.2.rds", method="auto", quiet = FALSE, mode = "wb", cacheOK = TRUE)
+```
+
 ## Recreating the figures
 
 To generate all figures run code in `build_figures.R`.
